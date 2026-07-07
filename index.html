@@ -1,0 +1,748 @@
+<!DOCTYPE html><html lang="zh-Hant"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>國三上 第1章「相似形」分節互動講義 · 分節互動練習</title><style>
+:root{--primary:#1f6f8b;--primary-dark:#155263;--accent:#e76f51;--bg:#f6f4ef;--card:#fff;--ink:#2b2b2b;--line:#e5e1d8}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC","Microsoft JhengHei",sans-serif;line-height:1.8;font-size:16px}
+.wrap{max-width:900px;margin:0 auto;padding:0 18px 70px}
+code{background:#eae6dc;padding:1px 5px;border-radius:4px;font-family:Menlo,Consolas,monospace;font-size:1em}
+.fig{margin:10px 0;text-align:center}
+.fig svg{background:#fff;border:1px solid var(--line);border-radius:8px}
+.opts{margin:8px 0;display:flex;flex-wrap:wrap;gap:8px 14px}
+.opt{padding:4px 14px;background:#f4f2ec;border-radius:6px;flex:0 0 auto}
+.ol{font-weight:700;color:var(--primary)}
+
+header.hero{background:linear-gradient(135deg,var(--primary),var(--primary-dark));color:#fff;padding:40px 18px 34px;text-align:center;margin-bottom:22px}
+header.hero h1{margin:0 0 8px;font-size:18px}
+header.hero p{margin:3px 0;opacity:.92;font-size:16px}
+.toc{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin:16px 0}
+.toc a{background:#fff;border:1px solid var(--line);border-radius:20px;padding:6px 16px;text-decoration:none;color:var(--primary-dark);font-size:16px;box-shadow:0 1px 4px rgba(0,0,0,.05)}
+.toc a:hover{background:var(--primary);color:#fff}
+.sechd h2{display:inline-block;background:var(--primary);color:#fff;padding:6px 20px;border-radius:26px;margin:0 0 4px;font-size:18px}
+.sechd p{color:#6b7280;font-size:16px;margin:2px 0 10px}
+.qcard{background:var(--card);border-radius:14px;padding:18px 20px;margin:14px 0;box-shadow:0 2px 10px rgba(0,0,0,.06)}
+.qhead{display:flex;align-items:center;gap:8px;margin-bottom:8px;flex-wrap:wrap}
+.tbadge{color:#fff;font-size:16px;font-weight:700;padding:2px 12px;border-radius:12px}
+.qid{font-weight:700;color:var(--primary-dark);font-size:16px}
+.src{margin-left:auto;font-size:16px;color:#fff;background:var(--accent);padding:2px 12px;border-radius:12px;font-weight:700;white-space:nowrap}
+.pchip{font-size:16px;color:#fff;background:var(--primary-dark);padding:2px 12px;border-radius:12px;font-weight:700;white-space:nowrap}
+@media(max-width:640px){.src{margin-left:0}}
+.work{margin-top:12px;border:1.5px dashed #b9c7cd;border-radius:8px;min-height:5cm;width:15cm;max-width:100%;box-sizing:border-box;padding:8px 12px;background:repeating-linear-gradient(180deg,transparent,transparent 27px,#eef1f2 27px,#eef1f2 28px)}
+.wlabel{font-size:16px;color:#8a99a0;font-weight:700}
+.printpage{margin:0 0 8px}
+.pageribbon{display:none;text-align:center;font-size:16px;color:#8a99a0;border-bottom:1px dashed #cbd5da;margin:22px 0 10px;padding-bottom:4px}
+.qbody{font-size:16px}
+.revbtn{margin-top:12px;background:var(--accent);color:#fff;border:none;border-radius:22px;padding:8px 20px;font-size:16px;font-weight:700;cursor:pointer;box-shadow:0 2px 6px rgba(231,111,81,.35);transition:.15s}
+.revbtn:hover{filter:brightness(1.05);transform:translateY(-1px)}
+.revbtn.on{background:var(--primary)}
+.sol{display:none;margin-top:12px;padding:14px 16px;background:#eef6f8;border-left:5px solid var(--primary);border-radius:8px;font-size:16px}
+.sol.show{display:block;animation:fade .25s ease}
+@keyframes fade{from{opacity:0;transform:translateY(-4px)}to{opacity:1}}
+.ans{font-weight:700;color:var(--primary-dark);margin-bottom:8px;font-size:17px}
+.expl{color:#333;font-size:16px}
+.top{position:fixed;right:16px;bottom:16px;background:var(--primary);color:#fff;text-decoration:none;width:44px;height:44px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:18px;box-shadow:0 4px 12px rgba(0,0,0,.25);opacity:.85}
+.tips{background:#fff8ec;border-left:5px solid var(--accent);border-radius:10px;padding:12px 16px;margin:16px 0;font-size:16px;color:#7a5a3a}
+@media print{
+  @page{margin:1.4cm 1.2cm}
+  body{background:#fff;font-size:16px}
+  header.hero,.toc,.tips,.top{display:none!important}
+  .wrap{max-width:none;padding:0}
+  .printpage{page-break-after:always;break-after:page}
+  .printpage:last-child{page-break-after:auto}
+  .pageribbon{display:block}
+  .qcard{box-shadow:none;border:1px solid #d7d2c7;page-break-inside:avoid;break-inside:avoid;margin:8px 0;padding:10px 12px}
+  .revbtn,.sol{display:none!important}
+  .work{min-height:5cm}
+}
+</style></head><body id="top">
+<header class="hero"><h1>國三上 第1章「相似形」分節互動講義 · 分節互動練習</h1>
+<p>依講義觀念分節 ‧ 每題附「計算 / 作答區」可書寫；點「顯示解析」才展開答案詳解</p>
+<p>🖨 每題右上角標示列印頁碼（全卷共 35 頁），螢幕與紙本頁碼一致</p></header>
+<div class="wrap">
+<div class="toc"><a href="#1-1">1-1 連比例</a><a href="#1-2">1-2 比例線段</a><a href="#1-3">1-3 縮放與相似</a><a href="#1-4">1-4 相似三角形的應用</a></div>
+<div class="tips">💡 老師可直接用「計算 / 作答區」板書講解，不一定要展開解析。用瀏覽器列印（⌘/Ctrl+P）即為學生練習卷：自動分頁、隱藏答案、保留作答空間。圖形為示意圖，請以題目數據為準。</div>
+
+  <div class="printpage">
+    <div class="pageribbon">列印第 1 頁 / 共 35 頁　·　1-1 連比例</div>
+    <div class="sechd" id="1-1"><h2>1-1　連比例</h2><p>連比化簡與合併 ‧ 由兩比求連比 ‧ 連比例式與比例分配</p></div>
+    
+      <div class="qcard">
+        <div class="qhead"><span class="tbadge" style="background:#457b9d">選擇</span><span class="qid">1-1-1</span><span class="src">📄 改編·四育國中</span><span class="pchip">🖨 第 1 頁</span></div>
+        <div class="qbody">已知 2x:3y:4z=6:12:20，則 x:y:z=？</div>
+        
+        <div class="opts"><div class="opt"><span class="ol">(A)</span> 3:4:5</div><div class="opt"><span class="ol">(B)</span> 6:8:15</div><div class="opt"><span class="ol">(C)</span> 3:4:10</div><div class="opt"><span class="ol">(D)</span> 6:12:20</div></div>
+        <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
+        <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
+        <div class="sol">
+          <div class="ans">✅ 答案：(A) 3:4:5</div>
+          <div class="expl"><b>解析：</b>由 2x:3y:4z=6:12:20，將各項還原：<br>x = 6/2 = 3、y = 12/3 = 4、z = 20/4 = 5。<br>所以 x:y:z = 3:4:5。<br>驗算：2x:3y:4z = 6:12:20 ✓</div>
+        </div>
+      </div>
+      <div class="qcard">
+        <div class="qhead"><span class="tbadge" style="background:#457b9d">選擇</span><span class="qid">1-1-2</span><span class="src">📄 改編·福和國中</span><span class="pchip">🖨 第 1 頁</span></div>
+        <div class="qbody">已知 x:y=3:4、y:z=6:5，求 x:y:z 化為最簡整數比。</div>
+        
+        <div class="opts"><div class="opt"><span class="ol">(A)</span> 9:12:10</div><div class="opt"><span class="ol">(B)</span> 3:4:5</div><div class="opt"><span class="ol">(C)</span> 9:10:12</div><div class="opt"><span class="ol">(D)</span> 3:24:5</div></div>
+        <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
+        <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
+        <div class="sol">
+          <div class="ans">✅ 答案：(A) 9:12:10</div>
+          <div class="expl"><b>解析：</b>兩個比的共同項是 y。x:y 中 y=4，y:z 中 y=6，取 4 與 6 的最小公倍數 12。<br>x:y = 3:4 = 9:12（同乘 3）<br>y:z = 6:5 = 12:10（同乘 2）<br>y 都化為 12，合併得 x:y:z = 9:12:10。<br>驗算：x:y=9:12=3:4 ✓、y:z=12:10=6:5 ✓</div>
+        </div>
+      </div>
+  </div>
+  <div class="printpage">
+    <div class="pageribbon">列印第 2 頁 / 共 35 頁　·　1-1 連比例</div>
+    
+    
+      <div class="qcard">
+        <div class="qhead"><span class="tbadge" style="background:#457b9d">選擇</span><span class="qid">1-1-3</span><span class="src">📄 改編·四育國中</span><span class="pchip">🖨 第 2 頁</span></div>
+        <div class="qbody">若 3x=4y=6z，且 xyz≠0，求 x:y:z 化為最簡整數比。</div>
+        
+        <div class="opts"><div class="opt"><span class="ol">(A)</span> 4:3:2</div><div class="opt"><span class="ol">(B)</span> 3:4:6</div><div class="opt"><span class="ol">(C)</span> 2:3:4</div><div class="opt"><span class="ol">(D)</span> 6:4:3</div></div>
+        <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
+        <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
+        <div class="sol">
+          <div class="ans">✅ 答案：(A) 4:3:2</div>
+          <div class="expl"><b>解析：</b>設 3x=4y=6z=k（k≠0）。<br>x = k/3、y = k/4、z = k/6。<br>x:y:z = 1/3 : 1/4 : 1/6，各項乘以 3、4、6 的最小公倍數 12：<br>= (12/3):(12/4):(12/6) = 4:3:2。<br>驗算：3x=3·4=12、4y=4·3=12、6z=6·2=12，三者相等 ✓</div>
+        </div>
+      </div>
+      <div class="qcard">
+        <div class="qhead"><span class="tbadge" style="background:#457b9d">選擇</span><span class="qid">1-1-4</span><span class="src">📄 改編·陽明國中</span><span class="pchip">🖨 第 2 頁</span></div>
+        <div class="qbody">已知 x:y:z=2:3:5，且 xyz≠0，求 (x+y):(y+z):(z+x)=？</div>
+        
+        <div class="opts"><div class="opt"><span class="ol">(A)</span> 5:8:7</div><div class="opt"><span class="ol">(B)</span> 2:3:5</div><div class="opt"><span class="ol">(C)</span> 5:7:8</div><div class="opt"><span class="ol">(D)</span> 1:1:1</div></div>
+        <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
+        <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
+        <div class="sol">
+          <div class="ans">✅ 答案：(A) 5:8:7</div>
+          <div class="expl"><b>解析：</b>設 x=2r、y=3r、z=5r（r≠0）。<br>x+y = 2r+3r = 5r<br>y+z = 3r+5r = 8r<br>z+x = 5r+2r = 7r<br>所以 (x+y):(y+z):(z+x) = 5r:8r:7r = 5:8:7。</div>
+        </div>
+      </div>
+  </div>
+  <div class="printpage">
+    <div class="pageribbon">列印第 3 頁 / 共 35 頁　·　1-1 連比例</div>
+    
+    
+      <div class="qcard">
+        <div class="qhead"><span class="tbadge" style="background:#457b9d">選擇</span><span class="qid">1-1-5</span><span class="src">📄 改編·龍華國中</span><span class="pchip">🖨 第 3 頁</span></div>
+        <div class="qbody">撲滿內有 1 元、5 元、10 元硬幣共 180 枚，三種硬幣的個數比為 5:4:3，則撲滿內共有多少元？</div>
+        
+        <div class="opts"><div class="opt"><span class="ol">(A)</span> 825 元</div><div class="opt"><span class="ol">(B)</span> 180 元</div><div class="opt"><span class="ol">(C)</span> 900 元</div><div class="opt"><span class="ol">(D)</span> 780 元</div></div>
+        <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
+        <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
+        <div class="sol">
+          <div class="ans">✅ 答案：(A) 825 元</div>
+          <div class="expl"><b>解析：</b>個數比 5:4:3，總份數 5+4+3=12。每份 180÷12 = 15 枚。<br>1 元硬幣：5×15 = 75 枚，共 75×1 = 75 元<br>5 元硬幣：4×15 = 60 枚，共 60×5 = 300 元<br>10 元硬幣：3×15 = 45 枚，共 45×10 = 450 元<br>合計 75+300+450 = 825 元。<br>驗算：硬幣枚數 75+60+45 = 180 枚 ✓</div>
+        </div>
+      </div>
+      <div class="qcard">
+        <div class="qhead"><span class="tbadge" style="background:#2a9d8f">填充</span><span class="qid">1-1-6</span><span class="src">📄 改編·陽明國中</span><span class="pchip">🖨 第 3 頁</span></div>
+        <div class="qbody">若 y:z=4:3、x:z=8:5，求 x:y:z 化為最簡整數比。</div>
+        
+        
+        <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
+        <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
+        <div class="sol">
+          <div class="ans">✅ 答案：24:20:15</div>
+          <div class="expl"><b>解析：</b>兩個比的共同項是 z。y:z 中 z=3，x:z 中 z=5，取 3 與 5 的最小公倍數 15。<br>y:z = 4:3 = 20:15（同乘 5）<br>x:z = 8:5 = 24:15（同乘 3）<br>z 都化為 15，合併得 x:y:z = 24:20:15。<br>驗算：y:z=20:15=4:3 ✓、x:z=24:15=8:5 ✓</div>
+        </div>
+      </div>
+  </div>
+  <div class="printpage">
+    <div class="pageribbon">列印第 4 頁 / 共 35 頁　·　1-1 連比例</div>
+    
+    
+      <div class="qcard">
+        <div class="qhead"><span class="tbadge" style="background:#2a9d8f">填充</span><span class="qid">1-1-7</span><span class="src">📄 改編·四育國中</span><span class="pchip">🖨 第 4 頁</span></div>
+        <div class="qbody">已知 x:y:z=3:5:7，且 x+y+z=90，求 2x+y−z 的值。</div>
+        
+        
+        <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
+        <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
+        <div class="sol">
+          <div class="ans">✅ 答案：24</div>
+          <div class="expl"><b>解析：</b>設 x=3r、y=5r、z=7r（r≠0）。<br>x+y+z = 3r+5r+7r = 15r = 90，得 r = 6。<br>所以 x=18、y=30、z=42。<br>2x+y−z = 2·18+30−42 = 36+30−42 = 24。</div>
+        </div>
+      </div>
+      <div class="qcard">
+        <div class="qhead"><span class="tbadge" style="background:#2a9d8f">填充</span><span class="qid">1-1-8</span><span class="src">📄 改編·居仁國中</span><span class="pchip">🖨 第 4 頁</span></div>
+        <div class="qbody">甲、乙、丙三人合買禮物。甲出的錢是乙出的錢的 2 倍，乙出的錢的 3 倍等於丙出的錢的 2 倍。若禮物共 720 元，則甲出多少元？</div>
+        
+        
+        <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
+        <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
+        <div class="sol">
+          <div class="ans">✅ 答案：320 元</div>
+          <div class="expl"><b>解析：</b>設乙出的錢為基準。<br>甲 = 乙的 2 倍，故 甲:乙 = 2:1。<br>「乙的 3 倍 = 丙的 2 倍」即 3乙 = 2丙，得 乙:丙 = 2:3。<br>合併連比：以乙為共同項，甲:乙 = 2:1 = 4:2，乙:丙 = 2:3，<br>所以 甲:乙:丙 = 4:2:3。<br>總份數 4+2+3 = 9，每份 720÷9 = 80 元。<br>甲 = 4×80 = 320 元。<br>驗算：乙 = 2×80 = 160、丙 = 3×80 = 240；甲=2乙(320=2·160)✓、3乙=2丙(480=480)✓、總和 320+160+240 = 720 ✓</div>
+        </div>
+      </div>
+  </div>
+  <div class="printpage">
+    <div class="pageribbon">列印第 5 頁 / 共 35 頁　·　1-1 連比例</div>
+    
+    
+      <div class="qcard">
+        <div class="qhead"><span class="tbadge" style="background:#e76f51">計算</span><span class="qid">1-1-9</span><span class="src">📄 改編·福和國中</span><span class="pchip">🖨 第 5 頁</span></div>
+        <div class="qbody">游泳池有甲、乙、丙三個注水管，每小時出水量分別為 4、6、12 公升。若各水管單獨注滿同一個泳池所需時間分別為 x、y、z 小時，求 x:y:z 化為最簡整數比，並寫出計算過程。</div>
+        
+        
+        <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
+        <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
+        <div class="sol">
+          <div class="ans">✅ 答案：x:y:z = 3:2:1</div>
+          <div class="expl"><b>解析：</b>同一個泳池水量固定，注水時間與每小時出水量成<b>反比</b>。<br>x:y:z = 1/4 : 1/6 : 1/12。<br>各項乘以 4、6、12 的最小公倍數 12：<br>= (12/4):(12/6):(12/12) = 3:2:1。<br>驗算：出水量比 4:6:12 = 2:3:6；時間比 3:2:1 與 2:3:6 互為倒數比 ✓</div>
+        </div>
+      </div>
+      <div class="qcard">
+        <div class="qhead"><span class="tbadge" style="background:#e76f51">計算</span><span class="qid">1-1-10</span><span class="src">📄 改編·居仁國中</span><span class="pchip">🖨 第 5 頁</span></div>
+        <div class="qbody">一條緞帶長 96 公分，A、B 兩點在緞帶上（由左至右依序為左端、A、B、右端）。已知左端到 A、A 到 B、B 到右端三段長度之比為 3:2:1，求 A 到右端的長度，並寫出計算過程。</div>
+        
+        
+        <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
+        <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
+        <div class="sol">
+          <div class="ans">✅ 答案：A 到右端 = 48 公分</div>
+          <div class="expl"><b>解析：</b>三段長度比為 3:2:1，總份數 3+2+1 = 6。<br>每份長 96÷6 = 16 公分。<br>左端到 A = 3×16 = 48 公分<br>A 到 B = 2×16 = 32 公分<br>B 到右端 = 1×16 = 16 公分<br>A 到右端 = (A 到 B) + (B 到右端) = 32+16 = 48 公分。<br>驗算：48+32+16 = 96 公分 ✓</div>
+        </div>
+      </div>
+  </div>
+  <div class="printpage">
+    <div class="pageribbon">列印第 6 頁 / 共 35 頁　·　1-2 比例線段</div>
+    <div class="sechd" id="1-2"><h2>1-2　比例線段</h2><p>等高三角形面積比 ‧ 平行線截比例線段 ‧ 中點連線段 ‧ 角平分線分對邊比</p></div>
+    
+      <div class="qcard">
+        <div class="qhead"><span class="tbadge" style="background:#457b9d">選擇</span><span class="qid">1-2-1</span><span class="src">📄 改編·蘆洲國中</span><span class="pchip">🖨 第 6 頁</span></div>
+        <div class="qbody">如圖，△ABC 的頂點 A 連向底邊 BC 上依序的三點，已知 BD=3、DE=2、EC=5，則下列各三角形的面積比何者<b>錯誤</b>？</div>
+        <div class="fig"><svg viewBox="0 0 220 160"><polygon points="110,20 20,130 200,130" fill="none" stroke="#264653" stroke-width="1.5"/><line x1="110" y1="20" x2="74" y2="130" stroke="#999"/><line x1="110" y1="20" x2="98" y2="130" stroke="#999"/><text x="106" y="14" font-size="13">A</text><text x="12" y="142" font-size="13">B</text><text x="68" y="145" font-size="13">D</text><text x="93" y="145" font-size="13">E</text><text x="200" y="142" font-size="13">C</text></svg></div>
+        <div class="opts"><div class="opt"><span class="ol">(A)</span> △ABD:△ADC = 3:7</div><div class="opt"><span class="ol">(B)</span> △ADE:△AEC = 2:5</div><div class="opt"><span class="ol">(C)</span> △ABE:△ABC = 2:5</div><div class="opt"><span class="ol">(D)</span> △ABD:△AEC = 3:5</div></div>
+        <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
+        <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
+        <div class="sol">
+          <div class="ans">✅ 答案：(C)</div>
+          <div class="expl"><b>解析：</b>三角形皆以 A 為頂點、底在 BC 上，高相同，故面積比＝底邊比。BC=3+2+5=10、BE=BD+DE=3+2=5、DC=DE+EC=2+5=7。(A) △ABD:△ADC=BD:DC=3:7，正確。(B) △ADE:△AEC=DE:EC=2:5，正確。(D) △ABD:△AEC=BD:EC=3:5，正確。(C) △ABE:△ABC=BE:BC=5:10=1:2，並非 2:5，故錯誤。答案選 (C)。</div>
+        </div>
+      </div>
+  </div>
+  <div class="printpage">
+    <div class="pageribbon">列印第 7 頁 / 共 35 頁　·　1-2 比例線段</div>
+    
+    
+      <div class="qcard">
+        <div class="qhead"><span class="tbadge" style="background:#457b9d">選擇</span><span class="qid">1-2-2</span><span class="src">📄 改編·翠屏國中</span><span class="pchip">🖨 第 7 頁</span></div>
+        <div class="qbody">如圖，△ABC 中，D、E 分別在 AB、AC 上，且 DE // BC。若 AD=6、DB=9、AE=4，則 EC=？</div>
+        <div class="fig"><svg viewBox="0 0 220 160"><polygon points="40,20 20,140 190,140" fill="none" stroke="#264653" stroke-width="1.5"/><line x1="32" y1="68" x2="108" y2="68" stroke="#e76f51" stroke-width="1.5"/><text x="34" y="16" font-size="13">A</text><text x="18" y="64" font-size="13">D</text><text x="112" y="70" font-size="13">E</text><text x="10" y="152" font-size="13">B</text><text x="190" y="152" font-size="13">C</text></svg></div>
+        <div class="opts"><div class="opt"><span class="ol">(A)</span> 4</div><div class="opt"><span class="ol">(B)</span> 5</div><div class="opt"><span class="ol">(C)</span> 6</div><div class="opt"><span class="ol">(D)</span> 9</div></div>
+        <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
+        <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
+        <div class="sol">
+          <div class="ans">✅ 答案：(C) 6</div>
+          <div class="expl"><b>解析：</b>DE // BC，由平行線截比例線段性質：AD:DB = AE:EC。代入得 6:9 = 4:EC，交叉相乘 6·EC = 9·4 = 36，故 EC = 36÷6 = 6。答案選 (C)。</div>
+        </div>
+      </div>
+  </div>
+  <div class="printpage">
+    <div class="pageribbon">列印第 8 頁 / 共 35 頁　·　1-2 比例線段</div>
+    
+    
+      <div class="qcard">
+        <div class="qhead"><span class="tbadge" style="background:#457b9d">選擇</span><span class="qid">1-2-3</span><span class="src">📄 改編·土城國中</span><span class="pchip">🖨 第 8 頁</span></div>
+        <div class="qbody">△ABC 中，P、Q 兩點分別在 AB、AC 上，則下列哪一組條件<b>不一定</b>能保證 PQ // BC？</div>
+        <div class="fig"><svg viewBox="0 0 220 160"><polygon points="50,20 20,140 195,140" fill="none" stroke="#264653" stroke-width="1.5"/><line x1="40" y1="60" x2="120" y2="60" stroke="#e76f51" stroke-width="1.5"/><text x="44" y="16" font-size="13">A</text><text x="22" y="58" font-size="13">P</text><text x="124" y="62" font-size="13">Q</text><text x="10" y="152" font-size="13">B</text><text x="195" y="152" font-size="13">C</text></svg></div>
+        <div class="opts"><div class="opt"><span class="ol">(A)</span> AP=6、PB=10、AQ=9、QC=15</div><div class="opt"><span class="ol">(B)</span> AP=8、AB=12、AQ=10、AC=15</div><div class="opt"><span class="ol">(C)</span> AB=10、BP=4、AC=15、CQ=6</div><div class="opt"><span class="ol">(D)</span> AP=4、AB=10、PQ=8、BC=20</div></div>
+        <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
+        <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
+        <div class="sol">
+          <div class="ans">✅ 答案：(D)</div>
+          <div class="expl"><b>解析：</b>要判斷 PQ // BC，須滿足『被截兩邊對應線段成比例』（如 AP:PB=AQ:QC 或 AP:AB=AQ:AC）。(A) AP:PB=6:10=3:5，AQ:QC=9:15=3:5，相等 ⇒ 平行。(B) AP:AB=8:12=2:3，AQ:AC=10:15=2:3，相等 ⇒ 平行。(C) BP:AB=4:10=2:5，CQ:AC=6:15=2:5，相等 ⇒ 平行。(D) 給的是 PQ:BC=8:20=2:5 與 AP:AB=4:10=2:5，這是『第三邊長度之比』而非分割兩邊之比；線段長相等不保證方向相同，故 PQ 不一定平行 BC。答案選 (D)。</div>
+        </div>
+      </div>
+  </div>
+  <div class="printpage">
+    <div class="pageribbon">列印第 9 頁 / 共 35 頁　·　1-2 比例線段</div>
+    
+    
+      <div class="qcard">
+        <div class="qhead"><span class="tbadge" style="background:#457b9d">選擇</span><span class="qid">1-2-4</span><span class="src">📄 改編·四育國中</span><span class="pchip">🖨 第 9 頁</span></div>
+        <div class="qbody">如圖，△ABC 中，D 為 AB 的中點，E 為 AC 的中點，若 DE=11，則 BC 的長度為何？</div>
+        <div class="fig"><svg viewBox="0 0 220 160"><polygon points="60,20 20,140 200,140" fill="none" stroke="#264653" stroke-width="1.5"/><line x1="40" y1="80" x2="130" y2="80" stroke="#e76f51" stroke-width="1.5"/><text x="56" y="16" font-size="13">A</text><text x="24" y="80" font-size="13">D</text><text x="134" y="82" font-size="13">E</text><text x="10" y="152" font-size="13">B</text><text x="200" y="152" font-size="13">C</text></svg></div>
+        <div class="opts"><div class="opt"><span class="ol">(A)</span> 18</div><div class="opt"><span class="ol">(B)</span> 20</div><div class="opt"><span class="ol">(C)</span> 21</div><div class="opt"><span class="ol">(D)</span> 22</div></div>
+        <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
+        <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
+        <div class="sol">
+          <div class="ans">✅ 答案：(D) 22</div>
+          <div class="expl"><b>解析：</b>三角形兩邊中點的連線段（中線連線）平行第三邊，且長度為第三邊的一半，即 DE = ½ BC。故 BC = 2·DE = 2·11 = 22。答案選 (D)。</div>
+        </div>
+      </div>
+  </div>
+  <div class="printpage">
+    <div class="pageribbon">列印第 10 頁 / 共 35 頁　·　1-2 比例線段</div>
+    
+    
+      <div class="qcard">
+        <div class="qhead"><span class="tbadge" style="background:#457b9d">選擇</span><span class="qid">1-2-5</span><span class="src">📄 改編·龍華國中</span><span class="pchip">🖨 第 10 頁</span></div>
+        <div class="qbody">如圖，三條平行線 AD // BE // CF 被兩條截線所截。若 AB:BC=1:3，且 DE=4x−3、EF=6x+3，則 x 的值為何？</div>
+        <div class="fig"><svg viewBox="0 0 220 160"><line x1="20" y1="30" x2="140" y2="30" stroke="#264653"/><line x1="20" y1="75" x2="170" y2="75" stroke="#264653"/><line x1="20" y1="135" x2="210" y2="135" stroke="#264653"/><line x1="35" y1="20" x2="70" y2="145" stroke="#e76f51"/><line x1="120" y1="20" x2="195" y2="145" stroke="#e76f51"/><text x="30" y="28" font-size="13">A</text><text x="38" y="73" font-size="13">B</text><text x="52" y="133" font-size="13">C</text><text x="140" y="30" font-size="13">D</text><text x="172" y="75" font-size="13">E</text><text x="210" y="135" font-size="13">F</text></svg></div>
+        <div class="opts"><div class="opt"><span class="ol">(A)</span> 2</div><div class="opt"><span class="ol">(B)</span> 2.5</div><div class="opt"><span class="ol">(C)</span> 3</div><div class="opt"><span class="ol">(D)</span> 5</div></div>
+        <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
+        <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
+        <div class="sol">
+          <div class="ans">✅ 答案：(A) 2</div>
+          <div class="expl"><b>解析：</b>三平行線截兩截線，所截對應線段成比例：AB:BC = DE:EF。代入得 1:3 = (4x−3):(6x+3)，交叉相乘 3(4x−3) = 1·(6x+3)，即 12x−9 = 6x+3，6x = 12，x = 2。驗算：DE=4·2−3=5、EF=6·2+3=15，5:15=1:3 ✓。答案選 (A)。</div>
+        </div>
+      </div>
+  </div>
+  <div class="printpage">
+    <div class="pageribbon">列印第 11 頁 / 共 35 頁　·　1-2 比例線段</div>
+    
+    
+      <div class="qcard">
+        <div class="qhead"><span class="tbadge" style="background:#457b9d">選擇</span><span class="qid">1-2-6</span><span class="src">📄 改編·福和國中</span><span class="pchip">🖨 第 11 頁</span></div>
+        <div class="qbody">如圖，梯形 ABCD 中，AD // PQ // BC，P 在 AB 上、Q 在 DC 上，且 AP:PB=3:2。若 PQ=20、BC=24，則上底 AD=？</div>
+        <div class="fig"><svg viewBox="0 0 220 160"><polygon points="60,25 160,25 200,135 20,135" fill="none" stroke="#264653" stroke-width="1.5"/><line x1="36" y1="91" x2="176" y2="91" stroke="#e76f51" stroke-width="1.5"/><text x="56" y="20" font-size="13">A</text><text x="162" y="20" font-size="13">D</text><text x="24" y="90" font-size="13">P</text><text x="180" y="92" font-size="13">Q</text><text x="10" y="147" font-size="13">B</text><text x="200" y="147" font-size="13">C</text></svg></div>
+        <div class="opts"><div class="opt"><span class="ol">(A)</span> 12</div><div class="opt"><span class="ol">(B)</span> 13</div><div class="opt"><span class="ol">(C)</span> 14</div><div class="opt"><span class="ol">(D)</span> 16</div></div>
+        <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
+        <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
+        <div class="sol">
+          <div class="ans">✅ 答案：(C) 14</div>
+          <div class="expl"><b>解析：</b>設 AD=a。過 A 作 AB 的平行……較簡便的作法：連對角線或用夾線公式。因 AD // PQ // BC，P 分 AB 使 AP:AB=3:5，故 PQ 為上底 AD 與下底 BC 之間、位置比例為 3/5 處的截線，長度為 PQ = AD + (BC−AD)·(AP/AB) = AD + (24−AD)·(3/5)。代入 PQ=20：20 = AD + (24−AD)·0.6 = 0.4AD + 14.4，得 0.4AD = 5.6，AD = 14。驗算：14 + (24−14)·0.6 = 14+6 = 20 ✓。答案選 (C)。</div>
+        </div>
+      </div>
+  </div>
+  <div class="printpage">
+    <div class="pageribbon">列印第 12 頁 / 共 35 頁　·　1-2 比例線段</div>
+    
+    
+      <div class="qcard">
+        <div class="qhead"><span class="tbadge" style="background:#457b9d">選擇</span><span class="qid">1-2-7</span><span class="src">📄 改編·龍華國中</span><span class="pchip">🖨 第 12 頁</span></div>
+        <div class="qbody">如圖，△ABC 中，AD 平分 ∠BAC 交 BC 於 D，且 DE // AB 交 AC 於 E。若 AB=10、AC=15，則 AE=？</div>
+        <div class="fig"><svg viewBox="0 0 220 160"><polygon points="40,20 20,140 200,140" fill="none" stroke="#264653" stroke-width="1.5"/><line x1="40" y1="20" x2="100" y2="140" stroke="#999"/><line x1="100" y1="140" x2="128" y2="84" stroke="#e76f51" stroke-width="1.5"/><text x="34" y="16" font-size="13">A</text><text x="10" y="152" font-size="13">B</text><text x="96" y="153" font-size="13">D</text><text x="132" y="84" font-size="13">E</text><text x="200" y="152" font-size="13">C</text></svg></div>
+        <div class="opts"><div class="opt"><span class="ol">(A)</span> 5</div><div class="opt"><span class="ol">(B)</span> 6</div><div class="opt"><span class="ol">(C)</span> 7.5</div><div class="opt"><span class="ol">(D)</span> 9</div></div>
+        <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
+        <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
+        <div class="sol">
+          <div class="ans">✅ 答案：(B) 6</div>
+          <div class="expl"><b>解析：</b>AD 為 ∠A 的角平分線，依角平分線分對邊性質：BD:DC = AB:AC = 10:15 = 2:3。又 DE // AB，D 在 BC 上、E 在 AC 上，由平行線截比例：CE:EA = CD:DB = 3:2，即 AE:EC = 2:3。故 AE = AC·2/(2+3) = 15·2/5 = 6。答案選 (B)。</div>
+        </div>
+      </div>
+  </div>
+  <div class="printpage">
+    <div class="pageribbon">列印第 13 頁 / 共 35 頁　·　1-2 比例線段</div>
+    
+    
+      <div class="qcard">
+        <div class="qhead"><span class="tbadge" style="background:#2a9d8f">填充</span><span class="qid">1-2-8</span><span class="src">📄 改編·蘆洲國中</span><span class="pchip">🖨 第 13 頁</span></div>
+        <div class="qbody">如圖，梯形 ABCD 中，AB // DC 為兩平行邊，AB=8、DC=12。E、F 分別為對角線 BD、AC 的中點，連 EF，則 EF 的長度為＿＿＿。</div>
+        <div class="fig"><svg viewBox="0 0 220 160"><polygon points="70,25 150,25 200,135 20,135" fill="none" stroke="#264653" stroke-width="1.5"/><line x1="70" y1="25" x2="200" y2="135" stroke="#bbb"/><line x1="150" y1="25" x2="20" y2="135" stroke="#bbb"/><line x1="92" y1="84" x2="128" y2="84" stroke="#e76f51" stroke-width="1.5"/><text x="66" y="20" font-size="13">A</text><text x="152" y="20" font-size="13">B</text><text x="84" y="86" font-size="13">F</text><text x="132" y="86" font-size="13">E</text><text x="10" y="147" font-size="13">D</text><text x="200" y="147" font-size="13">C</text></svg></div>
+        
+        <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
+        <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
+        <div class="sol">
+          <div class="ans">✅ 答案：EF = 2</div>
+          <div class="expl"><b>解析：</b>梯形兩對角線中點的連線段，平行於兩底，且長度等於兩底之差的一半：EF = ½(DC − AB)。代入 EF = ½(12 − 8) = ½·4 = 2。（原理：中點連線可視為由兩個三角形中點連線疊出，長度為長底減短底的一半。）</div>
+        </div>
+      </div>
+  </div>
+  <div class="printpage">
+    <div class="pageribbon">列印第 14 頁 / 共 35 頁　·　1-2 比例線段</div>
+    
+    
+      <div class="qcard">
+        <div class="qhead"><span class="tbadge" style="background:#2a9d8f">填充</span><span class="qid">1-2-9</span><span class="src">📄 改編·居仁國中</span><span class="pchip">🖨 第 14 頁</span></div>
+        <div class="qbody">如圖，△ABC 中，D 在 BC 上、P 在 AD 上，已知 BD:DC=3:2、AP:PD=1:1，且 △ABD 的面積為 45。求：(1) △ABC 的面積＝＿＿＿；(2) △APC 的面積＝＿＿＿。</div>
+        <div class="fig"><svg viewBox="0 0 220 160"><polygon points="110,20 20,140 200,140" fill="none" stroke="#264653" stroke-width="1.5"/><line x1="110" y1="20" x2="128" y2="140" stroke="#999"/><line x1="128" y1="140" x2="200" y2="140" stroke="none"/><circle cx="119" cy="80" r="2.5" fill="#e76f51"/><text x="106" y="14" font-size="13">A</text><text x="10" y="152" font-size="13">B</text><text x="124" y="153" font-size="13">D</text><text x="200" y="152" font-size="13">C</text><text x="122" y="80" font-size="13">P</text></svg></div>
+        
+        <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
+        <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
+        <div class="sol">
+          <div class="ans">✅ 答案：(1) △ABC = 75；(2) △APC = 15</div>
+          <div class="expl"><b>解析：</b>(1) △ABD 與 △ADC 同以 A 為頂點、底在 BC 上，面積比＝BD:DC=3:2。故 △ADC = 45·(2/3) = 30，△ABC = △ABD + △ADC = 45 + 30 = 75。(2) 看 △ADC 內：P 在 AD 上，△APC 與 △DPC 以 C 為頂點、底 AP、PD 在同一直線上，面積比＝AP:PD=1:1。故 △APC = △ADC·(1/2) = 30·½ = 15。</div>
+        </div>
+      </div>
+  </div>
+  <div class="printpage">
+    <div class="pageribbon">列印第 15 頁 / 共 35 頁　·　1-2 比例線段</div>
+    
+    
+      <div class="qcard">
+        <div class="qhead"><span class="tbadge" style="background:#2a9d8f">填充</span><span class="qid">1-2-10</span><span class="src">📄 改編·蘆洲國中</span><span class="pchip">🖨 第 15 頁</span></div>
+        <div class="qbody">如圖，△ABC 中，∠B=90°，AB=32、BC=24。D、E、F 分別為 AB、AC、BC 的中點，求 △DEF 的周長＝＿＿＿。</div>
+        <div class="fig"><svg viewBox="0 0 220 160"><polygon points="30,20 30,140 200,140" fill="none" stroke="#264653" stroke-width="1.5"/><line x1="30" y1="80" x2="115" y2="80" stroke="#e76f51"/><line x1="115" y1="80" x2="115" y2="140" stroke="#e76f51"/><line x1="30" y1="80" x2="115" y2="140" stroke="#e76f51"/><text x="26" y="16" font-size="13">A</text><text x="14" y="84" font-size="13">D</text><text x="118" y="78" font-size="13">E</text><text x="16" y="152" font-size="13">B</text><text x="110" y="153" font-size="13">F</text><text x="200" y="152" font-size="13">C</text></svg></div>
+        
+        <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
+        <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
+        <div class="sol">
+          <div class="ans">✅ 答案：△DEF 周長 = 48</div>
+          <div class="expl"><b>解析：</b>先求斜邊 AC：直角三角形 ∠B=90°，AC = √(AB²+BC²) = √(32²+24²) = √(1024+576) = √1600 = 40。D、E、F 為各邊中點，中點三角形的每一邊都是原三角形某一邊的中點連線，長度為對邊的一半，故 △DEF 三邊分別為 AB、BC、CA 的一半：16、12、20。周長 = 16+12+20 = 48（即原三角形周長 96 的一半）。</div>
+        </div>
+      </div>
+  </div>
+  <div class="printpage">
+    <div class="pageribbon">列印第 16 頁 / 共 35 頁　·　1-2 比例線段</div>
+    
+    
+      <div class="qcard">
+        <div class="qhead"><span class="tbadge" style="background:#e76f51">計算</span><span class="qid">1-2-11</span><span class="src">📄 改編·陽明國中</span><span class="pchip">🖨 第 16 頁</span></div>
+        <div class="qbody">如圖，梯形 ABCD 中，AD // PQ // BC，P 在 AB 上、Q 在 DC 上。已知 DQ=x、QC=3、AP=2x−3、PB=4。(1) 求 x 的值；(2) 求 AP 與 DQ 的長度。</div>
+        <div class="fig"><svg viewBox="0 0 220 160"><polygon points="55,25 165,25 205,135 15,135" fill="none" stroke="#264653" stroke-width="1.5"/><line x1="35" y1="91" x2="185" y2="91" stroke="#e76f51" stroke-width="1.5"/><text x="50" y="20" font-size="13">A</text><text x="168" y="20" font-size="13">D</text><text x="22" y="90" font-size="13">P</text><text x="188" y="92" font-size="13">Q</text><text x="6" y="147" font-size="13">B</text><text x="205" y="147" font-size="13">C</text></svg></div>
+        
+        <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
+        <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
+        <div class="sol">
+          <div class="ans">✅ 答案：(1) x = 9/2；(2) AP = 6、DQ = 9/2</div>
+          <div class="expl"><b>解析：</b>(1) 因 AD // PQ // BC，這兩條截線（腰 AB 與 DC）被三平行線所截，對應線段成比例：AP:PB = DQ:QC。代入 (2x−3):4 = x:3，交叉相乘 3(2x−3) = 4·x，即 6x−9 = 4x，2x = 9，x = 9/2。(2) AP = 2x−3 = 2·(9/2)−3 = 9−3 = 6；DQ = x = 9/2。驗算：AP:PB = 6:4 = 3:2，DQ:QC = (9/2):3 = 3:2，兩比相等 ✓。</div>
+        </div>
+      </div>
+  </div>
+  <div class="printpage">
+    <div class="pageribbon">列印第 17 頁 / 共 35 頁　·　1-2 比例線段</div>
+    
+    
+      <div class="qcard">
+        <div class="qhead"><span class="tbadge" style="background:#e76f51">計算</span><span class="qid">1-2-12</span><span class="src">📄 改編·翠屏國中</span><span class="pchip">🖨 第 17 頁</span></div>
+        <div class="qbody">如圖，△ABC 中，D、E 分別為 AB、AC 的中點。已知 AB=14、AC=10、DE=6。(1) 說明 DE 與 BC 的關係（平行與長度）；(2) 求 BC 的長；(3) 求 △ADE 與 △ABC 的周長比。</div>
+        <div class="fig"><svg viewBox="0 0 220 160"><polygon points="70,20 20,140 200,140" fill="none" stroke="#264653" stroke-width="1.5"/><line x1="45" y1="80" x2="135" y2="80" stroke="#e76f51" stroke-width="1.5"/><text x="66" y="16" font-size="13">A</text><text x="28" y="80" font-size="13">D</text><text x="138" y="82" font-size="13">E</text><text x="10" y="152" font-size="13">B</text><text x="200" y="152" font-size="13">C</text></svg></div>
+        
+        <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
+        <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
+        <div class="sol">
+          <div class="ans">✅ 答案：(1) DE // BC 且 DE=½BC；(2) BC = 12；(3) 周長比 = 1:2</div>
+          <div class="expl"><b>解析：</b>(1) D、E 為 AB、AC 兩邊中點，由三角形兩邊中點連線段性質：DE 平行第三邊 BC，且長度為 BC 的一半，即 DE = ½ BC。(2) 由 DE = ½ BC 得 BC = 2·DE = 2·6 = 12。(3) 因 AD:AB = AE:AC = 1:2，且 DE:BC = 1:2，三組對應邊比皆為 1:2，△ADE 與 △ABC 相似，周長比＝對應邊比＝1:2。（驗算：△ADE 三邊 AD=7、AE=5、DE=6，和 18；△ABC 三邊 AB=14、AC=10、BC=12，和 36，18:36=1:2 ✓。）</div>
+        </div>
+      </div>
+  </div>
+  <div class="printpage">
+    <div class="pageribbon">列印第 18 頁 / 共 35 頁　·　1-3 縮放與相似</div>
+    <div class="sechd" id="1-3"><h2>1-3　縮放與相似</h2><p>縮放與位似 ‧ 相似多邊形判別 ‧ 相似三角形 AA / SAS / SSS</p></div>
+    
+      <div class="qcard">
+        <div class="qhead"><span class="tbadge" style="background:#457b9d">選擇</span><span class="qid">1-3-1</span><span class="src">📄 改編·土城國中</span><span class="pchip">🖨 第 18 頁</span></div>
+        <div class="qbody">如圖，A′、B′、C′ 分別在通過 O 點的三條直線上，且 O A′＝4 O A、O B′＝4 O B、O C′＝4 O C。若 △ABC 的周長為 18，則 △A′B′C′（△ABC 以 O 為縮放中心的縮放圖）的周長為多少？</div>
+        <div class="fig"><svg viewBox="0 0 220 160"><circle cx="28" cy="82" r="3" fill="#264653"/><text x="14" y="86" font-size="13">O</text><line x1="28" y1="82" x2="205" y2="20" stroke="#999"/><line x1="28" y1="82" x2="205" y2="96" stroke="#999"/><line x1="28" y1="82" x2="205" y2="150" stroke="#999"/><polygon points="72,66 72,86 100,90" fill="none" stroke="#264653"/><polygon points="205,20 205,96 205,150" fill="none" stroke="#e76f51"/><text x="64" y="62" font-size="13">A</text><text x="60" y="92" font-size="13">B</text><text x="100" y="102" font-size="13">C</text><text x="207" y="18" font-size="13">A′</text><text x="207" y="100" font-size="13">B′</text><text x="207" y="158" font-size="13">C′</text></svg></div>
+        <div class="opts"><div class="opt"><span class="ol">(A)</span> (A) 22</div><div class="opt"><span class="ol">(B)</span> (B) 54</div><div class="opt"><span class="ol">(C)</span> (C) 72</div><div class="opt"><span class="ol">(D)</span> (D) 288</div></div>
+        <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
+        <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
+        <div class="sol">
+          <div class="ans">✅ 答案：(C) 72</div>
+          <div class="expl"><b>解析：</b>縮放倍率 r＝O A′/O A＝4。縮放後圖形與原圖形對應邊成比例，周長也放大為 r 倍，故 △A′B′C′ 周長＝18×4＝72。（面積才是 r² 倍，勿誤用。）</div>
+        </div>
+      </div>
+  </div>
+  <div class="printpage">
+    <div class="pageribbon">列印第 19 頁 / 共 35 頁　·　1-3 縮放與相似</div>
+    
+    
+      <div class="qcard">
+        <div class="qhead"><span class="tbadge" style="background:#457b9d">選擇</span><span class="qid">1-3-2</span><span class="src">📄 改編·向上國中</span><span class="pchip">🖨 第 19 頁</span></div>
+        <div class="qbody">四邊形 ABCD ∼ 四邊形 PQRS，對應點依序為 A→P、B→Q、C→R、D→S。若 AB : BC : CD : DA＝6 : 5 : 4 : 3，且 PQ 與 RS 相差 14 公分，則四邊形 PQRS 的周長為多少公分？</div>
+        
+        <div class="opts"><div class="opt"><span class="ol">(A)</span> (A) 63</div><div class="opt"><span class="ol">(B)</span> (B) 84</div><div class="opt"><span class="ol">(C)</span> (C) 126</div><div class="opt"><span class="ol">(D)</span> (D) 252</div></div>
+        <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
+        <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
+        <div class="sol">
+          <div class="ans">✅ 答案：(C) 126</div>
+          <div class="expl"><b>解析：</b>PQ 對應 AB（比 6），RS 對應 CD（比 4）。相似 ⇒ 對應邊成比例，設每一份為 k，則 PQ＝6k、RS＝4k，PQ－RS＝2k＝14 ⇒ k＝7。四邊形 PQRS 周長＝(6＋5＋4＋3)k＝18×7＝126（公分）。</div>
+        </div>
+      </div>
+      <div class="qcard">
+        <div class="qhead"><span class="tbadge" style="background:#457b9d">選擇</span><span class="qid">1-3-3</span><span class="src">📄 改編·土城國中</span><span class="pchip">🖨 第 19 頁</span></div>
+        <div class="qbody">已知四邊形 ABCD ∼ 四邊形 PQRS，A、B、C、D 的對應點依序為 P、Q、R、S。若 ∠A＝(2x＋10)°、∠P＝(3x－30)°，∠Q＝(2x－10)°，則 ∠B 為多少度？</div>
+        
+        <div class="opts"><div class="opt"><span class="ol">(A)</span> (A) 60°</div><div class="opt"><span class="ol">(B)</span> (B) 66°</div><div class="opt"><span class="ol">(C)</span> (C) 70°</div><div class="opt"><span class="ol">(D)</span> (D) 74°</div></div>
+        <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
+        <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
+        <div class="sol">
+          <div class="ans">✅ 答案：(C) 70°</div>
+          <div class="expl"><b>解析：</b>相似 ⇒ 對應角相等，∠A＝∠P：2x＋10＝3x－30 ⇒ x＝40。又 ∠B 的對應角為 ∠Q，故 ∠B＝∠Q＝2(40)－10＝70°。</div>
+        </div>
+      </div>
+  </div>
+  <div class="printpage">
+    <div class="pageribbon">列印第 20 頁 / 共 35 頁　·　1-3 縮放與相似</div>
+    
+    
+      <div class="qcard">
+        <div class="qhead"><span class="tbadge" style="background:#457b9d">選擇</span><span class="qid">1-3-4</span><span class="src">📄 改編·四育國中</span><span class="pchip">🖨 第 20 頁</span></div>
+        <div class="qbody">下列有關相似形的敘述，何者「正確」？</div>
+        
+        <div class="opts"><div class="opt"><span class="ol">(A)</span> (A) 任意兩個長方形一定相似</div><div class="opt"><span class="ol">(B)</span> (B) 任意兩個菱形一定相似</div><div class="opt"><span class="ol">(C)</span> (C) 兩個五邊形只要對應邊成比例，就一定相似</div><div class="opt"><span class="ol">(D)</span> (D) 任意兩個正方形一定相似</div></div>
+        <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
+        <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
+        <div class="sol">
+          <div class="ans">✅ 答案：(D) 任意兩個正方形一定相似</div>
+          <div class="expl"><b>解析：</b>判別相似須「對應角相等」且「對應邊成比例」兩條件同時成立。(A) 長方形對應角雖皆 90°，但邊比可不同（如 1×2 與 1×3），錯；(B) 菱形對應邊皆成比例，但角度可不同，錯；(C) 只有對應邊成比例、對應角不一定相等，錯；(D) 正方形四角皆 90°（對應角相等），四邊等長（對應邊比皆相同），兩條件都成立，故一定相似，正確。</div>
+        </div>
+      </div>
+  </div>
+  <div class="printpage">
+    <div class="pageribbon">列印第 21 頁 / 共 35 頁　·　1-3 縮放與相似</div>
+    
+    
+      <div class="qcard">
+        <div class="qhead"><span class="tbadge" style="background:#457b9d">選擇</span><span class="qid">1-3-5</span><span class="src">📄 改編·龍華國中</span><span class="pchip">🖨 第 21 頁</span></div>
+        <div class="qbody">如圖，AC 與 BD 相交於 O 點，已知 OA＝4、OC＝6、OB＝6、OD＝9。試判斷 △OAB 與 △OCD 是否相似，並指出所根據的相似性質。</div>
+        <div class="fig"><svg viewBox="0 0 220 160"><line x1="30" y1="40" x2="190" y2="120" stroke="#264653"/><line x1="40" y1="120" x2="180" y2="40" stroke="#264653"/><circle cx="110" cy="80" r="3" fill="#264653"/><text x="112" y="94" font-size="13">O</text><line x1="30" y1="40" x2="40" y2="120" stroke="#e76f51"/><line x1="190" y1="120" x2="180" y2="40" stroke="#e76f51"/><text x="20" y="38" font-size="13">A</text><text x="30" y="132" font-size="13">B</text><text x="192" y="122" font-size="13">C</text><text x="182" y="36" font-size="13">D</text></svg></div>
+        <div class="opts"><div class="opt"><span class="ol">(A)</span> (A) 相似，根據 AA 相似</div><div class="opt"><span class="ol">(B)</span> (B) 相似，根據 SAS 相似</div><div class="opt"><span class="ol">(C)</span> (C) 相似，根據 SSS 相似</div><div class="opt"><span class="ol">(D)</span> (D) 條件不足，無法判斷</div></div>
+        <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
+        <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
+        <div class="sol">
+          <div class="ans">✅ 答案：(B) 相似，根據 SAS 相似</div>
+          <div class="expl"><b>解析：</b>∠AOB 與 ∠COD 為對頂角，故 ∠AOB＝∠COD（一組對應角相等）。夾此角的兩組對應邊：OA/OC＝4/6＝2/3，OB/OD＝6/9＝2/3，比值相等。一組對應角相等且夾角兩邊成比例，故 △OAB ∼ △OCD（SAS 相似）。</div>
+        </div>
+      </div>
+  </div>
+  <div class="printpage">
+    <div class="pageribbon">列印第 22 頁 / 共 35 頁　·　1-3 縮放與相似</div>
+    
+    
+      <div class="qcard">
+        <div class="qhead"><span class="tbadge" style="background:#2a9d8f">填充</span><span class="qid">1-3-6</span><span class="src">📄 自編</span><span class="pchip">🖨 第 22 頁</span></div>
+        <div class="qbody">已知 △ABC 三邊長為 6、9、12，另有一個 △DEF 與 △ABC 相似。若 △DEF 的最長邊為 20，求 △DEF 的周長。</div>
+        
+        
+        <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
+        <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
+        <div class="sol">
+          <div class="ans">✅ 答案：△DEF 周長＝45</div>
+          <div class="expl"><b>解析：</b>△ABC 三邊 6:9:12 化簡為 2:3:4，最長邊為 12。△DEF ∼ △ABC，對應邊成比例：相似比＝DEF 最長邊/ABC 最長邊＝20/12＝5/3。周長也依此比放大，△ABC 周長＝6＋9＋12＝27，故 △DEF 周長＝27×5/3＝45。（亦可直接由 20＝4 份 ⇒ 每份 5，周長＝(2＋3＋4)×5＝45。）</div>
+        </div>
+      </div>
+      <div class="qcard">
+        <div class="qhead"><span class="tbadge" style="background:#457b9d">選擇</span><span class="qid">1-3-7</span><span class="src">📄 改編·龍華國中</span><span class="pchip">🖨 第 22 頁</span></div>
+        <div class="qbody">將一個三角形以某點為中心，把各頂點到中心的距離都放大為 3 倍，得到一個新三角形。有關新三角形與原三角形的敘述，下列哪一個「錯誤」？</div>
+        
+        <div class="opts"><div class="opt"><span class="ol">(A)</span> (A) 新三角形與原三角形相似</div><div class="opt"><span class="ol">(B)</span> (B) 新三角形的周長為原三角形周長的 3 倍</div><div class="opt"><span class="ol">(C)</span> (C) 新三角形的每一個內角都是原三角形對應內角的 3 倍</div><div class="opt"><span class="ol">(D)</span> (D) 新三角形的面積為原三角形面積的 9 倍</div></div>
+        <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
+        <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
+        <div class="sol">
+          <div class="ans">✅ 答案：(C) 新三角形的每一個內角都是原三角形對應內角的 3 倍</div>
+          <div class="expl"><b>解析：</b>縮放（位似）性質：對應角「相等」、對應邊成比例。(A) 對應角相等且對應邊成比例，故相似，正確；(B) 邊長放大 3 倍，周長也為 3 倍，正確；(C) 角度在縮放後「不變」，並非放大 3 倍，錯誤；(D) 面積比＝邊長比的平方＝3²＝9 倍，正確。故選 (C)。</div>
+        </div>
+      </div>
+  </div>
+  <div class="printpage">
+    <div class="pageribbon">列印第 23 頁 / 共 35 頁　·　1-3 縮放與相似</div>
+    
+    
+      <div class="qcard">
+        <div class="qhead"><span class="tbadge" style="background:#2a9d8f">填充</span><span class="qid">1-3-8</span><span class="src">📄 改編·陽明國中</span><span class="pchip">🖨 第 23 頁</span></div>
+        <div class="qbody">如圖，△ABC 中，D 在 AB 上、E 在 AC 上，已知 AD＝4、AB＝10、AE＝5、AC＝8，且 DE＝6。求 BC 的長。</div>
+        <div class="fig"><svg viewBox="0 0 220 160"><polygon points="30,130 200,130 60,20" fill="none" stroke="#264653"/><line x1="96" y1="64" x2="120" y2="130" stroke="#e76f51"/><circle cx="96" cy="64" r="2.5" fill="#264653"/><circle cx="120" cy="130" r="2.5" fill="#264653"/><text x="56" y="16" font-size="13">A</text><text x="20" y="136" font-size="13">B</text><text x="202" y="136" font-size="13">C</text><text x="78" y="62" font-size="13">E</text><text x="118" y="146" font-size="13">D</text></svg></div>
+        
+        <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
+        <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
+        <div class="sol">
+          <div class="ans">✅ 答案：BC＝12</div>
+          <div class="expl"><b>解析：</b>△ADE 與 △ACB 中，∠A 為公共角（一組對應角相等）。夾此角兩邊：AD/AC＝4/8＝1/2，AE/AB＝5/10＝1/2，比值相等，故 △ADE ∼ △ACB（SAS 相似），對應邊 DE 對 BC。由 DE/BC＝1/2 ⇒ 6/BC＝1/2 ⇒ BC＝12。</div>
+        </div>
+      </div>
+  </div>
+  <div class="printpage">
+    <div class="pageribbon">列印第 24 頁 / 共 35 頁　·　1-3 縮放與相似</div>
+    
+    
+      <div class="qcard">
+        <div class="qhead"><span class="tbadge" style="background:#666">計算/證明</span><span class="qid">1-3-9</span><span class="src">📄 改編·蘆洲國中</span><span class="pchip">🖨 第 24 頁</span></div>
+        <div class="qbody">如圖，AC 與 BD 相交於 O 點，且 ∠A＝∠D。已知 OA＝8、OB＝6、OD＝4。(1) 說明 △OAB 與 △ODC 相似，並指出所用的相似性質。(2) 求 OC 的長。</div>
+        <div class="fig"><svg viewBox="0 0 220 160"><line x1="30" y1="35" x2="190" y2="125" stroke="#264653"/><line x1="35" y1="125" x2="185" y2="35" stroke="#264653"/><circle cx="108" cy="80" r="3" fill="#264653"/><text x="110" y="94" font-size="13">O</text><text x="20" y="34" font-size="13">A</text><text x="24" y="136" font-size="13">B</text><text x="192" y="128" font-size="13">C</text><text x="186" y="32" font-size="13">D</text></svg></div>
+        
+        <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
+        <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
+        <div class="sol">
+          <div class="ans">✅ 答案：(1) 由 AA 相似判定 △OAB ∼ △ODC；(2) OC＝3</div>
+          <div class="expl"><b>解析：</b>(1) 在 △OAB 與 △ODC 中：∠A＝∠D（已知，一組對應角相等）；∠AOB＝∠DOC（對頂角相等，第二組對應角相等）。兩組對應角分別相等，故 △OAB ∼ △ODC（AA 相似）。(2) 由相似得對應邊成比例：OA/OD＝OB/OC。代入 8/4＝6/OC ⇒ 2＝6/OC ⇒ OC＝3。</div>
+        </div>
+      </div>
+  </div>
+  <div class="printpage">
+    <div class="pageribbon">列印第 25 頁 / 共 35 頁　·　1-3 縮放與相似</div>
+    
+    
+      <div class="qcard">
+        <div class="qhead"><span class="tbadge" style="background:#666">計算/證明</span><span class="qid">1-3-10</span><span class="src">📄 改編·福和國中</span><span class="pchip">🖨 第 25 頁</span></div>
+        <div class="qbody">有一張長 8 公分、寬 6 公分的長方形紙張。沿長邊剪去一長條，使剩下的長方形長度變為 (8－x) 公分、寬仍為 6 公分，且剩下的長方形恰與原長方形相似。求 x 的值。</div>
+        <div class="fig"><svg viewBox="0 0 220 160"><rect x="25" y="40" width="160" height="80" fill="none" stroke="#264653"/><line x1="115" y1="40" x2="115" y2="120" stroke="#e76f51" stroke-dasharray="4 3"/><rect x="115" y="40" width="70" height="80" fill="#f4a26120" stroke="none"/><text x="95" y="34" font-size="13">8</text><text x="12" y="84" font-size="13">6</text><text x="135" y="135" font-size="13">剪去</text></svg></div>
+        
+        <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
+        <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
+        <div class="sol">
+          <div class="ans">✅ 答案：x＝3.5（即剩下的長方形為 4.5×6）</div>
+          <div class="expl"><b>解析：</b>原長方形長:寬＝8:6＝4:3。剩下的長方形兩邊為 (8－x) 與 6。因剩下的較「瘦長」的一邊變成 6，較短邊為 (8－x)，要與原長方形相似（長邊:短邊＝4:3），須 6:(8－x)＝4:3，即 4(8－x)＝18 ⇒ 32－4x＝18 ⇒ 4x＝14 ⇒ x＝3.5。驗算：剩下 4.5×6，比為 6:4.5＝4:3 ✓，與原長方形 8:6＝4:3 相同，確為相似。</div>
+        </div>
+      </div>
+  </div>
+  <div class="printpage">
+    <div class="pageribbon">列印第 26 頁 / 共 35 頁　·　1-4 相似三角形的應用</div>
+    <div class="sechd" id="1-4"><h2>1-4　相似三角形的應用</h2><p>對應邊比與面積比 ‧ 母子相似 ‧ 實際測量 ‧ 特殊直角三角形</p></div>
+    
+      <div class="qcard">
+        <div class="qhead"><span class="tbadge" style="background:#457b9d">選擇</span><span class="qid">1-4-1</span><span class="src">📄 改編·向上國中</span><span class="pchip">🖨 第 26 頁</span></div>
+        <div class="qbody">如圖，△ABC 中，D 在 AB 上，且 ∠BCD=∠BAC。若 AD=12、DB=4，則 BC=？</div>
+        <div class="fig"><svg viewBox="0 0 220 160"><polygon points="20,140 200,140 60,30" fill="none" stroke="#264653" stroke-width="2"/><line x1="200" y1="140" x2="48" y2="58" stroke="#e76f51" stroke-width="2"/><text x="48" y="26" font-size="13">A</text><text x="6" y="146" font-size="13">B</text><text x="204" y="146" font-size="13">C</text><text x="40" y="70" font-size="13">D</text></svg></div>
+        <div class="opts"><div class="opt"><span class="ol">(A)</span> (A) 6</div><div class="opt"><span class="ol">(B)</span> (B) 8</div><div class="opt"><span class="ol">(C)</span> (C) 4√3</div><div class="opt"><span class="ol">(D)</span> (D) 12</div></div>
+        <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
+        <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
+        <div class="sol">
+          <div class="ans">✅ 答案：(B) 8</div>
+          <div class="expl"><b>解析：</b>∠B 為共用角，∠BCD=∠BAC，故 △BCD∼△BAC（AA 相似，母子相似型）。對應邊 BC:BA=BD:BC，即 BC²=BD·BA。其中 BA=AD+DB=12+4=16，故 BC²=4×16=64，BC=8。</div>
+        </div>
+      </div>
+  </div>
+  <div class="printpage">
+    <div class="pageribbon">列印第 27 頁 / 共 35 頁　·　1-4 相似三角形的應用</div>
+    
+    
+      <div class="qcard">
+        <div class="qhead"><span class="tbadge" style="background:#457b9d">選擇</span><span class="qid">1-4-2</span><span class="src">📄 改編·蘆洲國中</span><span class="pchip">🖨 第 27 頁</span></div>
+        <div class="qbody">已知 △ABC∼△DEF，AP、DQ 分別為 BC、EF 邊上的對應高。若 AB=8、DE=12、AP=6，則對應高 DQ=？</div>
+        <div class="fig"><svg viewBox="0 0 220 160"><polygon points="15,120 95,120 55,40" fill="none" stroke="#264653" stroke-width="2"/><line x1="55" y1="40" x2="55" y2="120" stroke="#e76f51" stroke-width="2"/><rect x="55" y="110" width="10" height="10" fill="none" stroke="#264653"/><polygon points="110,130 210,130 160,30" fill="none" stroke="#264653" stroke-width="2"/><line x1="160" y1="30" x2="160" y2="130" stroke="#e76f51" stroke-width="2"/><rect x="160" y="120" width="10" height="10" fill="none" stroke="#264653"/><text x="48" y="36" font-size="13">A</text><text x="152" y="26" font-size="13">D</text></svg></div>
+        <div class="opts"><div class="opt"><span class="ol">(A)</span> (A) 4</div><div class="opt"><span class="ol">(B)</span> (B) 8</div><div class="opt"><span class="ol">(C)</span> (C) 9</div><div class="opt"><span class="ol">(D)</span> (D) 10</div></div>
+        <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
+        <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
+        <div class="sol">
+          <div class="ans">✅ 答案：(C) 9</div>
+          <div class="expl"><b>解析：</b>相似三角形對應高的比＝對應邊的比。AP:DQ=AB:DE=8:12=2:3，故 6:DQ=2:3，DQ=6×3/2=9。</div>
+        </div>
+      </div>
+  </div>
+  <div class="printpage">
+    <div class="pageribbon">列印第 28 頁 / 共 35 頁　·　1-4 相似三角形的應用</div>
+    
+    
+      <div class="qcard">
+        <div class="qhead"><span class="tbadge" style="background:#457b9d">選擇</span><span class="qid">1-4-3</span><span class="src">📄 改編·土城國中</span><span class="pchip">🖨 第 28 頁</span></div>
+        <div class="qbody">兩個相似三角形的一組對應邊長分別為 6 公分與 10 公分。若較小三角形的面積為 27 平方公分，則較大三角形的面積為多少平方公分？</div>
+        
+        <div class="opts"><div class="opt"><span class="ol">(A)</span> (A) 45</div><div class="opt"><span class="ol">(B)</span> (B) 54</div><div class="opt"><span class="ol">(C)</span> (C) 75</div><div class="opt"><span class="ol">(D)</span> (D) 90</div></div>
+        <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
+        <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
+        <div class="sol">
+          <div class="ans">✅ 答案：(C) 75</div>
+          <div class="expl"><b>解析：</b>相似三角形面積比＝對應邊長比的平方。對應邊比 6:10=3:5，故面積比 3²:5²=9:25。設較大面積為 S，27:S=9:25，S=27×25/9=75（平方公分）。</div>
+        </div>
+      </div>
+  </div>
+  <div class="printpage">
+    <div class="pageribbon">列印第 29 頁 / 共 35 頁　·　1-4 相似三角形的應用</div>
+    
+    
+      <div class="qcard">
+        <div class="qhead"><span class="tbadge" style="background:#457b9d">選擇</span><span class="qid">1-4-4</span><span class="src">📄 改編·龍華國中</span><span class="pchip">🖨 第 29 頁</span></div>
+        <div class="qbody">同一時刻陽光下，身高 160 公分的小昀影長為 2 公尺，此時一棵大樹的影長為 5 公尺。若人（棍）、樹與各自影子構成相似直角三角形，則大樹高多少公尺？</div>
+        <div class="fig"><svg viewBox="0 0 220 160"><line x1="20" y1="140" x2="200" y2="140" stroke="#264653" stroke-width="2"/><line x1="45" y1="140" x2="45" y2="110" stroke="#264653" stroke-width="2"/><line x1="45" y1="110" x2="75" y2="140" stroke="#e76f51" stroke-width="2"/><line x1="120" y1="140" x2="120" y2="55" stroke="#264653" stroke-width="2"/><line x1="120" y1="55" x2="195" y2="140" stroke="#e76f51" stroke-width="2"/><text x="30" y="106" font-size="13">人</text><text x="124" y="52" font-size="13">樹</text></svg></div>
+        <div class="opts"><div class="opt"><span class="ol">(A)</span> (A) 3</div><div class="opt"><span class="ol">(B)</span> (B) 4</div><div class="opt"><span class="ol">(C)</span> (C) 4.5</div><div class="opt"><span class="ol">(D)</span> (D) 6.25</div></div>
+        <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
+        <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
+        <div class="sol">
+          <div class="ans">✅ 答案：(B) 4</div>
+          <div class="expl"><b>解析：</b>人高 160 公分＝1.6 公尺。同時刻兩相似直角三角形：人高:樹高＝人影:樹影。設樹高 h，1.6:h=2:5，h=1.6×5/2=4（公尺）。</div>
+        </div>
+      </div>
+  </div>
+  <div class="printpage">
+    <div class="pageribbon">列印第 30 頁 / 共 35 頁　·　1-4 相似三角形的應用</div>
+    
+    
+      <div class="qcard">
+        <div class="qhead"><span class="tbadge" style="background:#457b9d">選擇</span><span class="qid">1-4-5</span><span class="src">📄 改編·陽明國中</span><span class="pchip">🖨 第 30 頁</span></div>
+        <div class="qbody">一面等腰直角三角形（45°-45°-90°）的三角旗，斜邊長為 8√2 公分。則它的一股（腰）長為多少公分？</div>
+        <div class="fig"><svg viewBox="0 0 220 160"><polygon points="30,140 30,30 170,140" fill="none" stroke="#264653" stroke-width="2"/><rect x="30" y="128" width="12" height="12" fill="none" stroke="#264653"/><line x1="30" y1="30" x2="170" y2="140" stroke="#e76f51" stroke-width="2"/><text x="14" y="28" font-size="13">A</text><text x="16" y="148" font-size="13">C</text><text x="172" y="148" font-size="13">B</text><text x="96" y="78" font-size="13">8√2</text></svg></div>
+        <div class="opts"><div class="opt"><span class="ol">(A)</span> (A) 4</div><div class="opt"><span class="ol">(B)</span> (B) 8</div><div class="opt"><span class="ol">(C)</span> (C) 8√2</div><div class="opt"><span class="ol">(D)</span> (D) 16</div></div>
+        <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
+        <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
+        <div class="sol">
+          <div class="ans">✅ 答案：(B) 8</div>
+          <div class="expl"><b>解析：</b>45°-45°-90° 直角三角形的邊長比為 股:股:斜邊＝1:1:√2。設股長 a，則斜邊＝√2·a=8√2，故 a=8（公分）。</div>
+        </div>
+      </div>
+  </div>
+  <div class="printpage">
+    <div class="pageribbon">列印第 31 頁 / 共 35 頁　·　1-4 相似三角形的應用</div>
+    
+    
+      <div class="qcard">
+        <div class="qhead"><span class="tbadge" style="background:#2a9d8f">填充</span><span class="qid">1-4-6</span><span class="src">📄 改編·四育國中</span><span class="pchip">🖨 第 31 頁</span></div>
+        <div class="qbody">△ABC 的三邊中點分別為 D、E、F，連接 DEF 成中點三角形。已知 △ABC 的周長為 30 公分、面積為 48 平方公分，則中點三角形 △DEF 的 (1) 周長=＿＿公分；(2) 面積=＿＿平方公分。</div>
+        <div class="fig"><svg viewBox="0 0 220 160"><polygon points="20,140 200,140 70,20" fill="none" stroke="#264653" stroke-width="2"/><polygon points="110,140 135,80 45,80" fill="none" stroke="#e76f51" stroke-width="2"/><text x="58" y="16" font-size="13">A</text><text x="6" y="146" font-size="13">B</text><text x="204" y="146" font-size="13">C</text><text x="30" y="78" font-size="13">D</text><text x="140" y="78" font-size="13">E</text><text x="106" y="156" font-size="13">F</text></svg></div>
+        
+        <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
+        <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
+        <div class="sol">
+          <div class="ans">✅ 答案：(1) 15；(2) 12</div>
+          <div class="expl"><b>解析：</b>三邊中點連線所成的中點三角形 △DEF∼△ABC，且對應邊皆為原三角形的一半（比 1:2）。(1) 周長比＝邊長比＝1:2，故周長＝30×½=15（公分）。(2) 面積比＝邊長比平方＝1²:2²=1:4，故面積＝48×¼=12（平方公分）。</div>
+        </div>
+      </div>
+  </div>
+  <div class="printpage">
+    <div class="pageribbon">列印第 32 頁 / 共 35 頁　·　1-4 相似三角形的應用</div>
+    
+    
+      <div class="qcard">
+        <div class="qhead"><span class="tbadge" style="background:#2a9d8f">填充</span><span class="qid">1-4-7</span><span class="src">📄 改編·龍華國中</span><span class="pchip">🖨 第 32 頁</span></div>
+        <div class="qbody">直角三角形 ABC 中，∠C=90°、∠B=30°，斜邊 AB=12 公分。則 (1) 30° 所對的邊 AC=＿＿公分；(2) 60° 所對的邊 BC=＿＿公分。</div>
+        <div class="fig"><svg viewBox="0 0 220 160"><polygon points="30,130 190,130 190,40" fill="none" stroke="#264653" stroke-width="2"/><rect x="178" y="118" width="12" height="12" fill="none" stroke="#264653"/><line x1="30" y1="130" x2="190" y2="40" stroke="#e76f51" stroke-width="2"/><text x="14" y="136" font-size="13">B</text><text x="194" y="136" font-size="13">C</text><text x="194" y="40" font-size="13">A</text><text x="96" y="78" font-size="13">12</text></svg></div>
+        
+        <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
+        <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
+        <div class="sol">
+          <div class="ans">✅ 答案：(1) 6；(2) 6√3</div>
+          <div class="expl"><b>解析：</b>30°-60°-90° 直角三角形邊長比為 (30°對邊):(60°對邊):斜邊＝1:√3:2。斜邊 AB=12＝2 份，故每份 6。(1) 30° 對邊 AC＝1 份＝6（公分）。(2) 60° 對邊 BC＝√3 份＝6√3（公分）。</div>
+        </div>
+      </div>
+  </div>
+  <div class="printpage">
+    <div class="pageribbon">列印第 33 頁 / 共 35 頁　·　1-4 相似三角形的應用</div>
+    
+    
+      <div class="qcard">
+        <div class="qhead"><span class="tbadge" style="background:#2a9d8f">填充</span><span class="qid">1-4-8</span><span class="src">📄 改編·龍華國中</span><span class="pchip">🖨 第 33 頁</span></div>
+        <div class="qbody">直角三角形 ABC 中，∠BAC=90°，AD⊥BC 於 D。若 BD=4、CD=9，則 (1) 高 AD=＿＿；(2) 股 AB=＿＿。</div>
+        <div class="fig"><svg viewBox="0 0 220 160"><polygon points="20,130 200,130 70,30" fill="none" stroke="#264653" stroke-width="2"/><line x1="70" y1="30" x2="70" y2="130" stroke="#e76f51" stroke-width="2"/><rect x="70" y="118" width="12" height="12" fill="none" stroke="#264653"/><text x="58" y="26" font-size="13">A</text><text x="8" y="136" font-size="13">B</text><text x="204" y="136" font-size="13">C</text><text x="62" y="146" font-size="13">D</text></svg></div>
+        
+        <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
+        <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
+        <div class="sol">
+          <div class="ans">✅ 答案：(1) AD=6；(2) AB=2√13</div>
+          <div class="expl"><b>解析：</b>直角三角形斜邊上的高分出母子相似三角形。(1) 由 △ABD∼△CAD 得 AD:CD=BD:AD，即 AD²=BD·CD=4×9=36，AD=6。(2) 由 △ABD∼△CBA 得 AB²=BD·BC，其中 BC=BD+CD=4+9=13，故 AB²=4×13=52，AB=√52=2√13。</div>
+        </div>
+      </div>
+  </div>
+  <div class="printpage">
+    <div class="pageribbon">列印第 34 頁 / 共 35 頁　·　1-4 相似三角形的應用</div>
+    
+    
+      <div class="qcard">
+        <div class="qhead"><span class="tbadge" style="background:#e76f51">計算</span><span class="qid">1-4-9</span><span class="src">📄 改編·居仁國中</span><span class="pchip">🖨 第 34 頁</span></div>
+        <div class="qbody">阿哲想測量無法直接跨越的河寬 AB（A 在對岸、B 在此岸）。他在此岸沿與 AB 垂直的方向設點，造出 △CDE 與 △CAB 相似（DE∥AB）。測得 DE=12 公尺、CE=15 公尺、CB=45 公尺。請問河寬 AB 為多少公尺？（須列式）</div>
+        <div class="fig"><svg viewBox="0 0 220 160"><polygon points="25,130 205,130 25,25" fill="none" stroke="#264653" stroke-width="2"/><line x1="25" y1="95" x2="85" y2="130" stroke="#e76f51" stroke-width="2"/><rect x="25" y="118" width="12" height="12" fill="none" stroke="#264653"/><text x="10" y="22" font-size="13">A</text><text x="10" y="98" font-size="13">D</text><text x="14" y="142" font-size="13">C</text><text x="80" y="144" font-size="13">E</text><text x="206" y="140" font-size="13">B</text></svg></div>
+        
+        <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
+        <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
+        <div class="sol">
+          <div class="ans">✅ 答案：AB = 36 公尺</div>
+          <div class="expl"><b>解析：</b>因 DE∥AB，∠CED=∠CBA、∠C 共用，故 △CED∼△CBA（AA 相似）。對應邊成比例：DE:AB=CE:CB。設 AB=x，12:x=15:45，15x=12×45=540，x=36。所以河寬 AB=36 公尺。</div>
+        </div>
+      </div>
+  </div>
+  <div class="printpage">
+    <div class="pageribbon">列印第 35 頁 / 共 35 頁　·　1-4 相似三角形的應用</div>
+    
+    
+      <div class="qcard">
+        <div class="qhead"><span class="tbadge" style="background:#e76f51">計算</span><span class="qid">1-4-10</span><span class="src">📄 自編</span><span class="pchip">🖨 第 35 頁</span></div>
+        <div class="qbody">一條筆直的斜坡與水平地面夾 30° 角。小玲沿著斜坡由坡底走到坡頂，共走了 24 公尺。請問她 (1) 上升的垂直高度為多少公尺？(2) 水平方向前進了多少公尺？（可用特殊直角三角形邊長比，√3 保留根號）</div>
+        <div class="fig"><svg viewBox="0 0 220 160"><polygon points="20,130 200,130 200,42" fill="none" stroke="#264653" stroke-width="2"/><rect x="188" y="118" width="12" height="12" fill="none" stroke="#264653"/><line x1="20" y1="130" x2="200" y2="42" stroke="#e76f51" stroke-width="2"/><text x="24" y="124" font-size="13">30°</text><text x="90" y="78" font-size="13">24</text><text x="204" y="90" font-size="13">高</text></svg></div>
+        
+        <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
+        <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
+        <div class="sol">
+          <div class="ans">✅ 答案：(1) 12 公尺；(2) 12√3 公尺</div>
+          <div class="expl"><b>解析：</b>斜坡、水平地面與垂直高度構成 30°-60°-90° 直角三角形，邊長比 (30°對邊):(60°對邊):斜邊＝1:√3:2。斜坡長（斜邊）＝24＝2 份，每份 12。(1) 垂直高度是 30° 所對的邊＝1 份＝12（公尺）。(2) 水平距離是 60° 所對的邊＝√3 份＝12√3（公尺）。</div>
+        </div>
+      </div>
+  </div>
+</div>
+<a href="#top" class="top">↑</a>
+<script>
+function tog(b){var s=b.nextElementSibling;var on=s.classList.toggle('show');b.classList.toggle('on',on);b.textContent=on?'收合解析 ▲':'顯示解析 ▼';}
+</script></body></html>
