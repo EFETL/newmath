@@ -12,9 +12,22 @@ code{background:#eae6dc;padding:1px 5px;border-radius:4px;font-family:Menlo,Cons
 .opt{padding:4px 14px;background:#f4f2ec;border-radius:6px;flex:0 0 auto}
 .ol{font-weight:700;color:var(--primary)}
 
-header.hero{background:linear-gradient(135deg,var(--primary),var(--primary-dark));color:#fff;padding:40px 18px 34px;text-align:center;margin-bottom:22px}
-header.hero h1{margin:0 0 8px;font-size:18px}
-header.hero p{margin:3px 0;opacity:.92;font-size:16px}
+header.hero{position:relative;overflow:hidden;background:linear-gradient(120deg,#7b2ff7,#f107a3,#ff8a3d,#ffd166);background-size:280% 280%;animation:flow 14s ease infinite;color:#fff;padding:22px 18px 34px;text-align:center;margin-bottom:22px}
+@keyframes flow{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}
+header.hero h1{position:relative;margin:6px 0 8px;font-size:19px;text-shadow:0 3px 14px rgba(0,0,0,.18)}
+header.hero p{position:relative;margin:3px 0;opacity:.95;font-size:16px}
+header.hero .heroback{position:relative;display:inline-flex;align-items:center;gap:7px;color:#fff;text-decoration:none;font-weight:700;font-size:14px;background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.5);padding:7px 15px;border-radius:999px;backdrop-filter:blur(3px);transition:.15s}
+header.hero .heroback:hover{background:#fff;color:var(--primary-dark)}
+header.hero .toprow{position:relative;display:flex;justify-content:flex-start;margin-bottom:6px}
+.msym{position:absolute;color:rgba(255,255,255,.22);font-weight:800;pointer-events:none;user-select:none;animation:floaty 7s ease-in-out infinite}
+.msym.s1{font-size:64px;left:4%;top:38%;animation-delay:0s}
+.msym.s2{font-size:44px;left:22%;top:10%;animation-delay:1.2s}
+.msym.s3{font-size:52px;right:8%;top:16%;animation-delay:.6s}
+.msym.s4{font-size:38px;right:24%;bottom:12%;animation-delay:2s}
+.msym.s5{font-size:48px;right:40%;top:52%;animation-delay:1.6s}
+.msym.s6{font-size:40px;left:12%;bottom:14%;animation-delay:.9s}
+@keyframes floaty{0%,100%{transform:translateY(0) rotate(-4deg)}50%{transform:translateY(-12px) rotate(4deg)}}
+@media print{.msym{display:none}}
 .toc{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin:16px 0}
 .toc a{background:#fff;border:1px solid var(--line);border-radius:20px;padding:6px 16px;text-decoration:none;color:var(--primary-dark);font-size:16px;box-shadow:0 1px 4px rgba(0,0,0,.05)}
 .toc a:hover{background:var(--primary);color:#fff}
@@ -54,13 +67,11 @@ header.hero p{margin:3px 0;opacity:.92;font-size:16px}
   .revbtn,.sol{display:none!important}
   .work{min-height:5cm}
 }
-.backbar{max-width:900px;margin:0 auto;padding:14px 18px 0}
-.backbar a{display:inline-flex;align-items:center;gap:7px;color:var(--primary-dark);text-decoration:none;font-weight:700;font-size:15px;background:#fff;border:1px solid var(--line);padding:8px 16px;border-radius:999px;box-shadow:0 1px 3px rgba(0,0,0,.05);transition:.15s}
-.backbar a:hover{background:var(--primary);color:#fff;border-color:var(--primary)}
-@media print{.backbar{display:none}}
 </style></head><body id="top">
-<div class="backbar"><a href="vol5.html">← 返回第五冊 Back to Vol.5</a></div>
-<header class="hero"><h1>國三上 第1章「相似形」分節互動講義 · 分節互動練習</h1>
+<header class="hero">
+<span class="msym s1">△</span><span class="msym s2">π</span><span class="msym s3">∑</span><span class="msym s4">√</span><span class="msym s5">∠</span><span class="msym s6">%</span>
+<div class="toprow"><a class="heroback" href="vol5.html">← 返回第五冊 Back to Vol.5</a></div>
+<h1>國三上 第1章「相似形」分節互動講義 · 分節互動練習</h1>
 <p>依講義觀念分節 ‧ 每題附「計算 / 作答區」可書寫；點「顯示解析」才展開答案詳解</p>
 <p>🖨 每題右上角標示列印頁碼（全卷共 35 頁），螢幕與紙本頁碼一致</p></header>
 <div class="wrap">
