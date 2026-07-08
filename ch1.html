@@ -7,27 +7,14 @@ body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,Bl
 .wrap{max-width:900px;margin:0 auto;padding:0 18px 70px}
 code{background:#eae6dc;padding:1px 5px;border-radius:4px;font-family:Menlo,Consolas,monospace;font-size:1em}
 .fig{margin:10px 0;text-align:center}
-.fig svg{background:#fff;border:1px solid var(--line);border-radius:8px}
+.fig svg{background:#fff;border:1px solid var(--line);border-radius:8px;width:100%;max-width:320px;height:auto;max-height:6cm}
 .opts{margin:8px 0;display:flex;flex-wrap:wrap;gap:8px 14px}
 .opt{padding:4px 14px;background:#f4f2ec;border-radius:6px;flex:0 0 auto}
 .ol{font-weight:700;color:var(--primary)}
 
-header.hero{position:relative;overflow:hidden;background:linear-gradient(120deg,#7b2ff7,#f107a3,#ff8a3d,#ffd166);background-size:280% 280%;animation:flow 14s ease infinite;color:#fff;padding:22px 18px 34px;text-align:center;margin-bottom:22px}
-@keyframes flow{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}
-header.hero h1{position:relative;margin:6px 0 8px;font-size:19px;text-shadow:0 3px 14px rgba(0,0,0,.18)}
-header.hero p{position:relative;margin:3px 0;opacity:.95;font-size:16px}
-header.hero .heroback{position:relative;display:inline-flex;align-items:center;gap:7px;color:#fff;text-decoration:none;font-weight:700;font-size:14px;background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.5);padding:7px 15px;border-radius:999px;backdrop-filter:blur(3px);transition:.15s}
-header.hero .heroback:hover{background:#fff;color:var(--primary-dark)}
-header.hero .toprow{position:relative;display:flex;justify-content:flex-start;margin-bottom:6px}
-.msym{position:absolute;color:rgba(255,255,255,.22);font-weight:800;pointer-events:none;user-select:none;animation:floaty 7s ease-in-out infinite}
-.msym.s1{font-size:64px;left:4%;top:38%;animation-delay:0s}
-.msym.s2{font-size:44px;left:22%;top:10%;animation-delay:1.2s}
-.msym.s3{font-size:52px;right:8%;top:16%;animation-delay:.6s}
-.msym.s4{font-size:38px;right:24%;bottom:12%;animation-delay:2s}
-.msym.s5{font-size:48px;right:40%;top:52%;animation-delay:1.6s}
-.msym.s6{font-size:40px;left:12%;bottom:14%;animation-delay:.9s}
-@keyframes floaty{0%,100%{transform:translateY(0) rotate(-4deg)}50%{transform:translateY(-12px) rotate(4deg)}}
-@media print{.msym{display:none}}
+header.hero{background:linear-gradient(135deg,var(--primary),var(--primary-dark));color:#fff;padding:40px 18px 34px;text-align:center;margin-bottom:22px}
+header.hero h1{margin:0 0 8px;font-size:18px}
+header.hero p{margin:3px 0;opacity:.92;font-size:16px}
 .toc{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin:16px 0}
 .toc a{background:#fff;border:1px solid var(--line);border-radius:20px;padding:6px 16px;text-decoration:none;color:var(--primary-dark);font-size:16px;box-shadow:0 1px 4px rgba(0,0,0,.05)}
 .toc a:hover{background:var(--primary);color:#fff}
@@ -67,13 +54,30 @@ header.hero .toprow{position:relative;display:flex;justify-content:flex-start;ma
   .revbtn,.sol{display:none!important}
   .work{min-height:5cm}
 }
+header.hero{position:relative;overflow:hidden;background:linear-gradient(120deg,#7b2ff7,#f107a3,#ff8a3d,#ffd166);background-size:280% 280%;animation:flow 14s ease infinite;color:#fff;padding:22px 18px 34px;text-align:center;margin-bottom:22px}
+@keyframes flow{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}
+header.hero h1{position:relative;text-shadow:0 3px 14px rgba(0,0,0,.18)}
+header.hero p{position:relative}
+header.hero .heroback{position:relative;display:inline-flex;align-items:center;gap:7px;color:#fff;text-decoration:none;font-weight:700;font-size:14px;background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.5);padding:7px 15px;border-radius:999px;backdrop-filter:blur(3px);transition:.15s}
+header.hero .heroback:hover{background:#fff;color:#155263}
+header.hero .toprow{position:relative;display:flex;justify-content:flex-start;margin-bottom:6px}
+.msym{position:absolute;color:rgba(255,255,255,.22);font-weight:800;pointer-events:none;user-select:none;animation:floaty 7s ease-in-out infinite}
+.msym.s1{font-size:64px;left:4%;top:38%;animation-delay:0s}
+.msym.s2{font-size:44px;left:22%;top:10%;animation-delay:1.2s}
+.msym.s3{font-size:52px;right:8%;top:16%;animation-delay:.6s}
+.msym.s4{font-size:38px;right:24%;bottom:12%;animation-delay:2s}
+.msym.s5{font-size:48px;right:40%;top:52%;animation-delay:1.6s}
+.msym.s6{font-size:40px;left:12%;bottom:14%;animation-delay:.9s}
+@keyframes floaty{0%,100%{transform:translateY(0) rotate(-4deg)}50%{transform:translateY(-12px) rotate(4deg)}}
+@media print{.msym{display:none}header.hero{animation:none;background:#155263}}
 </style></head><body id="top">
 <header class="hero">
 <span class="msym s1">△</span><span class="msym s2">π</span><span class="msym s3">∑</span><span class="msym s4">√</span><span class="msym s5">∠</span><span class="msym s6">%</span>
 <div class="toprow"><a class="heroback" href="vol5.html">← 返回第五冊 Back to Vol.5</a></div>
 <h1>國三上 第1章「相似形」分節互動講義 · 分節互動練習</h1>
 <p>依講義觀念分節 ‧ 每題附「計算 / 作答區」可書寫；點「顯示解析」才展開答案詳解</p>
-<p>🖨 每題右上角標示列印頁碼（全卷共 35 頁），螢幕與紙本頁碼一致</p></header>
+<p>🖨 每題右上角標示列印頁碼（全卷共 35 頁），螢幕與紙本頁碼一致</p>
+</header>
 <div class="wrap">
 <div class="toc"><a href="#1-1">1-1 連比例</a><a href="#1-2">1-2 比例線段</a><a href="#1-3">1-3 縮放與相似</a><a href="#1-4">1-4 相似三角形的應用</a></div>
 <div class="tips">💡 老師可直接用「計算 / 作答區」板書講解，不一定要展開解析。用瀏覽器列印（⌘/Ctrl+P）即為學生練習卷：自動分頁、隱藏答案、保留作答空間。圖形為示意圖，請以題目數據為準。</div>
@@ -298,7 +302,7 @@ header.hero .toprow{position:relative;display:flex;justify-content:flex-start;ma
       <div class="qcard">
         <div class="qhead"><span class="tbadge" style="background:#457b9d">選擇</span><span class="qid">1-2-5</span><span class="src">📄 改編·龍華國中</span><span class="pchip">🖨 第 10 頁</span></div>
         <div class="qbody">如圖，三條平行線 AD // BE // CF 被兩條截線所截。若 AB:BC=1:3，且 DE=4x−3、EF=6x+3，則 x 的值為何？</div>
-        <div class="fig"><svg viewBox="0 0 220 160"><line x1="20" y1="30" x2="140" y2="30" stroke="#264653"/><line x1="20" y1="75" x2="170" y2="75" stroke="#264653"/><line x1="20" y1="135" x2="210" y2="135" stroke="#264653"/><line x1="35" y1="20" x2="70" y2="145" stroke="#e76f51"/><line x1="120" y1="20" x2="195" y2="145" stroke="#e76f51"/><text x="30" y="28" font-size="13">A</text><text x="38" y="73" font-size="13">B</text><text x="52" y="133" font-size="13">C</text><text x="140" y="30" font-size="13">D</text><text x="172" y="75" font-size="13">E</text><text x="210" y="135" font-size="13">F</text></svg></div>
+        <div class="fig"><svg viewBox="0 0 220 160"><line x1="20" y1="30" x2="140" y2="30" stroke="#264653"/><line x1="20" y1="57" x2="175" y2="57" stroke="#264653"/><line x1="20" y1="138" x2="210" y2="138" stroke="#264653"/><line x1="33" y1="20" x2="72" y2="150" stroke="#e76f51"/><line x1="120" y1="20" x2="196" y2="150" stroke="#e76f51"/><text x="27" y="28" font-size="13">A</text><text x="36" y="54" font-size="13">B</text><text x="55" y="136" font-size="13">C</text><text x="142" y="30" font-size="13">D</text><text x="178" y="57" font-size="13">E</text><text x="205" y="138" font-size="13">F</text></svg></div>
         <div class="opts"><div class="opt"><span class="ol">(A)</span> 2</div><div class="opt"><span class="ol">(B)</span> 2.5</div><div class="opt"><span class="ol">(C)</span> 3</div><div class="opt"><span class="ol">(D)</span> 5</div></div>
         <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
         <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
@@ -332,7 +336,7 @@ header.hero .toprow{position:relative;display:flex;justify-content:flex-start;ma
       <div class="qcard">
         <div class="qhead"><span class="tbadge" style="background:#457b9d">選擇</span><span class="qid">1-2-7</span><span class="src">📄 改編·龍華國中</span><span class="pchip">🖨 第 12 頁</span></div>
         <div class="qbody">如圖，△ABC 中，AD 平分 ∠BAC 交 BC 於 D，且 DE // AB 交 AC 於 E。若 AB=10、AC=15，則 AE=？</div>
-        <div class="fig"><svg viewBox="0 0 220 160"><polygon points="40,20 20,140 200,140" fill="none" stroke="#264653" stroke-width="1.5"/><line x1="40" y1="20" x2="100" y2="140" stroke="#999"/><line x1="100" y1="140" x2="128" y2="84" stroke="#e76f51" stroke-width="1.5"/><text x="34" y="16" font-size="13">A</text><text x="10" y="152" font-size="13">B</text><text x="96" y="153" font-size="13">D</text><text x="132" y="84" font-size="13">E</text><text x="200" y="152" font-size="13">C</text></svg></div>
+        <div class="fig"><svg viewBox="0 0 220 160"><polygon points="50,25 30,140 200,140" fill="none" stroke="#264653"/><line x1="50" y1="25" x2="98" y2="140" stroke="#bbb"/><line x1="98" y1="140" x2="110" y2="71" stroke="#e76f51" stroke-width="1.5"/><circle cx="110" cy="71" r="2" fill="#264653"/><circle cx="98" cy="140" r="2" fill="#264653"/><text x="46" y="20" font-size="13">A</text><text x="16" y="148" font-size="13">B</text><text x="204" y="148" font-size="13">C</text><text x="90" y="155" font-size="13">D</text><text x="115" y="70" font-size="13">E</text></svg></div>
         <div class="opts"><div class="opt"><span class="ol">(A)</span> 5</div><div class="opt"><span class="ol">(B)</span> 6</div><div class="opt"><span class="ol">(C)</span> 7.5</div><div class="opt"><span class="ol">(D)</span> 9</div></div>
         <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
         <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
@@ -349,7 +353,7 @@ header.hero .toprow{position:relative;display:flex;justify-content:flex-start;ma
       <div class="qcard">
         <div class="qhead"><span class="tbadge" style="background:#2a9d8f">填充</span><span class="qid">1-2-8</span><span class="src">📄 改編·蘆洲國中</span><span class="pchip">🖨 第 13 頁</span></div>
         <div class="qbody">如圖，梯形 ABCD 中，AB // DC 為兩平行邊，AB=8、DC=12。E、F 分別為對角線 BD、AC 的中點，連 EF，則 EF 的長度為＿＿＿。</div>
-        <div class="fig"><svg viewBox="0 0 220 160"><polygon points="70,25 150,25 200,135 20,135" fill="none" stroke="#264653" stroke-width="1.5"/><line x1="70" y1="25" x2="200" y2="135" stroke="#bbb"/><line x1="150" y1="25" x2="20" y2="135" stroke="#bbb"/><line x1="92" y1="84" x2="128" y2="84" stroke="#e76f51" stroke-width="1.5"/><text x="66" y="20" font-size="13">A</text><text x="152" y="20" font-size="13">B</text><text x="84" y="86" font-size="13">F</text><text x="132" y="86" font-size="13">E</text><text x="10" y="147" font-size="13">D</text><text x="200" y="147" font-size="13">C</text></svg></div>
+        <div class="fig"><svg viewBox="0 0 220 160"><polygon points="70,25 150,25 200,135 20,135" fill="none" stroke="#264653" stroke-width="1.5"/><line x1="70" y1="25" x2="200" y2="135" stroke="#bbb"/><line x1="150" y1="25" x2="20" y2="135" stroke="#bbb"/><line x1="85" y1="80" x2="135" y2="80" stroke="#e76f51" stroke-width="1.5"/><circle cx="85" cy="80" r="2" fill="#264653"/><circle cx="135" cy="80" r="2" fill="#264653"/><text x="66" y="20" font-size="13">A</text><text x="152" y="20" font-size="13">B</text><text x="70" y="78" font-size="13">E</text><text x="138" y="78" font-size="13">F</text><text x="10" y="147" font-size="13">D</text><text x="200" y="147" font-size="13">C</text></svg></div>
         
         <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
         <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
@@ -434,7 +438,7 @@ header.hero .toprow{position:relative;display:flex;justify-content:flex-start;ma
       <div class="qcard">
         <div class="qhead"><span class="tbadge" style="background:#457b9d">選擇</span><span class="qid">1-3-1</span><span class="src">📄 改編·土城國中</span><span class="pchip">🖨 第 18 頁</span></div>
         <div class="qbody">如圖，A′、B′、C′ 分別在通過 O 點的三條直線上，且 O A′＝4 O A、O B′＝4 O B、O C′＝4 O C。若 △ABC 的周長為 18，則 △A′B′C′（△ABC 以 O 為縮放中心的縮放圖）的周長為多少？</div>
-        <div class="fig"><svg viewBox="0 0 220 160"><circle cx="28" cy="82" r="3" fill="#264653"/><text x="14" y="86" font-size="13">O</text><line x1="28" y1="82" x2="205" y2="20" stroke="#999"/><line x1="28" y1="82" x2="205" y2="96" stroke="#999"/><line x1="28" y1="82" x2="205" y2="150" stroke="#999"/><polygon points="72,66 72,86 100,90" fill="none" stroke="#264653"/><polygon points="205,20 205,96 205,150" fill="none" stroke="#e76f51"/><text x="64" y="62" font-size="13">A</text><text x="60" y="92" font-size="13">B</text><text x="100" y="102" font-size="13">C</text><text x="207" y="18" font-size="13">A′</text><text x="207" y="100" font-size="13">B′</text><text x="207" y="158" font-size="13">C′</text></svg></div>
+        <div class="fig"><svg viewBox="0 0 220 160"><line x1="18" y1="25" x2="107" y2="97" stroke="#bbb"/><line x1="18" y1="25" x2="90" y2="156" stroke="#bbb"/><line x1="18" y1="25" x2="148" y2="138" stroke="#bbb"/><polygon points="55,55 48,80 72,72" fill="none" stroke="#264653" stroke-width="1.5"/><polygon points="107,97 90,156 148,138" fill="none" stroke="#e76f51" stroke-width="1.5"/><circle cx="18" cy="25" r="2.5" fill="#264653"/><text x="7" y="23" font-size="13">O</text><text x="50" y="52" font-size="11">A</text><text x="35" y="83" font-size="11">B</text><text x="74" y="70" font-size="11">C</text><text x="110" y="95" font-size="11">A′</text><text x="74" y="159" font-size="11">B′</text><text x="150" y="140" font-size="11">C′</text></svg></div>
         <div class="opts"><div class="opt"><span class="ol">(A)</span> (A) 22</div><div class="opt"><span class="ol">(B)</span> (B) 54</div><div class="opt"><span class="ol">(C)</span> (C) 72</div><div class="opt"><span class="ol">(D)</span> (D) 288</div></div>
         <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
         <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
@@ -543,7 +547,7 @@ header.hero .toprow{position:relative;display:flex;justify-content:flex-start;ma
       <div class="qcard">
         <div class="qhead"><span class="tbadge" style="background:#2a9d8f">填充</span><span class="qid">1-3-8</span><span class="src">📄 改編·陽明國中</span><span class="pchip">🖨 第 23 頁</span></div>
         <div class="qbody">如圖，△ABC 中，D 在 AB 上、E 在 AC 上，已知 AD＝4、AB＝10、AE＝5、AC＝8，且 DE＝6。求 BC 的長。</div>
-        <div class="fig"><svg viewBox="0 0 220 160"><polygon points="30,130 200,130 60,20" fill="none" stroke="#264653"/><line x1="96" y1="64" x2="120" y2="130" stroke="#e76f51"/><circle cx="96" cy="64" r="2.5" fill="#264653"/><circle cx="120" cy="130" r="2.5" fill="#264653"/><text x="56" y="16" font-size="13">A</text><text x="20" y="136" font-size="13">B</text><text x="202" y="136" font-size="13">C</text><text x="78" y="62" font-size="13">E</text><text x="118" y="146" font-size="13">D</text></svg></div>
+        <div class="fig"><svg viewBox="0 0 220 160"><polygon points="60,20 30,130 200,130" fill="none" stroke="#264653"/><line x1="48" y1="64" x2="148" y2="89" stroke="#e76f51"/><circle cx="48" cy="64" r="2.5" fill="#264653"/><circle cx="148" cy="89" r="2.5" fill="#264653"/><text x="54" y="16" font-size="13">A</text><text x="20" y="136" font-size="13">B</text><text x="202" y="136" font-size="13">C</text><text x="34" y="66" font-size="13">D</text><text x="152" y="88" font-size="13">E</text></svg></div>
         
         <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
         <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
@@ -594,7 +598,7 @@ header.hero .toprow{position:relative;display:flex;justify-content:flex-start;ma
       <div class="qcard">
         <div class="qhead"><span class="tbadge" style="background:#457b9d">選擇</span><span class="qid">1-4-1</span><span class="src">📄 改編·向上國中</span><span class="pchip">🖨 第 26 頁</span></div>
         <div class="qbody">如圖，△ABC 中，D 在 AB 上，且 ∠BCD=∠BAC。若 AD=12、DB=4，則 BC=？</div>
-        <div class="fig"><svg viewBox="0 0 220 160"><polygon points="20,140 200,140 60,30" fill="none" stroke="#264653" stroke-width="2"/><line x1="200" y1="140" x2="48" y2="58" stroke="#e76f51" stroke-width="2"/><text x="48" y="26" font-size="13">A</text><text x="6" y="146" font-size="13">B</text><text x="204" y="146" font-size="13">C</text><text x="40" y="70" font-size="13">D</text></svg></div>
+        <div class="fig"><svg viewBox="0 0 220 160"><polygon points="60,30 20,140 200,140" fill="none" stroke="#264653" stroke-width="2"/><line x1="200" y1="140" x2="30" y2="113" stroke="#e76f51" stroke-width="2"/><circle cx="30" cy="113" r="2.5" fill="#264653"/><text x="48" y="26" font-size="13">A</text><text x="6" y="146" font-size="13">B</text><text x="204" y="146" font-size="13">C</text><text x="10" y="112" font-size="13">D</text></svg></div>
         <div class="opts"><div class="opt"><span class="ol">(A)</span> (A) 6</div><div class="opt"><span class="ol">(B)</span> (B) 8</div><div class="opt"><span class="ol">(C)</span> (C) 4√3</div><div class="opt"><span class="ol">(D)</span> (D) 12</div></div>
         <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
         <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
@@ -662,7 +666,7 @@ header.hero .toprow{position:relative;display:flex;justify-content:flex-start;ma
       <div class="qcard">
         <div class="qhead"><span class="tbadge" style="background:#457b9d">選擇</span><span class="qid">1-4-5</span><span class="src">📄 改編·陽明國中</span><span class="pchip">🖨 第 30 頁</span></div>
         <div class="qbody">一面等腰直角三角形（45°-45°-90°）的三角旗，斜邊長為 8√2 公分。則它的一股（腰）長為多少公分？</div>
-        <div class="fig"><svg viewBox="0 0 220 160"><polygon points="30,140 30,30 170,140" fill="none" stroke="#264653" stroke-width="2"/><rect x="30" y="128" width="12" height="12" fill="none" stroke="#264653"/><line x1="30" y1="30" x2="170" y2="140" stroke="#e76f51" stroke-width="2"/><text x="14" y="28" font-size="13">A</text><text x="16" y="148" font-size="13">C</text><text x="172" y="148" font-size="13">B</text><text x="96" y="78" font-size="13">8√2</text></svg></div>
+        <div class="fig"><svg viewBox="0 0 220 160"><polygon points="30,140 30,30 140,140" fill="none" stroke="#264653" stroke-width="2"/><rect x="30" y="128" width="12" height="12" fill="none" stroke="#264653"/><line x1="30" y1="30" x2="140" y2="140" stroke="#e76f51" stroke-width="2"/><text x="14" y="28" font-size="13">A</text><text x="14" y="152" font-size="13">C</text><text x="144" y="152" font-size="13">B</text><text x="92" y="78" font-size="13">8√2</text></svg></div>
         <div class="opts"><div class="opt"><span class="ol">(A)</span> (A) 4</div><div class="opt"><span class="ol">(B)</span> (B) 8</div><div class="opt"><span class="ol">(C)</span> (C) 8√2</div><div class="opt"><span class="ol">(D)</span> (D) 16</div></div>
         <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
         <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
