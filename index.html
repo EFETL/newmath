@@ -1,41 +1,46 @@
 <!DOCTYPE html><html lang="zh-Hant"><head><meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>數學 Mathematics · 線上互動講義</title>
+<title>EFE 數學教室 · 線上互動講義</title>
 <style>
 :root{--primary:#1f6f8b;--primary-dark:#155263;--accent:#e76f51;--bg:#f6f4ef;--card:#fff;--ink:#2b2b2b;--line:#e5e1d8;--muted:#7a756c}
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC","Microsoft JhengHei",sans-serif;line-height:1.7}
-.hero{background:linear-gradient(120deg,#7b2ff7,#f107a3,#ff8a3d,#ffd166);background-size:280% 280%;animation:flow 14s ease infinite;color:#fff;padding:64px 20px 56px;text-align:center;position:relative;overflow:hidden}
+.hero{position:relative;overflow:hidden;background:linear-gradient(120deg,#7b2ff7,#f107a3,#ff8a3d,#ffd166);background-size:280% 280%;animation:flow 14s ease infinite;color:#fff;padding:60px 20px 52px;text-align:center}
 @keyframes flow{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}
 .hero::before,.hero::after{content:"";position:absolute;border-radius:50%;background:rgba(255,255,255,.14)}
-.hero::before{width:220px;height:220px;left:-60px;top:-70px}
-.hero::after{width:150px;height:150px;right:-40px;bottom:-60px}
+.hero::before{width:210px;height:210px;left:-58px;top:-66px}
+.hero::after{width:140px;height:140px;right:-38px;bottom:-54px}
 .hero .kicker{position:relative;letter-spacing:.35em;font-size:13px;opacity:.9;margin:0 0 12px}
-.hero h1{position:relative;margin:0 0 10px;font-size:40px;letter-spacing:.03em;text-shadow:0 3px 14px rgba(0,0,0,.18)}
+.hero h1{position:relative;margin:0 0 10px;font-size:38px;letter-spacing:.03em;text-shadow:0 3px 14px rgba(0,0,0,.18)}
 .hero p{position:relative;margin:0;font-size:16px;opacity:.95}
-.wrap{max-width:960px;margin:0 auto;padding:44px 20px 70px}
+.msym{position:absolute;color:rgba(255,255,255,.20);font-weight:800;pointer-events:none;user-select:none;animation:floaty 7s ease-in-out infinite}
+@keyframes floaty{0%,100%{transform:translateY(0) rotate(-4deg)}50%{transform:translateY(-12px) rotate(4deg)}}
+.wrap{max-width:960px;margin:0 auto;padding:38px 20px 70px}
+.backbar{margin:0 0 26px}
+.backbar a{display:inline-flex;align-items:center;gap:7px;color:var(--primary-dark);text-decoration:none;font-weight:700;font-size:15px;background:#fff;border:1px solid var(--line);padding:8px 16px;border-radius:999px;box-shadow:0 1px 3px rgba(0,0,0,.05);transition:.15s}
+.backbar a:hover{background:var(--primary);color:#fff;border-color:var(--primary)}
 .sec-title{display:flex;align-items:baseline;gap:12px;margin:0 0 22px}
 .sec-title b{font-size:20px}
 .sec-title span{color:var(--muted);font-size:14px}
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:22px}
 .card{position:relative;display:block;background:var(--card);border-radius:18px;overflow:hidden;text-decoration:none;color:inherit;box-shadow:0 4px 16px rgba(31,111,139,.10);border:1px solid var(--line);transition:transform .18s,box-shadow .18s}
 .card:hover{transform:translateY(-6px);box-shadow:0 12px 28px rgba(31,111,139,.20)}
-.card .top{position:relative;height:132px;background:linear-gradient(135deg,#2a8ca8,#155263);overflow:hidden}
-.card .top .emoji{position:absolute;left:22px;top:50%;transform:translateY(-50%);font-size:56px;filter:drop-shadow(0 3px 8px rgba(0,0,0,.25))}
+.card .top{position:relative;height:132px;overflow:hidden}
+.card .top .emoji{position:absolute;left:22px;top:50%;transform:translateY(-50%);font-size:54px;filter:drop-shadow(0 3px 8px rgba(0,0,0,.25))}
 .card .top .dot{position:absolute;border-radius:50%;background:rgba(255,255,255,.16)}
 .card .top .d1{width:90px;height:90px;right:-18px;top:-24px}
 .card .top .d2{width:52px;height:52px;right:44px;bottom:-16px}
-.card .top .tri{position:absolute;right:0;top:0;border-width:0 44px 44px 0;border-style:solid;border-color:transparent var(--accent) transparent transparent;opacity:.9}
+.card .top .tri{position:absolute;right:0;top:0;border-width:0 44px 44px 0;border-style:solid;opacity:.9}
 .card .body{padding:18px 20px 22px}
 .card .body .en{color:var(--accent);font-weight:700;font-size:13px;letter-spacing:.06em;margin:0 0 4px}
 .card .body h3{margin:0 0 6px;font-size:20px}
 .card .body .meta{margin:0;color:var(--muted);font-size:14px}
 .card .go{position:absolute;right:16px;bottom:16px;color:var(--primary);font-weight:700;font-size:14px}
 footer{text-align:center;color:var(--muted);font-size:13px;padding:30px 20px 50px;border-top:1px solid var(--line)}
-@media(max-width:520px){.hero h1{font-size:27px}}
+@media(max-width:520px){.hero h1{font-size:28px}}
 </style></head>
 <body>
-<header class="hero">
+<header class="hero"><span class="msym" style="font-size:60px;left:5%;top:40%;animation-delay:0s">△</span><span class="msym" style="font-size:42px;left:22%;top:12%;animation-delay:1.2s">π</span><span class="msym" style="font-size:50px;right:9%;top:18%;animation-delay:.6s">∑</span><span class="msym" style="font-size:36px;right:24%;bottom:14%;animation-delay:2s">√</span><span class="msym" style="font-size:46px;right:41%;top:54%;animation-delay:1.6s">∠</span><span class="msym" style="font-size:38px;left:13%;bottom:16%;animation-delay:.9s">%</span>
   <p class="kicker">EFE MATH CLASSROOM</p>
   <h1>EFE 數學教室</h1>
   <p>國中數學 · 線上互動講義與分節練習</p>
@@ -44,9 +49,9 @@ footer{text-align:center;color:var(--muted);font-size:13px;padding:30px 20px 50p
   <div class="sec-title"><b>冊別 Volumes</b><span>選擇冊別開始學習</span></div>
   <div class="grid">
     <a class="card" href="vol5.html">
-      <div class="top">
+      <div class="top" style="background:linear-gradient(135deg,#2a8ca8,#155263)">
         <span class="dot d1"></span><span class="dot d2"></span>
-        <span class="tri"></span>
+        <span class="tri" style="border-color:transparent var(--accent) transparent transparent"></span>
         <span class="emoji">📐</span>
       </div>
       <div class="body">

@@ -1,0 +1,25 @@
+{
+  "brand": "EFE 數學教室",
+  "brand_en": "EFE MATH CLASSROOM",
+  "tagline": "國中數學 · 線上互動講義與分節練習",
+  "volumes": [
+    {
+      "id": "vol5",
+      "title": "第五冊",
+      "title_en": "VOLUME 5",
+      "meta": "國三上 · Grade 9 (1st term)",
+      "emoji": "📐",
+      "kicker": "VOLUME 5 · GRADE 9",
+      "subtitle": "相似形　·　章節互動講義",
+      "chapters": [
+        {
+          "file": "ch1.html",
+          "title": "第一章　相似形",
+          "title_en": "CHAPTER 1",
+          "meta": "Similar Figures · 分節互動講義",
+          "emoji": "📐"
+        }
+      ]
+    }
+  ]
+}
