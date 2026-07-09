@@ -4,6 +4,31 @@
   "tagline": "國中數學 · 線上互動講義與分節練習",
   "volumes": [
     {
+      "id": "vol4",
+      "title": "第四冊",
+      "title_en": "VOLUME 4",
+      "meta": "國二下 · Grade 8 (2nd term)",
+      "emoji": "📐",
+      "kicker": "VOLUME 4 · GRADE 8",
+      "subtitle": "三角形的基本性質　·　平行與四邊形　·　分節互動練習",
+      "chapters": [
+        {
+          "file": "ch3.html",
+          "title": "第三章　三角形的基本性質",
+          "title_en": "CHAPTER 3",
+          "meta": "Triangles · 內角外角/尺規作圖/全等/中垂線角平分線/邊角關係 · 分節練習",
+          "emoji": "📐"
+        },
+        {
+          "file": "ch4.html",
+          "title": "第四章　平行與四邊形",
+          "title_en": "CHAPTER 4",
+          "meta": "Parallels & Quadrilaterals · 平行/平行四邊形/特殊四邊形 · 分節練習",
+          "emoji": "▱"
+        }
+      ]
+    },
+    {
       "id": "vol5",
       "title": "第五冊",
       "title_en": "VOLUME 5",

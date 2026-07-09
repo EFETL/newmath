@@ -1,0 +1,909 @@
+<!DOCTYPE html><html lang="zh-Hant"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>國二下 第3章「三角形的基本性質」 · 分節互動練習</title><style>
+:root{--primary:#1f6f8b;--primary-dark:#155263;--accent:#e76f51;--bg:#f6f4ef;--card:#fff;--ink:#2b2b2b;--line:#e5e1d8}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC","Microsoft JhengHei",sans-serif;line-height:1.8;font-size:16px}
+.wrap{max-width:900px;margin:0 auto;padding:0 18px 70px}
+code{background:#eae6dc;padding:1px 5px;border-radius:4px;font-family:Menlo,Consolas,monospace;font-size:1em}
+.fig{margin:10px 0;text-align:center}
+.fig svg{background:#fff;border:1px solid var(--line);border-radius:8px;width:100%;max-width:320px;height:auto;max-height:6cm}
+.opts{margin:8px 0;display:flex;flex-wrap:wrap;gap:8px 14px}
+.opt{padding:4px 14px;background:#f4f2ec;border-radius:6px;flex:0 0 auto}
+.ol{font-weight:700;color:var(--primary)}
+
+header.hero{background:linear-gradient(135deg,var(--primary),var(--primary-dark));color:#fff;padding:40px 18px 34px;text-align:center;margin-bottom:22px}
+header.hero h1{margin:0 0 8px;font-size:18px}
+header.hero p{margin:3px 0;opacity:.92;font-size:16px}
+.toc{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin:16px 0}
+.toc a{background:#fff;border:1px solid var(--line);border-radius:20px;padding:6px 16px;text-decoration:none;color:var(--primary-dark);font-size:16px;box-shadow:0 1px 4px rgba(0,0,0,.05)}
+.toc a:hover{background:var(--primary);color:#fff}
+.sechd h2{display:inline-block;background:var(--primary);color:#fff;padding:6px 20px;border-radius:26px;margin:0 0 4px;font-size:18px}
+.sechd p{color:#6b7280;font-size:16px;margin:2px 0 10px}
+.qcard{background:var(--card);border-radius:14px;padding:18px 20px;margin:14px 0;box-shadow:0 2px 10px rgba(0,0,0,.06)}
+.qhead{display:flex;align-items:center;gap:8px;margin-bottom:8px;flex-wrap:wrap}
+.tbadge{color:#fff;font-size:16px;font-weight:700;padding:2px 12px;border-radius:12px}
+.qid{font-weight:700;color:var(--primary-dark);font-size:16px}
+.src{margin-left:auto;font-size:16px;color:#fff;background:var(--accent);padding:2px 12px;border-radius:12px;font-weight:700;white-space:nowrap}
+.pchip{font-size:16px;color:#fff;background:var(--primary-dark);padding:2px 12px;border-radius:12px;font-weight:700;white-space:nowrap}
+@media(max-width:640px){.src{margin-left:0}}
+.work{margin-top:12px;border:1.5px dashed #b9c7cd;border-radius:8px;min-height:5cm;width:15cm;max-width:100%;box-sizing:border-box;padding:8px 12px;background:repeating-linear-gradient(180deg,transparent,transparent 27px,#eef1f2 27px,#eef1f2 28px)}
+.wlabel{font-size:16px;color:#8a99a0;font-weight:700}
+.printpage{margin:0 0 8px}
+.pageribbon{display:none;text-align:center;font-size:16px;color:#8a99a0;border-bottom:1px dashed #cbd5da;margin:22px 0 10px;padding-bottom:4px}
+.qbody{font-size:16px}
+.revbtn{margin-top:12px;background:var(--accent);color:#fff;border:none;border-radius:22px;padding:8px 20px;font-size:16px;font-weight:700;cursor:pointer;box-shadow:0 2px 6px rgba(231,111,81,.35);transition:.15s}
+.revbtn:hover{filter:brightness(1.05);transform:translateY(-1px)}
+.revbtn.on{background:var(--primary)}
+.sol{display:none;margin-top:12px;padding:14px 16px;background:#eef6f8;border-left:5px solid var(--primary);border-radius:8px;font-size:16px}
+.sol.show{display:block;animation:fade .25s ease}
+@keyframes fade{from{opacity:0;transform:translateY(-4px)}to{opacity:1}}
+.ans{font-weight:700;color:var(--primary-dark);margin-bottom:8px;font-size:17px}
+.expl{color:#333;font-size:16px}
+.top{position:fixed;right:16px;bottom:16px;background:var(--primary);color:#fff;text-decoration:none;width:44px;height:44px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:18px;box-shadow:0 4px 12px rgba(0,0,0,.25);opacity:.85}
+.tips{background:#fff8ec;border-left:5px solid var(--accent);border-radius:10px;padding:12px 16px;margin:16px 0;font-size:16px;color:#7a5a3a}
+@media print{
+  @page{margin:1.4cm 1.2cm}
+  body{background:#fff;font-size:16px}
+  header.hero,.toc,.tips,.top{display:none!important}
+  .wrap{max-width:none;padding:0}
+  .printpage{page-break-after:always;break-after:page}
+  .printpage:last-child{page-break-after:auto}
+  .pageribbon{display:block}
+  .qcard{box-shadow:none;border:1px solid #d7d2c7;page-break-inside:avoid;break-inside:avoid;margin:8px 0;padding:10px 12px}
+  .revbtn,.sol{display:none!important}
+  .work{min-height:5cm}
+}
+
+header.hero{position:relative;overflow:hidden;background:linear-gradient(120deg,#7b2ff7,#f107a3,#ff8a3d,#ffd166);background-size:280% 280%;animation:flow 14s ease infinite;color:#fff;padding:22px 18px 34px;text-align:center;margin-bottom:22px}
+@keyframes flow{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}
+header.hero h1{position:relative;text-shadow:0 3px 14px rgba(0,0,0,.18)}
+header.hero p{position:relative}
+header.hero .heroback{position:relative;display:inline-flex;align-items:center;gap:7px;color:#fff;text-decoration:none;font-weight:700;font-size:14px;background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.5);padding:7px 15px;border-radius:999px;backdrop-filter:blur(3px);transition:.15s}
+header.hero .heroback:hover{background:#fff;color:#155263}
+header.hero .toprow{position:relative;display:flex;justify-content:flex-start;margin-bottom:6px}
+.msym{position:absolute;color:rgba(255,255,255,.22);font-weight:800;pointer-events:none;user-select:none;animation:floaty 7s ease-in-out infinite}
+.msym.s1{font-size:64px;left:4%;top:38%;animation-delay:0s}
+.msym.s2{font-size:44px;left:22%;top:10%;animation-delay:1.2s}
+.msym.s3{font-size:52px;right:8%;top:16%;animation-delay:.6s}
+.msym.s4{font-size:38px;right:24%;bottom:12%;animation-delay:2s}
+.msym.s5{font-size:48px;right:40%;top:52%;animation-delay:1.6s}
+.msym.s6{font-size:40px;left:12%;bottom:14%;animation-delay:.9s}
+@keyframes floaty{0%,100%{transform:translateY(0) rotate(-4deg)}50%{transform:translateY(-12px) rotate(4deg)}}
+@media print{.msym{display:none}header.hero{animation:none;background:#155263}}
+</style></head><body id="top">
+<header class="hero">
+<span class="msym s1">△</span><span class="msym s2">π</span><span class="msym s3">∑</span><span class="msym s4">√</span><span class="msym s5">∠</span><span class="msym s6">%</span>
+<div class="toprow"><a class="heroback" href="vol4.html">← 返回第四冊 Back to Vol.4</a></div>
+<h1>國二下 第3章「三角形的基本性質」 · 分節互動練習</h1>
+<p>依講義觀念分節 ‧ 每題附「計算 / 作答區」可書寫；點「顯示解析」才展開答案詳解</p>
+<p>🖨 每題右上角標示列印頁碼（全卷共 44 頁），螢幕與紙本頁碼一致</p></header>
+<div class="wrap">
+<div class="toc"><a href="#3-1">3-1 三角形與多邊形的內角與外角</a><a href="#3-2">3-2 尺規作圖</a><a href="#3-3">3-3 三角形的全等性質</a><a href="#3-4">3-4 中垂線與角平分線的性質</a><a href="#3-5">3-5 三角形的邊角關係</a></div>
+<div class="tips">💡 老師可直接用「計算 / 作答區」板書講解，不一定要展開解析。用瀏覽器列印（⌘/Ctrl+P）即為學生練習卷：自動分頁、隱藏答案、保留作答空間。圖形為示意圖，請以題目數據為準。</div>
+
+  <div class="printpage">
+    <div class="pageribbon">列印第 1 頁 / 共 44 頁　·　3-1 三角形與多邊形的內角與外角</div>
+    <div class="sechd" id="3-1"><h2>3-1　三角形與多邊形的內角與外角</h2><p>三角形內角和180° ‧ 外角=兩內對角和 ‧ 外角和360° ‧ n邊形內角和(n-2)×180° ‧ n邊形外角和360° ‧ 正n邊形每個內角=(n-2)×180°/n、每個外角=360°/n ‧ 正多邊形夾兩平行線求角</p></div>
+    
+      <div class="qcard">
+        <div class="qhead"><span class="tbadge" style="background:#457b9d">選擇</span><span class="qid">3-1-1</span><span class="src">📄 自編</span><span class="pchip">🖨 第 1 頁</span></div>
+        <div class="qbody">△ABC 中，∠A : ∠B : ∠C = 2 : 3 : 4，則最大內角是幾度？</div>
+        <div class="fig"><svg viewBox="0 0 220 160"><polygon points="30,140 190,140 80,25" fill="#eef6f8" stroke="#1f6f8b" stroke-width="2"/><text x="74" y="20" font-size="14">A</text><text x="18" y="150" font-size="14">B</text><text x="192" y="150" font-size="14">C</text></svg></div>
+        <div class="opts"><div class="opt"><span class="ol">(A)</span> 60°</div><div class="opt"><span class="ol">(B)</span> 70°</div><div class="opt"><span class="ol">(C)</span> 80°</div><div class="opt"><span class="ol">(D)</span> 90°</div></div>
+        <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
+        <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
+        <div class="sol">
+          <div class="ans">✅ 答案：(C) 80°</div>
+          <div class="expl"><b>解析：</b>三內角和 = 180°。<br>設三角為 2k、3k、4k，則 2k+3k+4k = 9k = 180°，得 k = 20°。<br>最大內角 = 4k = 4×20° = <b>80°</b>。<br>驗算：40°+60°+80° = 180° ✓</div>
+        </div>
+      </div>
+  </div>
+  <div class="printpage">
+    <div class="pageribbon">列印第 2 頁 / 共 44 頁　·　3-1 三角形與多邊形的內角與外角</div>
+    
+    
+      <div class="qcard">
+        <div class="qhead"><span class="tbadge" style="background:#457b9d">選擇</span><span class="qid">3-1-2</span><span class="src">📄 自編</span><span class="pchip">🖨 第 2 頁</span></div>
+        <div class="qbody">如圖，△ABC 中 ∠B = 55°、∠C = 40°，∠A 的外角（BA 延長所成）為 ∠1，則 ∠1 = ？</div>
+        <div class="fig"><svg viewBox="0 0 240 160"><polygon points="50,120 190,120 90,30" fill="#eef6f8" stroke="#1f6f8b" stroke-width="2"/><line x1="90" y1="30" x2="90" y2="5" stroke="#e76f51" stroke-width="2"/><text x="84" y="28" font-size="13">A</text><text x="40" y="130" font-size="13">B</text><text x="192" y="130" font-size="13">C</text><text x="96" y="22" font-size="12" fill="#e76f51">1</text></svg></div>
+        <div class="opts"><div class="opt"><span class="ol">(A)</span> 85°</div><div class="opt"><span class="ol">(B)</span> 90°</div><div class="opt"><span class="ol">(C)</span> 95°</div><div class="opt"><span class="ol">(D)</span> 125°</div></div>
+        <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
+        <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
+        <div class="sol">
+          <div class="ans">✅ 答案：(C) 95°</div>
+          <div class="expl"><b>解析：</b>外角定理：三角形任一外角 = 不相鄰兩內角和。<br>∠A 的外角 ∠1 = ∠B + ∠C = 55° + 40° = <b>95°</b>。<br>驗算：∠A = 180°−55°−40° = 85°，而 ∠1 與 ∠A 互補：85°+95° = 180° ✓</div>
+        </div>
+      </div>
+  </div>
+  <div class="printpage">
+    <div class="pageribbon">列印第 3 頁 / 共 44 頁　·　3-1 三角形與多邊形的內角與外角</div>
+    
+    
+      <div class="qcard">
+        <div class="qhead"><span class="tbadge" style="background:#457b9d">選擇</span><span class="qid">3-1-3</span><span class="src">📄 自編</span><span class="pchip">🖨 第 3 頁</span></div>
+        <div class="qbody">一個三角形的三個外角（各頂點取一個）度數比為 3 : 4 : 5，則此三角形最小的內角是幾度？</div>
+        
+        <div class="opts"><div class="opt"><span class="ol">(A)</span> 30°</div><div class="opt"><span class="ol">(B)</span> 60°</div><div class="opt"><span class="ol">(C)</span> 70°</div><div class="opt"><span class="ol">(D)</span> 90°</div></div>
+        <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
+        <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
+        <div class="sol">
+          <div class="ans">✅ 答案：(A) 30°</div>
+          <div class="expl"><b>解析：</b>三角形一組外角和 = 360°。<br>設三外角為 3k、4k、5k，則 3k+4k+5k = 12k = 360°，得 k = 30°。<br>三外角為 90°、120°、150°。<br>最大的外角 150° 對應最小的內角 = 180°−150° = <b>30°</b>。<br>驗算：內角為 90°、60°、30°，和 = 180° ✓</div>
+        </div>
+      </div>
+      <div class="qcard">
+        <div class="qhead"><span class="tbadge" style="background:#2a9d8f">填充</span><span class="qid">3-1-4</span><span class="src">📄 自編</span><span class="pchip">🖨 第 3 頁</span></div>
+        <div class="qbody">一個正 n 邊形的內角和為 1440°，則 n = ______，且它的每一個內角為 ______ 度。</div>
+        
+        
+        <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
+        <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
+        <div class="sol">
+          <div class="ans">✅ 答案：n = 10；每一內角 = 144°</div>
+          <div class="expl"><b>解析：</b>n 邊形內角和 = (n−2)×180°。<br>令 (n−2)×180° = 1440°，得 n−2 = 8，n = <b>10</b>。<br>正十邊形每一內角 = 1440° ÷ 10 = <b>144°</b>。<br>驗算：亦可用 180°−360°/n = 180°−360°/10 = 180°−36° = 144° ✓</div>
+        </div>
+      </div>
+  </div>
+  <div class="printpage">
+    <div class="pageribbon">列印第 4 頁 / 共 44 頁　·　3-1 三角形與多邊形的內角與外角</div>
+    
+    
+      <div class="qcard">
+        <div class="qhead"><span class="tbadge" style="background:#457b9d">選擇</span><span class="qid">3-1-5</span><span class="src">📄 自編</span><span class="pchip">🖨 第 4 頁</span></div>
+        <div class="qbody">一個正多邊形的每一個外角為 24°，則此正多邊形是幾邊形？</div>
+        
+        <div class="opts"><div class="opt"><span class="ol">(A)</span> 12 邊形</div><div class="opt"><span class="ol">(B)</span> 15 邊形</div><div class="opt"><span class="ol">(C)</span> 18 邊形</div><div class="opt"><span class="ol">(D)</span> 20 邊形</div></div>
+        <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
+        <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
+        <div class="sol">
+          <div class="ans">✅ 答案：(B) 15 邊形</div>
+          <div class="expl"><b>解析：</b>正 n 邊形每一外角 = 360°/n。<br>令 360°/n = 24°，得 n = 360° ÷ 24° = <b>15</b>，為正十五邊形。<br>驗算：每一內角 = 180°−24° = 156°，內角和 = 15×156° = 2340° = (15−2)×180° = 2340° ✓</div>
+        </div>
+      </div>
+      <div class="qcard">
+        <div class="qhead"><span class="tbadge" style="background:#457b9d">選擇</span><span class="qid">3-1-6</span><span class="src">📄 自編</span><span class="pchip">🖨 第 4 頁</span></div>
+        <div class="qbody">一個正多邊形，每一個內角恰好是每一個外角的 4 倍，則此正多邊形每一個內角為幾度？</div>
+        
+        <div class="opts"><div class="opt"><span class="ol">(A)</span> 120°</div><div class="opt"><span class="ol">(B)</span> 135°</div><div class="opt"><span class="ol">(C)</span> 140°</div><div class="opt"><span class="ol">(D)</span> 144°</div></div>
+        <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
+        <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
+        <div class="sol">
+          <div class="ans">✅ 答案：(D) 144°</div>
+          <div class="expl"><b>解析：</b>同一頂點的內角與外角互補：內角 + 外角 = 180°。<br>設外角 = x，則內角 = 4x，故 4x + x = 180°，5x = 180°，x = 36°。<br>每一內角 = 4x = <b>144°</b>。<br>驗算：外角 36° → n = 360°/36° = 10（正十邊形），內角 144° ✓</div>
+        </div>
+      </div>
+  </div>
+  <div class="printpage">
+    <div class="pageribbon">列印第 5 頁 / 共 44 頁　·　3-1 三角形與多邊形的內角與外角</div>
+    
+    
+      <div class="qcard">
+        <div class="qhead"><span class="tbadge" style="background:#e76f51">計算</span><span class="qid">3-1-7</span><span class="src">📄 自編</span><span class="pchip">🖨 第 5 頁</span></div>
+        <div class="qbody">一個凸多邊形的內角和是它的外角和的 3 倍，求此多邊形的邊數 n。（外角和固定為 360°）</div>
+        
+        
+        <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
+        <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
+        <div class="sol">
+          <div class="ans">✅ 答案：n = 8（八邊形）</div>
+          <div class="expl"><b>解析：</b>n 邊形外角和恆為 360°；內角和 = (n−2)×180°。<br>依題意：(n−2)×180° = 3 × 360° = 1080°。<br>n−2 = 1080° ÷ 180° = 6，故 n = <b>8</b>。<br>驗算：八邊形內角和 = (8−2)×180° = 1080°，恰為 360°×3 ✓</div>
+        </div>
+      </div>
+  </div>
+  <div class="printpage">
+    <div class="pageribbon">列印第 6 頁 / 共 44 頁　·　3-1 三角形與多邊形的內角與外角</div>
+    
+    
+      <div class="qcard">
+        <div class="qhead"><span class="tbadge" style="background:#457b9d">選擇</span><span class="qid">3-1-8</span><span class="src">📄 改編·苓雅國中</span><span class="pchip">🖨 第 6 頁</span></div>
+        <div class="qbody">如圖，△ABC 中，∠A = 68°、∠B = 63°、∠C = 49°。則三邊 AB、BC、CA 中，最長的邊與最短的邊分別是哪一邊？（提示：大角對大邊、小角對小邊）</div>
+        <div class="fig"><svg viewBox="0 0 240 160"><polygon points="40,130 200,130 95,25" fill="#eef6f8" stroke="#1f6f8b" stroke-width="2"/><text x="90" y="20" font-size="14">A</text><text x="28" y="140" font-size="14">B</text><text x="204" y="140" font-size="14">C</text></svg></div>
+        <div class="opts"><div class="opt"><span class="ol">(A)</span> 最長 BC、最短 AB</div><div class="opt"><span class="ol">(B)</span> 最長 BC、最短 CA</div><div class="opt"><span class="ol">(C)</span> 最長 CA、最短 AB</div><div class="opt"><span class="ol">(D)</span> 最長 AB、最短 BC</div></div>
+        <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
+        <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
+        <div class="sol">
+          <div class="ans">✅ 答案：(A) 最長 BC、最短 AB</div>
+          <div class="expl"><b>解析：</b>先確認內角和：68°+63°+49° = 180° ✓。<br>「大角對大邊、小角對小邊」：每一邊的長短由它所對的內角決定。<br>邊 BC 對 ∠A = 68°（最大角）→ BC 最長。<br>邊 CA 對 ∠B = 63°（中間角）→ CA 居中。<br>邊 AB 對 ∠C = 49°（最小角）→ AB 最短。<br>故三邊大小為 BC > CA > AB，最長邊為 <b>BC</b>、最短邊為 <b>AB</b>，選 (A)。</div>
+        </div>
+      </div>
+  </div>
+  <div class="printpage">
+    <div class="pageribbon">列印第 7 頁 / 共 44 頁　·　3-1 三角形與多邊形的內角與外角</div>
+    
+    
+      <div class="qcard">
+        <div class="qhead"><span class="tbadge" style="background:#2a9d8f">填充</span><span class="qid">3-1-9</span><span class="src">📄 改編·中港國中</span><span class="pchip">🖨 第 7 頁</span></div>
+        <div class="qbody">如圖，ABCDE 為正五邊形，直線 M 通過頂點 A、直線 L 通過邊 CD（即 L 與 CD 重合），且 M ∥ L。∠1 為 M 與邊 AB 所夾的角、∠2 為 M 與邊 AE 所夾的角。求 ∠1 + ∠2 = ______ 度。</div>
+        <div class="fig"><svg viewBox="0 0 240 180"><line x1="10" y1="30" x2="230" y2="30" stroke="#333" stroke-width="1.5"/><text x="12" y="24" font-size="12">M</text><line x1="10" y1="150" x2="230" y2="150" stroke="#333" stroke-width="1.5"/><text x="12" y="164" font-size="12">L</text><polygon points="120,30 55,73 80,150 160,150 185,73" fill="#eef6f8" stroke="#1f6f8b" stroke-width="2"/><text x="116" y="24" font-size="12">A</text><text x="44" y="74" font-size="12">B</text><text x="72" y="163" font-size="12">C</text><text x="162" y="163" font-size="12">D</text><text x="188" y="74" font-size="12">E</text></svg></div>
+        
+        <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
+        <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
+        <div class="sol">
+          <div class="ans">✅ 答案：∠1 + ∠2 = 72°</div>
+          <div class="expl"><b>解析：</b>正五邊形每一內角 = (5−2)×180°/5 = 540°/5 = 108°，故頂角 ∠BAE = 108°。<br>A 在直線 M 上，M 是一條直線（平角 180°）。M 在 A 處被邊 AB、AE 分成三部分：<br>∠1（M 與 AB）＋ ∠BAE（內角 108°）＋ ∠2（M 與 AE）= 180°。<br>所以 ∠1 + ∠2 = 180° − 108° = <b>72°</b>。<br>驗算：由對稱可知 ∠1 = ∠2 = 36°，36°+36° = 72° ✓（此結果與 L 的位置無關，只要 A 在 M 上即可）。</div>
+        </div>
+      </div>
+  </div>
+  <div class="printpage">
+    <div class="pageribbon">列印第 8 頁 / 共 44 頁　·　3-1 三角形與多邊形的內角與外角</div>
+    
+    
+      <div class="qcard">
+        <div class="qhead"><span class="tbadge" style="background:#e76f51">計算</span><span class="qid">3-1-10</span><span class="src">📄 改編·獅甲國中</span><span class="pchip">🖨 第 8 頁</span></div>
+        <div class="qbody">如圖，五邊形 ABCDE 中，∠B = 130°、∠E = 128°，且 BC ∥ ED。連 AC、AD。若 ∠CAD = 44°，求 ∠BAC + ∠DAE 的度數。</div>
+        <div class="fig"><svg viewBox="0 0 240 170"><polygon points="120,20 55,70 75,150 165,150 185,70" fill="#eef6f8" stroke="#1f6f8b" stroke-width="2"/><line x1="120" y1="20" x2="75" y2="150" stroke="#e76f51" stroke-width="1.5"/><line x1="120" y1="20" x2="165" y2="150" stroke="#e76f51" stroke-width="1.5"/><text x="116" y="16" font-size="12">A</text><text x="44" y="70" font-size="12">B</text><text x="66" y="163" font-size="12">C</text><text x="166" y="163" font-size="12">D</text><text x="188" y="70" font-size="12">E</text></svg></div>
+        
+        <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
+        <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
+        <div class="sol">
+          <div class="ans">✅ 答案：∠BAC + ∠DAE = 58°</div>
+          <div class="expl"><b>解析：</b>五邊形內角和 = (5−2)×180° = 540°，即 ∠A + ∠B + ∠C + ∠D + ∠E = 540°。<br>因 BC ∥ ED，CD 為截線，同旁內角互補：∠BCD + ∠EDC = 180°，即 ∠C + ∠D = 180°。<br>代入：∠A + ∠B + ∠E + (∠C + ∠D) = 540°<br>∠A + 130° + 128° + 180° = 540°<br>∠A = 540° − 438° = 102°。<br>又 ∠A = ∠BAC + ∠CAD + ∠DAE，且 ∠CAD = 44°，<br>∴ ∠BAC + ∠DAE = ∠A − ∠CAD = 102° − 44° = <b>58°</b>。<br>驗算：58° + 44° = 102° = ∠A ✓</div>
+        </div>
+      </div>
+  </div>
+  <div class="printpage">
+    <div class="pageribbon">列印第 9 頁 / 共 44 頁　·　3-2 尺規作圖</div>
+    <div class="sechd" id="3-2"><h2>3-2　尺規作圖</h2><p>6種基本作圖(等線段‧等角‧中垂線‧角平分線‧過線上/線外一點作垂線) ‧ 中垂線原理=菱形對角線互相垂直平分 ‧ 角平分線原理=鳶形對角線平分頂角 ‧ 作圖痕跡判別 ‧ 平行四邊形作圖綜合判別</p></div>
+    
+      <div class="qcard">
+        <div class="qhead"><span class="tbadge" style="background:#457b9d">選擇</span><span class="qid">3-2-1</span><span class="src">📄 自編</span><span class="pchip">🖨 第 9 頁</span></div>
+        <div class="qbody">關於「尺規作圖」的規則，下列敘述何者<b>正確</b>？</div>
+        
+        <div class="opts"><div class="opt"><span class="ol">(A)</span> 可以使用直尺上的刻度來量出線段長度</div><div class="opt"><span class="ol">(B)</span> 可以使用量角器量出角度後再畫角</div><div class="opt"><span class="ol">(C)</span> 圓規只能用來畫弧（畫圓），直尺只能用來畫直線</div><div class="opt"><span class="ol">(D)</span> 作圖時允許用三角板拼出直角</div></div>
+        <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
+        <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
+        <div class="sol">
+          <div class="ans">✅ 答案：(C) 圓規只能用來畫弧（畫圓），直尺只能用來畫直線</div>
+          <div class="expl"><b>解析：</b>尺規作圖只准用「直尺」與「圓規」兩種工具，且：<br>‧ 直尺只用來連兩點畫直線，<b>不可使用刻度</b>去量長度。<br>‧ 圓規只用來畫弧或圓。<br>因此 (A)(B)(D) 都違反規則（用刻度、用量角器、用三角板都不行），只有 (C) 正確。</div>
+        </div>
+      </div>
+  </div>
+  <div class="printpage">
+    <div class="pageribbon">列印第 10 頁 / 共 44 頁　·　3-2 尺規作圖</div>
+    
+    
+      <div class="qcard">
+        <div class="qhead"><span class="tbadge" style="background:#457b9d">選擇</span><span class="qid">3-2-2</span><span class="src">📄 自編</span><span class="pchip">🖨 第 10 頁</span></div>
+        <div class="qbody">如圖，作線段 AB 的中垂線時，分別以 A、B 為圓心畫弧交於 P、Q 兩點，連 PQ。此作圖能成立（PQ 垂直平分 AB）的原理，是利用了下列哪一種圖形的性質？</div>
+        <div class="fig"><svg viewBox="0 0 220 160"><line x1="40" y1="80" x2="180" y2="80" stroke="#1f6f8b" stroke-width="2"/><line x1="110" y1="20" x2="110" y2="140" stroke="#e76f51" stroke-width="2"/><circle cx="110" cy="20" r="3" fill="#e76f51"/><circle cx="110" cy="140" r="3" fill="#e76f51"/><circle cx="40" cy="80" r="3" fill="#1f6f8b"/><circle cx="180" cy="80" r="3" fill="#1f6f8b"/><line x1="40" y1="80" x2="110" y2="20" stroke="#999" stroke-width="1" stroke-dasharray="3 2"/><line x1="110" y1="20" x2="180" y2="80" stroke="#999" stroke-width="1" stroke-dasharray="3 2"/><line x1="40" y1="80" x2="110" y2="140" stroke="#999" stroke-width="1" stroke-dasharray="3 2"/><line x1="110" y1="140" x2="180" y2="80" stroke="#999" stroke-width="1" stroke-dasharray="3 2"/><text x="30" y="84" font-size="13">A</text><text x="184" y="84" font-size="13">B</text><text x="106" y="16" font-size="13">P</text><text x="106" y="154" font-size="13">Q</text></svg></div>
+        <div class="opts"><div class="opt"><span class="ol">(A)</span> 菱形的兩條對角線互相垂直平分</div><div class="opt"><span class="ol">(B)</span> 鳶形的一條對角線平分頂角</div><div class="opt"><span class="ol">(C)</span> 等腰三角形兩底角相等</div><div class="opt"><span class="ol">(D)</span> 平行四邊形對角線互相平分</div></div>
+        <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
+        <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
+        <div class="sol">
+          <div class="ans">✅ 答案：(A) 菱形的兩條對角線互相垂直平分</div>
+          <div class="expl"><b>解析：</b>作中垂線時，以 A、B 為圓心用<b>相同半徑</b>畫弧交於 P、Q，因此 PA＝PB＝QA＝QB（四邊等長），APBQ 為<b>菱形</b>。<br>菱形的兩對角線 AB 與 PQ 互相<b>垂直平分</b>，所以 PQ 就是 AB 的中垂線。<br>故選 (A)。</div>
+        </div>
+      </div>
+  </div>
+  <div class="printpage">
+    <div class="pageribbon">列印第 11 頁 / 共 44 頁　·　3-2 尺規作圖</div>
+    
+    
+      <div class="qcard">
+        <div class="qhead"><span class="tbadge" style="background:#457b9d">選擇</span><span class="qid">3-2-3</span><span class="src">📄 自編</span><span class="pchip">🖨 第 11 頁</span></div>
+        <div class="qbody">作 ∠P 的角平分線時，先以 P 為圓心畫弧交兩邊於 A、B，再分別以 A、B 為圓心、相同半徑畫弧交於 Q，連 PQ 即為所求。此作圖能成立的原理是利用了哪一種圖形的性質？</div>
+        <div class="fig"><svg viewBox="0 0 220 160"><line x1="30" y1="140" x2="200" y2="60" stroke="#1f6f8b" stroke-width="2"/><line x1="30" y1="140" x2="200" y2="140" stroke="#1f6f8b" stroke-width="2"/><line x1="30" y1="140" x2="175" y2="110" stroke="#e76f51" stroke-width="2"/><circle cx="30" cy="140" r="3" fill="#1f6f8b"/><circle cx="95" cy="110" r="3" fill="#1f6f8b"/><circle cx="95" cy="140" r="3" fill="#1f6f8b"/><circle cx="175" cy="110" r="3" fill="#e76f51"/><line x1="95" y1="110" x2="175" y2="110" stroke="#999" stroke-width="1" stroke-dasharray="3 2"/><line x1="95" y1="140" x2="175" y2="110" stroke="#999" stroke-width="1" stroke-dasharray="3 2"/><text x="20" y="144" font-size="13">P</text><text x="88" y="104" font-size="13">A</text><text x="88" y="154" font-size="13">B</text><text x="180" y="114" font-size="13">Q</text></svg></div>
+        <div class="opts"><div class="opt"><span class="ol">(A)</span> 鳶形 PAQB 中，對角線 PQ 平分頂角 ∠APB</div><div class="opt"><span class="ol">(B)</span> 正方形四個角都是直角</div><div class="opt"><span class="ol">(C)</span> 梯形兩腰中點連線平行兩底</div><div class="opt"><span class="ol">(D)</span> 菱形四邊等長</div></div>
+        <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
+        <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
+        <div class="sol">
+          <div class="ans">✅ 答案：(A) 鳶形 PAQB 中，對角線 PQ 平分頂角 ∠APB</div>
+          <div class="expl"><b>解析：</b>作圖中 PA＝PB（同一弧半徑）、QA＝QB（同半徑相交弧），因此 PAQB 為<b>鳶形</b>（兩組鄰邊分別相等）。<br>鳶形連接兩頂角的對角線 PQ 會<b>平分頂角</b> ∠APB，所以 PQ 就是 ∠P 的角平分線。<br>故選 (A)。</div>
+        </div>
+      </div>
+  </div>
+  <div class="printpage">
+    <div class="pageribbon">列印第 12 頁 / 共 44 頁　·　3-2 尺規作圖</div>
+    
+    
+      <div class="qcard">
+        <div class="qhead"><span class="tbadge" style="background:#457b9d">選擇</span><span class="qid">3-2-4</span><span class="src">📄 自編</span><span class="pchip">🖨 第 12 頁</span></div>
+        <div class="qbody">作 AB 的中垂線時，課本要求「分別以 A、B 為圓心，取<b>大於 (1/2)AB</b> 的相同長度為半徑畫弧」。為什麼半徑一定要大於 (1/2)AB？</div>
+        
+        <div class="opts"><div class="opt"><span class="ol">(A)</span> 半徑必須等於 AB 才畫得出來</div><div class="opt"><span class="ol">(B)</span> 為了讓 PQ 通過 A 點與 B 點</div><div class="opt"><span class="ol">(C)</span> 為了讓兩弧只交於 AB 中點一個點</div><div class="opt"><span class="ol">(D)</span> 半徑太短時，兩弧不會相交，就找不到交點無法連線</div></div>
+        <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
+        <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
+        <div class="sol">
+          <div class="ans">✅ 答案：(D) 半徑太短時，兩弧不會相交，就找不到交點無法連線</div>
+          <div class="expl"><b>解析：</b>以 A、B 為圓心、同半徑 r 畫弧。兩圓要相交，必須 r 夠大：當 r ≤ (1/2)AB 時，兩弧碰不到（或只在 AB 上相切成一點），無法得到 AB 上、下方各一個交點 P、Q。<br>唯有 <b>r > (1/2)AB</b> 兩弧才會相交於兩點 P、Q，連 PQ 才畫得出中垂線。故選 (D)。</div>
+        </div>
+      </div>
+  </div>
+  <div class="printpage">
+    <div class="pageribbon">列印第 13 頁 / 共 44 頁　·　3-2 尺規作圖</div>
+    
+    
+      <div class="qcard">
+        <div class="qhead"><span class="tbadge" style="background:#457b9d">選擇</span><span class="qid">3-2-5</span><span class="src">📄 改編·獅甲國中</span><span class="pchip">🖨 第 13 頁</span></div>
+        <div class="qbody">如圖，已知直線 L 及線外一點 P，阿翔利用尺規作圖畫出「過 P 點且平行於 L」的直線（圖中細線為作圖痕跡，作法為在 L 上與過 P 的斜線上各作一個相等的角）。請問阿翔是利用平行線的哪一種截角性質來作圖？</div>
+        <div class="fig"><svg viewBox="0 0 220 160"><line x1="20" y1="120" x2="200" y2="120" stroke="#1f6f8b" stroke-width="2"/><line x1="20" y1="40" x2="200" y2="40" stroke="#e76f51" stroke-width="2"/><line x1="60" y1="150" x2="170" y2="20" stroke="#333" stroke-width="1.5"/><circle cx="100" cy="40" r="3" fill="#e76f51"/><circle cx="115" cy="120" r="3" fill="#1f6f8b"/><text x="196" y="134" font-size="13">L</text><text x="88" y="34" font-size="13">P</text></svg></div>
+        <div class="opts"><div class="opt"><span class="ol">(A)</span> 同位角相等</div><div class="opt"><span class="ol">(B)</span> 內錯角相等</div><div class="opt"><span class="ol">(C)</span> 對頂角相等</div><div class="opt"><span class="ol">(D)</span> 同側內角互補</div></div>
+        <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
+        <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
+        <div class="sol">
+          <div class="ans">✅ 答案：(B) 內錯角相等</div>
+          <div class="expl"><b>解析：</b>過線外一點作平行線的等角作法，是把「已知直線 L 與斜截線所夾的角」複製到 P 點斜截線的<b>另一側</b>，使兩角成為<b>內錯角相等</b>。<br>由「內錯角相等 ⟹ 兩直線平行」可知所作直線平行 L。<br>（若複製到同一側同一位置則是同位角相等。本題作痕為內錯角。）故選 (B)。</div>
+        </div>
+      </div>
+  </div>
+  <div class="printpage">
+    <div class="pageribbon">列印第 14 頁 / 共 44 頁　·　3-2 尺規作圖</div>
+    
+    
+      <div class="qcard">
+        <div class="qhead"><span class="tbadge" style="background:#457b9d">選擇</span><span class="qid">3-2-6</span><span class="src">📄 改編·中正國中</span><span class="pchip">🖨 第 14 頁</span></div>
+        <div class="qbody">如圖，已知 ∠ABC 及 A、C 兩點，欲以尺規作圖畫出平行四邊形 ABCD（頂點依序為 A→B→C→D）。<br><b>小恩</b>：以 C 為圓心、BC 長為半徑畫弧；以 A 為圓心、AB 長為半徑畫弧，兩弧交於 D，連 AD、CD。<br><b>小齊</b>：過 A 作直線 L∥BC，在 L 上取一點 D 使 AD＝AB，連 CD。<br>下列敘述何者正確？</div>
+        <div class="fig"><svg viewBox="0 0 220 160"><line x1="40" y1="130" x2="110" y2="40" stroke="#1f6f8b" stroke-width="2"/><line x1="40" y1="130" x2="180" y2="130" stroke="#1f6f8b" stroke-width="2"/><circle cx="110" cy="40" r="3" fill="#e76f51"/><circle cx="180" cy="130" r="3" fill="#e76f51"/><circle cx="40" cy="130" r="3" fill="#1f6f8b"/><text x="30" y="144" font-size="13">B</text><text x="114" y="38" font-size="13">A</text><text x="184" y="134" font-size="13">C</text></svg></div>
+        <div class="opts"><div class="opt"><span class="ol">(A)</span> 兩人皆錯</div><div class="opt"><span class="ol">(B)</span> 兩人皆對</div><div class="opt"><span class="ol">(C)</span> 小恩錯誤，小齊正確</div><div class="opt"><span class="ol">(D)</span> 小恩正確，小齊錯誤</div></div>
+        <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
+        <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
+        <div class="sol">
+          <div class="ans">✅ 答案：(A) 兩人皆錯</div>
+          <div class="expl"><b>解析：</b>頂點依序 A→B→C→D 的平行四邊形，對邊為「AB 與 CD」「BC 與 DA」，故需 <b>CD＝AB 且 DA＝BC</b>。<br><b>小恩</b>：以 C 為圓心 BC 為半徑 ⟹ CD＝BC；以 A 為圓心 AB 為半徑 ⟹ AD＝AB。他做出的是 CD＝BC、AD＝AB，變成鳶形，並非 CD＝AB、AD＝BC，<b>半徑用錯</b>（正確應為 A 圓心取 BC、C 圓心取 AB），故小恩<b>錯誤</b>。<br><b>小齊</b>：AD∥BC 正確，但令 AD＝AB 而非 AD＝BC，無法滿足「一組對邊平行且相等」，故不一定是平行四邊形，小齊<b>錯誤</b>。<br>兩人皆錯，選 (A)。</div>
+        </div>
+      </div>
+  </div>
+  <div class="printpage">
+    <div class="pageribbon">列印第 15 頁 / 共 44 頁　·　3-2 尺規作圖</div>
+    
+    
+      <div class="qcard">
+        <div class="qhead"><span class="tbadge" style="background:#457b9d">選擇</span><span class="qid">3-2-7</span><span class="src">📄 改編·翠屏國中</span><span class="pchip">🖨 第 15 頁</span></div>
+        <div class="qbody">如圖，已知 ∠ABC 及 A、C 兩點。下列四種作圖方式，何者<b>無法</b>作出平行四邊形 ABCD？</div>
+        <div class="fig"><svg viewBox="0 0 220 160"><line x1="40" y1="130" x2="110" y2="40" stroke="#1f6f8b" stroke-width="2"/><line x1="40" y1="130" x2="180" y2="130" stroke="#1f6f8b" stroke-width="2"/><circle cx="110" cy="40" r="3" fill="#e76f51"/><circle cx="180" cy="130" r="3" fill="#e76f51"/><circle cx="40" cy="130" r="3" fill="#1f6f8b"/><text x="30" y="144" font-size="13">B</text><text x="114" y="38" font-size="13">A</text><text x="184" y="134" font-size="13">C</text></svg></div>
+        <div class="opts"><div class="opt"><span class="ol">(A)</span> 過 A 作 L∥BC，在 L 上取 D 使 AD＝BC，則 ABCD 為平行四邊形</div><div class="opt"><span class="ol">(B)</span> 過 A 作 L∥BC、過 C 作 M∥AB，設 L、M 交於 D，則 ABCD 為平行四邊形</div><div class="opt"><span class="ol">(C)</span> 分別以 A、C 為圓心，BC、AB 為半徑畫弧交於 D，連 AD、CD，則 ABCD 為平行四邊形</div><div class="opt"><span class="ol">(D)</span> 連 AC，作 ∠ABC 的角平分線交 AC 於 O，在直線 BO 上取 D 使 BO＝OD，連 AD、CD，則 ABCD 為平行四邊形</div></div>
+        <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
+        <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
+        <div class="sol">
+          <div class="ans">✅ 答案：(D) 連 AC，作 ∠ABC 的角平分線交 AC 於 O，在直線 BO 上取 D 使 BO＝OD…</div>
+          <div class="expl"><b>解析：</b>平行四邊形的判別：只要滿足「一組對邊平行且相等」「兩組對邊分別平行」「兩組對邊分別相等」「對角線互相平分」之一即可。<br>(A) AD∥BC 且 AD＝BC ⟹ 一組對邊平行且相等，成立。<br>(B) AD∥BC、DC∥AB ⟹ 兩組對邊分別平行，成立。<br>(C) AD＝BC、CD＝AB ⟹ 兩組對邊分別相等，成立。<br>(D) 對角線互相平分需「BD 與 AC 互相平分」，即 O 應為 <b>AC 的中點</b>；但角平分線交 AC 於 O 並不保證 O 是 AC 中點（除非 AB＝BC），故 BO＝OD 也無法保證對角線互相平分，<b>無法確定</b>是平行四邊形。<br>故選 (D)。</div>
+        </div>
+      </div>
+  </div>
+  <div class="printpage">
+    <div class="pageribbon">列印第 16 頁 / 共 44 頁　·　3-2 尺規作圖</div>
+    
+    
+      <div class="qcard">
+        <div class="qhead"><span class="tbadge" style="background:#457b9d">選擇</span><span class="qid">3-2-8</span><span class="src">📄 改編·弘道國中</span><span class="pchip">🖨 第 16 頁</span></div>
+        <div class="qbody">如圖，△ABC 中，以 B 為圓心、AB 長為半徑畫弧，交 CB 的延長線於左側 D 點；再以 C 為圓心、AC 長為半徑畫弧，交 BC 的延長線於右側 E 點。若 ∠ABC＝54°、∠ACB＝56°，則 AD、AE 的大小關係為何？</div>
+        <div class="fig"><svg viewBox="0 0 220 160"><polygon points="95,30 55,120 155,120" fill="#eef6f8" stroke="#1f6f8b" stroke-width="2"/><line x1="20" y1="120" x2="200" y2="120" stroke="#1f6f8b" stroke-width="1.5"/><circle cx="30" cy="120" r="3" fill="#e76f51"/><circle cx="190" cy="120" r="3" fill="#e76f51"/><line x1="95" y1="30" x2="30" y2="120" stroke="#e76f51" stroke-width="1" stroke-dasharray="3 2"/><line x1="95" y1="30" x2="190" y2="120" stroke="#e76f51" stroke-width="1" stroke-dasharray="3 2"/><text x="90" y="26" font-size="13">A</text><text x="48" y="133" font-size="13">B</text><text x="156" y="133" font-size="13">C</text><text x="22" y="133" font-size="13">D</text><text x="192" y="133" font-size="13">E</text></svg></div>
+        <div class="opts"><div class="opt"><span class="ol">(A)</span> AD＝AE</div><div class="opt"><span class="ol">(B)</span> AD>AE</div><div class="opt"><span class="ol">(C)</span> AD<AE</div><div class="opt"><span class="ol">(D)</span> 無法比較</div></div>
+        <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
+        <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
+        <div class="sol">
+          <div class="ans">✅ 答案：(B) AD>AE</div>
+          <div class="expl"><b>解析：</b>由作圖：BD＝AB（同弧半徑），故 △ABD 為等腰，∠ADB＝∠DAB；同理 CE＝AC，△ACE 等腰，∠AEC＝∠EAC。<br>△ABD：∠ABD 是 ∠ABC＝54° 的補角？D 在 CB 延長線左側，∠ABD＝180°−54°＝126°，故兩底角 ∠ADB＝(180−126)/2＝27°。<br>△ACE：∠ACE＝180°−56°＝124°，兩底角 ∠AEC＝(180−124)/2＝28°。<br>在 △ADE 中，∠ADE＝27°<∠AEC＝28°，<b>大角對大邊</b>：∠AED(28°) 對的邊 AD 大於 ∠ADE(27°) 對的邊 AE，故 <b>AD>AE</b>。<br>故選 (B)。</div>
+        </div>
+      </div>
+  </div>
+  <div class="printpage">
+    <div class="pageribbon">列印第 17 頁 / 共 44 頁　·　3-2 尺規作圖</div>
+    
+    
+      <div class="qcard">
+        <div class="qhead"><span class="tbadge" style="background:#2a9d8f">填充</span><span class="qid">3-2-9</span><span class="src">📄 改編·康軒自我評量</span><span class="pchip">🖨 第 17 頁</span></div>
+        <div class="qbody">如圖，已知直線 L 及<b>線外</b>一點 P，小明依「過線外一點作垂線」的作法：以 P 為圓心適當長畫弧交 L 於 A、B，再分別以 A、B 為圓心、大於 (1/2)AB 的同長度畫弧交於 Q，連 PQ。<br>請判斷下列敘述何者<b>正確</b>（可複選，填代號）：<br>(甲) PQ⊥L　(乙) L 是 PQ 的中垂線　(丙) PA＝PB　(丁) L 平分 PQ</div>
+        <div class="fig"><svg viewBox="0 0 220 160"><line x1="20" y1="90" x2="200" y2="90" stroke="#1f6f8b" stroke-width="2"/><circle cx="110" cy="30" r="3" fill="#e76f51"/><circle cx="110" cy="140" r="3" fill="#e76f51"/><circle cx="75" cy="90" r="3" fill="#1f6f8b"/><circle cx="145" cy="90" r="3" fill="#1f6f8b"/><line x1="110" y1="30" x2="110" y2="140" stroke="#e76f51" stroke-width="2"/><rect x="110" y="82" width="8" height="8" fill="none" stroke="#e76f51" stroke-width="1"/><text x="106" y="26" font-size="13">P</text><text x="106" y="154" font-size="13">Q</text><text x="66" y="84" font-size="13">A</text><text x="148" y="84" font-size="13">B</text><text x="196" y="104" font-size="13">L</text></svg></div>
+        
+        <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
+        <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
+        <div class="sol">
+          <div class="ans">✅ 答案：甲、丙（乙、丁錯）</div>
+          <div class="expl"><b>解析：</b>作法中 PA＝PB（同弧半徑）、QA＝QB（同半徑相交弧），故 PAQB 為鳶形，其對角線 PQ⊥AB（即 PQ⊥L）。<br>(甲) PQ⊥L：<b>正確</b>。<br>(丙) PA＝PB：<b>正確</b>（同一弧的半徑）。<br>(乙) L 是 PQ 的中垂線：<b>錯誤</b>。PQ 確實是 AB 的中垂線（會平分 AB），但反過來 L 未必平分 PQ——P 在線外任意位置，L 通常不通過 PQ 中點。<br>(丁) L 平分 PQ：同理<b>錯誤</b>。<br>故正確者為 <b>甲、丙</b>。</div>
+        </div>
+      </div>
+  </div>
+  <div class="printpage">
+    <div class="pageribbon">列印第 18 頁 / 共 44 頁　·　3-2 尺規作圖</div>
+    
+    
+      <div class="qcard">
+        <div class="qhead"><span class="tbadge" style="background:#7d5ba6">作圖</span><span class="qid">3-2-10</span><span class="src">📄 改編·康軒例題</span><span class="pchip">🖨 第 18 頁</span></div>
+        <div class="qbody">已知線段長 a 與 b（a>b），且已知 ∠1。請只用尺規作圖，描述如何作出一個線段 MN＝a＋b，以及一個角等於 2×∠1（即 ∠1 的兩倍）。（只需寫出作法步驟，不必實際畫在紙上）</div>
+        <div class="fig"><svg viewBox="0 0 220 160"><line x1="20" y1="40" x2="110" y2="40" stroke="#1f6f8b" stroke-width="3"/><text x="60" y="32" font-size="13">a</text><line x1="20" y1="70" x2="75" y2="70" stroke="#1f6f8b" stroke-width="3"/><text x="42" y="62" font-size="13">b</text><line x1="20" y1="140" x2="110" y2="110" stroke="#e76f51" stroke-width="2"/><line x1="20" y1="140" x2="110" y2="140" stroke="#e76f51" stroke-width="2"/><path d="M 55 140 A 35 35 0 0 0 52 128" fill="none" stroke="#e76f51" stroke-width="1"/><text x="60" y="135" font-size="12">∠1</text></svg></div>
+        
+        <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
+        <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
+        <div class="sol">
+          <div class="ans">✅ 答案：MN＝a＋b：在一直線上用等線段作圖依序截取 a、b 相接；2×∠1：用等角作圖把 ∠1 複製兩次相接。</div>
+          <div class="expl"><b>解析：</b><b>作 MN＝a＋b（用等線段作圖）</b>：<br>1. 畫一條直線，在上面取一點 M。<br>2. 以 M 為圓心、<b>a</b> 為半徑畫弧交直線於 P，得 MP＝a。<br>3. 再以 P 為圓心、<b>b</b> 為半徑，往同方向畫弧交直線於 N，得 PN＝b。<br>4. 則 MN＝MP＋PN＝a＋b，即為所求。<br><br><b>作 2×∠1（用等角作圖）</b>：<br>1. 畫射線 OX，用等角作圖把 ∠1 複製到 O，作 ∠XOY＝∠1。<br>2. 再以 OY 為一邊，往同側用等角作圖複製一次 ∠1，作 ∠YOZ＝∠1。<br>3. 則 ∠XOZ＝∠XOY＋∠YOZ＝∠1＋∠1＝2∠1，即為所求。<br>（兩者都只用直尺與圓規：等線段＝以已知長為半徑畫弧截取；等角＝以弧上弦長為半徑複製角。）</div>
+        </div>
+      </div>
+  </div>
+  <div class="printpage">
+    <div class="pageribbon">列印第 19 頁 / 共 44 頁　·　3-3 三角形的全等性質</div>
+    <div class="sechd" id="3-3"><h2>3-3　三角形的全等性質</h2><p>SSS ‧ SAS ‧ ASA ‧ AAS ‧ RHS 五種全等性質 ‧ SSA與AAA不能判別全等 ‧ 共用邊／共用角 ‧ 由全等求對應邊角與x ‧ 全等證明</p></div>
+    
+      <div class="qcard">
+        <div class="qhead"><span class="tbadge" style="background:#457b9d">選擇</span><span class="qid">3-3-1</span><span class="src">📄 自編</span><span class="pchip">🖨 第 19 頁</span></div>
+        <div class="qbody">如圖，△ABC 與 △DEF 中，AB=DE、BC=EF、AC=DF。判斷這兩個三角形全等，是根據下列哪一個全等性質？</div>
+        <div class="fig"><svg viewBox="0 0 260 160"><polygon points="20,140 110,140 40,30" fill="#eef6f8" stroke="#1f6f8b" stroke-width="2"/><polygon points="150,140 240,140 170,30" fill="#eef6f8" stroke="#1f6f8b" stroke-width="2"/><text x="36" y="26" font-size="13">A</text><text x="10" y="152" font-size="13">B</text><text x="110" y="152" font-size="13">C</text><text x="166" y="26" font-size="13">D</text><text x="140" y="152" font-size="13">E</text><text x="240" y="152" font-size="13">F</text></svg></div>
+        <div class="opts"><div class="opt"><span class="ol">(A)</span> SSS</div><div class="opt"><span class="ol">(B)</span> SAS</div><div class="opt"><span class="ol">(C)</span> ASA</div><div class="opt"><span class="ol">(D)</span> AAS</div></div>
+        <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
+        <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
+        <div class="sol">
+          <div class="ans">✅ 答案：(A) SSS</div>
+          <div class="expl"><b>解析：</b>三組已知條件 AB=DE、BC=EF、AC=DF 全部是「邊」，也就是三組對應邊分別相等。<br>三邊對應相等 ⟹ 用 <b>SSS 全等性質</b>，得 △ABC ≅ △DEF。<br>驗算對應：A↔D、B↔E、C↔F，三邊一一對應無誤。</div>
+        </div>
+      </div>
+  </div>
+  <div class="printpage">
+    <div class="pageribbon">列印第 20 頁 / 共 44 頁　·　3-3 三角形的全等性質</div>
+    
+    
+      <div class="qcard">
+        <div class="qhead"><span class="tbadge" style="background:#457b9d">選擇</span><span class="qid">3-3-2</span><span class="src">📄 自編</span><span class="pchip">🖨 第 20 頁</span></div>
+        <div class="qbody">如圖，D 為 BC 的中點（BD=CD），AD⊥BC。要證明 △ABD ≅ △ACD，最適合使用下列哪一個全等性質？（AD 為共用邊）</div>
+        <div class="fig"><svg viewBox="0 0 220 160"><polygon points="110,20 30,140 190,140" fill="#eef6f8" stroke="#1f6f8b" stroke-width="2"/><line x1="110" y1="20" x2="110" y2="140" stroke="#e76f51" stroke-width="2"/><rect x="110" y="128" width="12" height="12" fill="none" stroke="#1f6f8b" stroke-width="1.5"/><text x="106" y="16" font-size="13">A</text><text x="18" y="152" font-size="13">B</text><text x="192" y="152" font-size="13">C</text><text x="104" y="154" font-size="13">D</text></svg></div>
+        <div class="opts"><div class="opt"><span class="ol">(A)</span> SSS</div><div class="opt"><span class="ol">(B)</span> SAS</div><div class="opt"><span class="ol">(C)</span> AAA</div><div class="opt"><span class="ol">(D)</span> SSA</div></div>
+        <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
+        <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
+        <div class="sol">
+          <div class="ans">✅ 答案：(B) SAS</div>
+          <div class="expl"><b>解析：</b>在 △ABD 與 △ACD 中：<br>BD=CD（已知，D 為中點）… S<br>∠ADB=∠ADC=90°（AD⊥BC）… A（此角為兩邊夾角）<br>AD=AD（共用邊）… S<br>兩邊及其夾角對應相等 ⟹ 用 <b>SAS 全等性質</b>，得 △ABD ≅ △ACD。<br>驗算：夾角 ∠ADB 恰好夾在 BD、AD 兩邊之間，符合 SAS 的「夾角」要求。</div>
+        </div>
+      </div>
+  </div>
+  <div class="printpage">
+    <div class="pageribbon">列印第 21 頁 / 共 44 頁　·　3-3 三角形的全等性質</div>
+    
+    
+      <div class="qcard">
+        <div class="qhead"><span class="tbadge" style="background:#457b9d">選擇</span><span class="qid">3-3-3</span><span class="src">📄 自編</span><span class="pchip">🖨 第 21 頁</span></div>
+        <div class="qbody">下列關於三角形全等判別的敘述，何者<b>正確</b>？</div>
+        
+        <div class="opts"><div class="opt"><span class="ol">(A)</span> 兩三角形有 SSA（兩邊及其中一邊的對角）對應相等，就一定全等</div><div class="opt"><span class="ol">(B)</span> 兩三角形有 AAA（三組角）對應相等，就一定全等</div><div class="opt"><span class="ol">(C)</span> 兩三角形有 AAS（兩角及其中一角的對邊）對應相等，就一定全等</div><div class="opt"><span class="ol">(D)</span> 只要兩三角形面積相等，就一定全等</div></div>
+        <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
+        <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
+        <div class="sol">
+          <div class="ans">✅ 答案：(C) 兩三角形有 AAS（兩角及其中一角的對邊）對應相等，就一定全等</div>
+          <div class="expl"><b>解析：</b>逐項檢查：<br>(A) 錯：<b>SSA 不能</b>判別全等，兩邊及一邊的對角相等時，第三邊可能有兩種畫法（除非該角為直角，即成 RHS）。<br>(B) 錯：<b>AAA 不能</b>判別全等。例如邊長 2 與邊長 4 的兩個正三角形三角都是 60°，卻不全等（只保證相似）。<br>(C) 正確：AAS 由內角和 180° 可推出第三組角也相等，化為 ASA，故能判別全等。<br>(D) 錯：面積相等的三角形形狀可完全不同（如 底6高4 與 底8高3 面積都是 12），不一定全等。<br>故選 (C)。</div>
+        </div>
+      </div>
+  </div>
+  <div class="printpage">
+    <div class="pageribbon">列印第 22 頁 / 共 44 頁　·　3-3 三角形的全等性質</div>
+    
+    
+      <div class="qcard">
+        <div class="qhead"><span class="tbadge" style="background:#2a9d8f">填充</span><span class="qid">3-3-4</span><span class="src">📄 自編</span><span class="pchip">🖨 第 22 頁</span></div>
+        <div class="qbody">已知 △ABC ≅ △DEF，且 AB=8、BC=11、∠A=50°、∠B=65°。求：(1) EF＝____；(2) ∠F＝____。</div>
+        <div class="fig"><svg viewBox="0 0 260 160"><polygon points="20,140 120,140 55,30" fill="#eef6f8" stroke="#1f6f8b" stroke-width="2"/><polygon points="150,140 250,140 185,30" fill="#eef6f8" stroke="#1f6f8b" stroke-width="2"/><text x="50" y="26" font-size="13">A</text><text x="10" y="152" font-size="13">B</text><text x="120" y="152" font-size="13">C</text><text x="181" y="26" font-size="13">D</text><text x="140" y="152" font-size="13">E</text><text x="250" y="152" font-size="13">F</text></svg></div>
+        
+        <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
+        <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
+        <div class="sol">
+          <div class="ans">✅ 答案：(1) EF＝11；(2) ∠F＝65°</div>
+          <div class="expl"><b>解析：</b>由 △ABC ≅ △DEF 的頂點對應順序 A↔D、B↔E、C↔F。<br>(1) BC 的對應邊是 EF，故 EF＝BC＝<b>11</b>。<br>(2) 先求 ∠C：內角和 ∠C＝180°−∠A−∠B＝180°−50°−65°＝65°。<br>∠F 的對應角是 ∠C，故 ∠F＝∠C＝<b>65°</b>。<br>驗算：△DEF 三角 ∠D=∠A=50°、∠E=∠B=65°、∠F=65°，50+65+65＝180°，正確。</div>
+        </div>
+      </div>
+  </div>
+  <div class="printpage">
+    <div class="pageribbon">列印第 23 頁 / 共 44 頁　·　3-3 三角形的全等性質</div>
+    
+    
+      <div class="qcard">
+        <div class="qhead"><span class="tbadge" style="background:#2a9d8f">填充</span><span class="qid">3-3-5</span><span class="src">📄 自編</span><span class="pchip">🖨 第 23 頁</span></div>
+        <div class="qbody">如圖，△ABC 與 △DEF 中，AB=DE、BC=EF、CA=FD，且三邊對應相等使 △ABC ≅ △DEF。已知 AB=2x−3、DE=13、BC=3y+1、EF=19，求 x＋y＝____。</div>
+        <div class="fig"><svg viewBox="0 0 260 160"><polygon points="20,140 120,140 50,35" fill="#eef6f8" stroke="#1f6f8b" stroke-width="2"/><polygon points="150,140 250,140 180,35" fill="#eef6f8" stroke="#1f6f8b" stroke-width="2"/><text x="46" y="31" font-size="13">A</text><text x="10" y="152" font-size="13">B</text><text x="120" y="152" font-size="13">C</text><text x="176" y="31" font-size="13">D</text><text x="140" y="152" font-size="13">E</text><text x="250" y="152" font-size="13">F</text></svg></div>
+        
+        <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
+        <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
+        <div class="sol">
+          <div class="ans">✅ 答案：x＋y＝14</div>
+          <div class="expl"><b>解析：</b>由 △ABC ≅ △DEF，對應邊相等。<br>AB＝DE：2x−3＝13 ⟹ 2x＝16 ⟹ x＝8。<br>BC＝EF：3y+1＝19 ⟹ 3y＝18 ⟹ y＝6。<br>x＋y＝8＋6＝<b>14</b>。<br>驗算：AB＝2(8)−3＝13＝DE ✓；BC＝3(6)+1＝19＝EF ✓。</div>
+        </div>
+      </div>
+  </div>
+  <div class="printpage">
+    <div class="pageribbon">列印第 24 頁 / 共 44 頁　·　3-3 三角形的全等性質</div>
+    
+    
+      <div class="qcard">
+        <div class="qhead"><span class="tbadge" style="background:#457b9d">選擇</span><span class="qid">3-3-6</span><span class="src">📄 自編</span><span class="pchip">🖨 第 24 頁</span></div>
+        <div class="qbody">如圖，∠BAC=∠DAC、∠BCA=∠DCA，AC 為共用邊。要判別 △ABC ≅ △ADC，應使用下列哪一個全等性質？</div>
+        <div class="fig"><svg viewBox="0 0 220 170"><polygon points="30,85 190,30 190,140" fill="#eef6f8" stroke="#1f6f8b" stroke-width="2"/><line x1="30" y1="85" x2="190" y2="85" stroke="#e76f51" stroke-width="2"/><text x="192" y="28" font-size="13">B</text><text x="12" y="90" font-size="13">A</text><text x="192" y="146" font-size="13">D</text><text x="194" y="90" font-size="13">C</text></svg></div>
+        <div class="opts"><div class="opt"><span class="ol">(A)</span> SSS</div><div class="opt"><span class="ol">(B)</span> SAS</div><div class="opt"><span class="ol">(C)</span> ASA</div><div class="opt"><span class="ol">(D)</span> RHS</div></div>
+        <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
+        <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
+        <div class="sol">
+          <div class="ans">✅ 答案：(C) ASA</div>
+          <div class="expl"><b>解析：</b>在 △ABC 與 △ADC 中：<br>∠BAC=∠DAC（已知）… A<br>AC=AC（共用邊）… S（此邊為兩角的夾邊）<br>∠BCA=∠DCA（已知）… A<br>兩組角及其夾邊對應相等 ⟹ 用 <b>ASA 全等性質</b>，得 △ABC ≅ △ADC。<br>驗算：共用邊 AC 恰好夾在 ∠A、∠C 兩角之間，符合 ASA 的「夾邊」要求。</div>
+        </div>
+      </div>
+  </div>
+  <div class="printpage">
+    <div class="pageribbon">列印第 25 頁 / 共 44 頁　·　3-3 三角形的全等性質</div>
+    
+    
+      <div class="qcard">
+        <div class="qhead"><span class="tbadge" style="background:#457b9d">選擇</span><span class="qid">3-3-7</span><span class="src">📄 改編·中港國中</span><span class="pchip">🖨 第 25 頁</span></div>
+        <div class="qbody">如圖，△ABC 中 AB=AC，AD⊥BC 於 D。若要證明 △ABD ≅ △ACD，下列哪一個全等性質<b>最直接適用</b>（不需先求出其他邊角）？</div>
+        <div class="fig"><svg viewBox="0 0 220 160"><polygon points="110,20 30,140 190,140" fill="#eef6f8" stroke="#1f6f8b" stroke-width="2"/><line x1="110" y1="20" x2="110" y2="140" stroke="#e76f51" stroke-width="2"/><rect x="98" y="128" width="12" height="12" fill="none" stroke="#1f6f8b" stroke-width="1.5"/><text x="106" y="16" font-size="13">A</text><text x="18" y="152" font-size="13">B</text><text x="192" y="152" font-size="13">C</text><text x="104" y="154" font-size="13">D</text></svg></div>
+        <div class="opts"><div class="opt"><span class="ol">(A)</span> RHS</div><div class="opt"><span class="ol">(B)</span> AAA</div><div class="opt"><span class="ol">(C)</span> SSA</div><div class="opt"><span class="ol">(D)</span> AAS</div></div>
+        <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
+        <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
+        <div class="sol">
+          <div class="ans">✅ 答案：(A) RHS</div>
+          <div class="expl"><b>解析：</b>△ABD 與 △ACD 都是直角三角形（AD⊥BC，∠ADB=∠ADC=90°）。<br>斜邊 AB=AC（已知）… H<br>一股 AD=AD（共用邊）… S<br>兩直角三角形的斜邊與一股對應相等 ⟹ 用 <b>RHS 全等性質</b>，直接得 △ABD ≅ △ACD。<br>檢查其他選項：AAA、SSA 皆不能判別全等；AAS 這裡缺少現成的第二組角，不如 RHS 直接。故選 (A)。</div>
+        </div>
+      </div>
+  </div>
+  <div class="printpage">
+    <div class="pageribbon">列印第 26 頁 / 共 44 頁　·　3-3 三角形的全等性質</div>
+    
+    
+      <div class="qcard">
+        <div class="qhead"><span class="tbadge" style="background:#e76f51">計算</span><span class="qid">3-3-8</span><span class="src">📄 自編</span><span class="pchip">🖨 第 26 頁</span></div>
+        <div class="qbody">如圖，AB=AC，∠BAD=∠CAE，D、E 分別在 AC、AB 上（AD、AE 為由 A 出發的兩線段，∠A 為共用角）。已知 AD=AE。試證 △ABD ≅ △ACE，並求：若 ∠ABD=40°、∠BAC=70°，則 ∠ADB＝____。</div>
+        <div class="fig"><svg viewBox="0 0 220 170"><polygon points="110,20 30,150 190,150" fill="#eef6f8" stroke="#1f6f8b" stroke-width="2"/><line x1="110" y1="20" x2="70" y2="150" stroke="#e76f51" stroke-width="1.5"/><line x1="110" y1="20" x2="150" y2="150" stroke="#e76f51" stroke-width="1.5"/><text x="106" y="16" font-size="13">A</text><text x="18" y="156" font-size="13">B</text><text x="192" y="156" font-size="13">C</text><text x="62" y="164" font-size="12">E</text><text x="150" y="164" font-size="12">D</text></svg></div>
+        
+        <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
+        <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
+        <div class="sol">
+          <div class="ans">✅ 答案：∠ADB＝70°</div>
+          <div class="expl"><b>解析：</b>全等說明：在 △ABD 與 △ACE 中，AB=AC（已知）、∠BAD=∠CAE（已知，同為 ∠A 附近的角、∠A 為共用角）、AD=AE（已知），由 <b>SAS</b> 得 △ABD ≅ △ACE。<br>求 ∠ADB：本題直接看 △ABD。<br>△ABD 內角和：∠ADB＝180°−∠BAD−∠ABD。<br>其中 ∠BAD＝∠BAC＝70°（D 在 AC 上，∠BAD 即頂角 ∠BAC），∠ABD＝40°。<br>∠ADB＝180°−70°−40°＝<b>70°</b>。<br>驗算：70°+40°+70°＝180° ✓。</div>
+        </div>
+      </div>
+      <div class="qcard">
+        <div class="qhead"><span class="tbadge" style="background:#e76f51">計算</span><span class="qid">3-3-9</span><span class="src">📄 自編</span><span class="pchip">🖨 第 26 頁</span></div>
+        <div class="qbody">已知 △ABC ≅ △DEF，且對應如 A↔D、B↔E、C↔F。若 ∠A＝(2x＋10)°、∠D＝(3x−20)°、∠B＝55°，求 ∠C 與 ∠F 的度數。</div>
+        
+        
+        <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
+        <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
+        <div class="sol">
+          <div class="ans">✅ 答案：∠A＝∠D＝70°，∠C＝∠F＝55°</div>
+          <div class="expl"><b>解析：</b>由全等，對應角相等：∠A＝∠D。<br>2x＋10＝3x−20 ⟹ x＝30。<br>代回：∠A＝2(30)＋10＝70°（∠D＝3(30)−20＝70°，一致）。<br>△ABC 內角和：∠C＝180°−∠A−∠B＝180°−70°−55°＝55°。<br>由對應 ∠F＝∠C＝<b>55°</b>。<br>驗算：△ABC 三角 70°+55°+55°＝180° ✓；∠A=∠D=70° 兩式相等 ✓。<br>答：∠A＝∠D＝70°，∠C＝∠F＝<b>55°</b>。</div>
+        </div>
+      </div>
+  </div>
+  <div class="printpage">
+    <div class="pageribbon">列印第 27 頁 / 共 44 頁　·　3-3 三角形的全等性質</div>
+    
+    
+      <div class="qcard">
+        <div class="qhead"><span class="tbadge" style="background:#7d5ba6">證明</span><span class="qid">3-3-10</span><span class="src">📄 改編·康軒例題</span><span class="pchip">🖨 第 27 頁</span></div>
+        <div class="qbody">如圖，線段 AD 與 BC 相交於 O 點，且 O 為 AD、BC 共同的中點（即 AO=DO、BO=CO）。試證：△AOB ≅ △DOC。請完整寫出每一步的理由。</div>
+        <div class="fig"><svg viewBox="0 0 240 170"><line x1="30" y1="40" x2="210" y2="130" stroke="#1f6f8b" stroke-width="2"/><line x1="30" y1="130" x2="210" y2="40" stroke="#1f6f8b" stroke-width="2"/><circle cx="120" cy="85" r="3" fill="#e76f51"/><text x="14" y="40" font-size="13">A</text><text x="212" y="44" font-size="13">C</text><text x="14" y="136" font-size="13">B</text><text x="212" y="134" font-size="13">D</text><text x="126" y="82" font-size="13">O</text></svg></div>
+        
+        <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
+        <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
+        <div class="sol">
+          <div class="ans">✅ 答案：由 SAS 證得 △AOB ≅ △DOC（過程見解析）</div>
+          <div class="expl"><b>解析：</b><b>證明：</b><br>在 △AOB 與 △DOC 中，<br>(1) AO＝DO　（已知，O 為 AD 的中點）… S<br>(2) ∠AOB＝∠DOC　（對頂角相等）… A（此角為兩邊夾角）<br>(3) BO＝CO　（已知，O 為 BC 的中點）… S<br>由 (1)(2)(3)，兩組邊及其夾角分別對應相等，<br>依 <b>SAS 全等性質</b>，得 △AOB ≅ △DOC。　（得證）<br><br>說明：夾角 ∠AOB 恰夾在 AO、BO 兩邊之間，∠DOC 夾在 DO、CO 之間，且兩角為對頂角必相等，故條件符合 SAS。</div>
+        </div>
+      </div>
+  </div>
+  <div class="printpage">
+    <div class="pageribbon">列印第 28 頁 / 共 44 頁　·　3-4 中垂線與角平分線的性質</div>
+    <div class="sechd" id="3-4"><h2>3-4　中垂線與角平分線的性質</h2><p>中垂線性質(線上點到兩端等距) ‧ 中垂線判別(PA=PB) ‧ 角平分線性質(到兩邊等距) ‧ 角平分線判別 ‧ 等腰三角形兩底角相等 ‧ 等角對等邊判別 ‧ 對稱點最短路徑</p></div>
+    
+      <div class="qcard">
+        <div class="qhead"><span class="tbadge" style="background:#457b9d">選擇</span><span class="qid">3-4-1</span><span class="src">📄 改編·五甲國中</span><span class="pchip">🖨 第 28 頁</span></div>
+        <div class="qbody">如圖，直線 L 為 BC 的中垂線，交 BC 於 D，交 AB 於 E。若 △AEC 的周長為 21，AC=8，則 AB 的長為多少？</div>
+        <div class="fig"><svg viewBox="0 0 220 160"><polygon points="30,140 190,140 60,30" fill="#eef6f8" stroke="#1f6f8b" stroke-width="2"/><line x1="110" y1="140" x2="110" y2="20" stroke="#e76f51" stroke-width="2"/><rect x="104" y="134" width="6" height="6" fill="none" stroke="#e76f51"/><circle cx="90" cy="85" r="3" fill="#e76f51"/><text x="52" y="26" font-size="13">A</text><text x="20" y="150" font-size="13">B</text><text x="192" y="150" font-size="13">C</text><text x="112" y="152" font-size="13">D</text><text x="78" y="84" font-size="13">E</text><text x="116" y="28" font-size="12" fill="#e76f51">L</text></svg></div>
+        <div class="opts"><div class="opt"><span class="ol">(A)</span> 11</div><div class="opt"><span class="ol">(B)</span> 12</div><div class="opt"><span class="ol">(C)</span> 13</div><div class="opt"><span class="ol">(D)</span> 14</div></div>
+        <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
+        <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
+        <div class="sol">
+          <div class="ans">✅ 答案：(C) 13</div>
+          <div class="expl"><b>解析：</b>E 在 BC 的中垂線 L 上，由中垂線性質知 E 到 B、C 兩端點等距，故 <b>EB = EC</b>。<br>△AEC 周長 = AE + EC + CA = AE + EB + CA = (AE+EB) + CA = <b>AB + CA</b>。<br>所以 AB + 8 = 21，得 AB = <b>13</b>。<br>驗算：AB=13、AC=8，AE+EB=13，周長=AE+EC+CA=(AE+EB)+CA=13+8=21，正確。</div>
+        </div>
+      </div>
+  </div>
+  <div class="printpage">
+    <div class="pageribbon">列印第 29 頁 / 共 44 頁　·　3-4 中垂線與角平分線的性質</div>
+    
+    
+      <div class="qcard">
+        <div class="qhead"><span class="tbadge" style="background:#457b9d">選擇</span><span class="qid">3-4-2</span><span class="src">📄 自編</span><span class="pchip">🖨 第 29 頁</span></div>
+        <div class="qbody">如圖，△ABC 中 ∠ACB=90°，BD 為 ∠ABC 的角平分線，交 AC 於 D，且 DE⊥AB 於 E。若 AB=16，CD=5，則 △ABD 的面積為多少？</div>
+        <div class="fig"><svg viewBox="0 0 220 160"><polygon points="30,140 30,30 190,140" fill="#eef6f8" stroke="#1f6f8b" stroke-width="2"/><rect x="30" y="128" width="12" height="12" fill="none" stroke="#1f6f8b"/><line x1="190" y1="140" x2="30" y2="78" stroke="#1f6f8b" stroke-width="1.5"/><line x1="30" y1="78" x2="96" y2="104" stroke="#e76f51" stroke-width="2"/><rect x="90" y="100" width="7" height="7" fill="none" stroke="#e76f51"/><text x="22" y="26" font-size="13">A</text><text x="20" y="150" font-size="13">C</text><text x="192" y="150" font-size="13">B</text><text x="14" y="82" font-size="13">D</text><text x="98" y="116" font-size="13">E</text></svg></div>
+        <div class="opts"><div class="opt"><span class="ol">(A)</span> 35</div><div class="opt"><span class="ol">(B)</span> 40</div><div class="opt"><span class="ol">(C)</span> 45</div><div class="opt"><span class="ol">(D)</span> 48</div></div>
+        <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
+        <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
+        <div class="sol">
+          <div class="ans">✅ 答案：(B) 40</div>
+          <div class="expl"><b>解析：</b>D 在 ∠ABC 的角平分線 BD 上，由角平分線性質知 D 到 ∠ABC 兩邊(BC、AB)的距離相等。<br>D 到 BC 的距離就是 DC(因 ∠C=90°，DC⊥BC)，D 到 AB 的距離就是 DE。<br>故 <b>DE = DC = 5</b>。<br>△ABD 以 AB 為底、DE 為高：面積 = 1/2 × AB × DE = 1/2 × 16 × 5 = <b>40</b>。<br>驗算：底 16、高 5，面積 = 16×5÷2 = 40，正確。</div>
+        </div>
+      </div>
+  </div>
+  <div class="printpage">
+    <div class="pageribbon">列印第 30 頁 / 共 44 頁　·　3-4 中垂線與角平分線的性質</div>
+    
+    
+      <div class="qcard">
+        <div class="qhead"><span class="tbadge" style="background:#457b9d">選擇</span><span class="qid">3-4-3</span><span class="src">📄 自編</span><span class="pchip">🖨 第 30 頁</span></div>
+        <div class="qbody">如圖，某三角形為等腰三角形，頂角 ∠A=50°，AB=AC。則底角 ∠B 的度數為多少？</div>
+        <div class="fig"><svg viewBox="0 0 220 160"><polygon points="110,25 40,140 180,140" fill="#eef6f8" stroke="#1f6f8b" stroke-width="2"/><path d="M96,45 A25,25 0 0 0 124,45" fill="none" stroke="#e76f51" stroke-width="1.5"/><text x="104" y="20" font-size="13">A</text><text x="28" y="150" font-size="13">B</text><text x="184" y="150" font-size="13">C</text><text x="100" y="58" font-size="11" fill="#e76f51">50°</text></svg></div>
+        <div class="opts"><div class="opt"><span class="ol">(A)</span> 50°</div><div class="opt"><span class="ol">(B)</span> 60°</div><div class="opt"><span class="ol">(C)</span> 65°</div><div class="opt"><span class="ol">(D)</span> 70°</div></div>
+        <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
+        <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
+        <div class="sol">
+          <div class="ans">✅ 答案：(C) 65°</div>
+          <div class="expl"><b>解析：</b>△ABC 為等腰三角形且 AB=AC，由等腰三角形性質「兩底角相等」知 <b>∠B = ∠C</b>。<br>三角形內角和 180°：∠B + ∠C + ∠A = 180°。<br>2∠B = 180° − 50° = 130°，∠B = <b>65°</b>。<br>驗算：65°+65°+50° = 180°，正確。</div>
+        </div>
+      </div>
+  </div>
+  <div class="printpage">
+    <div class="pageribbon">列印第 31 頁 / 共 44 頁　·　3-4 中垂線與角平分線的性質</div>
+    
+    
+      <div class="qcard">
+        <div class="qhead"><span class="tbadge" style="background:#2a9d8f">填充</span><span class="qid">3-4-4</span><span class="src">📄 改編·五甲國中</span><span class="pchip">🖨 第 31 頁</span></div>
+        <div class="qbody">如圖，△ABC 中 D 為 BC 上一點，若 AB=AD=CD，且 ∠C=36°，則 ∠B=____度。</div>
+        <div class="fig"><svg viewBox="0 0 220 160"><polygon points="30,140 190,140 70,30" fill="#eef6f8" stroke="#1f6f8b" stroke-width="2"/><line x1="120" y1="140" x2="70" y2="30" stroke="#1f6f8b" stroke-width="1.5"/><text x="62" y="26" font-size="13">A</text><text x="20" y="150" font-size="13">B</text><text x="192" y="150" font-size="13">C</text><text x="116" y="153" font-size="13">D</text></svg></div>
+        
+        <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
+        <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
+        <div class="sol">
+          <div class="ans">✅ 答案：72</div>
+          <div class="expl"><b>解析：</b>先看 △ACD：CD=AD，為等腰三角形，等腰底角相等，故 ∠DAC = ∠C = 36°。<br>△ACD 外角：∠ADB = ∠DAC + ∠C = 36° + 36° = 72°(或由 ∠ADC=180°−36°−36°=108°，∠ADB=180°−108°=72°)。<br>再看 △ABD：AB=AD，為等腰三角形，等腰底角相等，∠B = ∠ADB = <b>72°</b>。<br>驗算：△ABD 中 ∠B=∠ADB=72°，∠BAD=180°−144°=36°，各角合理，正確。</div>
+        </div>
+      </div>
+  </div>
+  <div class="printpage">
+    <div class="pageribbon">列印第 32 頁 / 共 44 頁　·　3-4 中垂線與角平分線的性質</div>
+    
+    
+      <div class="qcard">
+        <div class="qhead"><span class="tbadge" style="background:#2a9d8f">填充</span><span class="qid">3-4-5</span><span class="src">📄 自編</span><span class="pchip">🖨 第 32 頁</span></div>
+        <div class="qbody">如圖，P 為線段 AB 的中垂線 L 上一點。已知 PA=(2x−1)、PB=(x+4)，則 x=____，PA=____。</div>
+        <div class="fig"><svg viewBox="0 0 220 160"><line x1="30" y1="110" x2="190" y2="110" stroke="#1f6f8b" stroke-width="2"/><line x1="110" y1="20" x2="110" y2="140" stroke="#e76f51" stroke-width="2"/><rect x="110" y="104" width="6" height="6" fill="none" stroke="#e76f51"/><line x1="30" y1="110" x2="110" y2="40" stroke="#1f6f8b" stroke-width="1.5"/><line x1="190" y1="110" x2="110" y2="40" stroke="#1f6f8b" stroke-width="1.5"/><circle cx="110" cy="40" r="3" fill="#e76f51"/><text x="20" y="120" font-size="13">A</text><text x="192" y="120" font-size="13">B</text><text x="114" y="38" font-size="13">P</text><text x="116" y="30" font-size="12" fill="#e76f51">L</text></svg></div>
+        
+        <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
+        <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
+        <div class="sol">
+          <div class="ans">✅ 答案：x=5，PA=9</div>
+          <div class="expl"><b>解析：</b>P 在 AB 的中垂線 L 上，由中垂線性質知 P 到兩端點等距，故 <b>PA = PB</b>。<br>2x − 1 = x + 4，移項：2x − x = 4 + 1，x = <b>5</b>。<br>代回：PA = 2×5 − 1 = <b>9</b>(檢查 PB = 5+4 = 9，確實相等)。<br>驗算：x=5 時 PA=9、PB=9，PA=PB 成立，正確。</div>
+        </div>
+      </div>
+  </div>
+  <div class="printpage">
+    <div class="pageribbon">列印第 33 頁 / 共 44 頁　·　3-4 中垂線與角平分線的性質</div>
+    
+    
+      <div class="qcard">
+        <div class="qhead"><span class="tbadge" style="background:#2a9d8f">填充</span><span class="qid">3-4-6</span><span class="src">📄 自編</span><span class="pchip">🖨 第 33 頁</span></div>
+        <div class="qbody">如圖，△ABC 中，∠B=(2x)°、∠C=(x+25)°，且已知 ∠B=∠C。若 AB=(3y−2)、AC=(y+6)，則 △ABC 為____三角形，且 AB=____。</div>
+        <div class="fig"><svg viewBox="0 0 220 160"><polygon points="110,25 40,140 180,140" fill="#eef6f8" stroke="#1f6f8b" stroke-width="2"/><path d="M52,132 A20,20 0 0 0 62,118" fill="none" stroke="#e76f51" stroke-width="1.5"/><path d="M158,132 A20,20 0 0 1 168,118" fill="none" stroke="#e76f51" stroke-width="1.5"/><text x="104" y="20" font-size="13">A</text><text x="28" y="150" font-size="13">B</text><text x="184" y="150" font-size="13">C</text></svg></div>
+        
+        <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
+        <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
+        <div class="sol">
+          <div class="ans">✅ 答案：等腰(AB=AC)，AB=10</div>
+          <div class="expl"><b>解析：</b>由 ∠B=∠C：2x = x + 25，得 x = 25，故 ∠B = ∠C = 50°。<br>兩內角相等，由「等角對等邊」判別性質，此三角形為<b>等腰三角形</b>，且這兩個相等角所對的邊相等，即 <b>AB = AC</b>。<br>所以 3y − 2 = y + 6，2y = 8，y = 4。<br>AB = 3×4 − 2 = <b>10</b>(檢查 AC = 4+6 = 10，相等)。<br>驗算：∠B=∠C=50° 時 AB=AC=10，等角對等邊成立，正確。</div>
+        </div>
+      </div>
+  </div>
+  <div class="printpage">
+    <div class="pageribbon">列印第 34 頁 / 共 44 頁　·　3-4 中垂線與角平分線的性質</div>
+    
+    
+      <div class="qcard">
+        <div class="qhead"><span class="tbadge" style="background:#2a9d8f">填充</span><span class="qid">3-4-7</span><span class="src">📄 自編</span><span class="pchip">🖨 第 34 頁</span></div>
+        <div class="qbody">如圖，AP 為 ∠BAC 的角平分線，D 為 AP 上一點，DB⊥AB 於 B、DC⊥AC 於 C。若 DB=(3x−4)、DC=(x+8)，則 x=____，DB=____。</div>
+        <div class="fig"><svg viewBox="0 0 220 160"><line x1="25" y1="80" x2="200" y2="30" stroke="#1f6f8b" stroke-width="2"/><line x1="25" y1="80" x2="200" y2="135" stroke="#1f6f8b" stroke-width="2"/><line x1="25" y1="80" x2="185" y2="82" stroke="#e76f51" stroke-width="1.5" stroke-dasharray="4,3"/><circle cx="140" cy="81" r="3" fill="#e76f51"/><line x1="140" y1="81" x2="128" y2="52" stroke="#1f6f8b" stroke-width="1.5"/><line x1="140" y1="81" x2="133" y2="116" stroke="#1f6f8b" stroke-width="1.5"/><rect x="122" y="49" width="7" height="7" fill="none" stroke="#1f6f8b"/><rect x="128" y="110" width="7" height="7" fill="none" stroke="#1f6f8b"/><text x="12" y="84" font-size="13">A</text><text x="124" y="46" font-size="13">B</text><text x="128" y="130" font-size="13">C</text><text x="144" y="78" font-size="13">D</text></svg></div>
+        
+        <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
+        <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
+        <div class="sol">
+          <div class="ans">✅ 答案：x=6，DB=14</div>
+          <div class="expl"><b>解析：</b>D 在 ∠BAC 的角平分線 AP 上，由角平分線性質知 D 到角的兩邊距離相等，故 <b>DB = DC</b>。<br>3x − 4 = x + 8，2x = 12，x = <b>6</b>。<br>DB = 3×6 − 4 = <b>14</b>(檢查 DC = 6+8 = 14，相等)。<br>驗算：x=6 時 DB=DC=14，角平分線兩邊等距成立，正確。</div>
+        </div>
+      </div>
+  </div>
+  <div class="printpage">
+    <div class="pageribbon">列印第 35 頁 / 共 44 頁　·　3-4 中垂線與角平分線的性質</div>
+    
+    
+      <div class="qcard">
+        <div class="qhead"><span class="tbadge" style="background:#e76f51">計算</span><span class="qid">3-4-8</span><span class="src">📄 改編·五甲國中</span><span class="pchip">🖨 第 35 頁</span></div>
+        <div class="qbody">如圖，△ABC 中，BD=BE、CD=CF，D、E、F 分別在 BC、AB、AC 上。若 ∠B=70°、∠C=40°，求 ∠EDF 的度數。(需寫出過程)</div>
+        <div class="fig"><svg viewBox="0 0 220 160"><polygon points="30,140 190,140 100,25" fill="#eef6f8" stroke="#1f6f8b" stroke-width="2"/><line x1="110" y1="140" x2="63" y2="86" stroke="#e76f51" stroke-width="1.5"/><line x1="110" y1="140" x2="150" y2="78" stroke="#e76f51" stroke-width="1.5"/><text x="94" y="20" font-size="13">A</text><text x="20" y="150" font-size="13">B</text><text x="192" y="150" font-size="13">C</text><text x="108" y="153" font-size="13">D</text><text x="52" y="86" font-size="13">E</text><text x="152" y="76" font-size="13">F</text></svg></div>
+        
+        <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
+        <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
+        <div class="sol">
+          <div class="ans">✅ 答案：∠EDF = 55°</div>
+          <div class="expl"><b>解析：</b>△BDE 中 BD=BE 為等腰三角形，底角相等：∠BDE = ∠BED = (180°−∠B)÷2 = (180°−70°)÷2 = <b>55°</b>。<br>△CDF 中 CD=CF 為等腰三角形，底角相等：∠CDF = ∠CFD = (180°−∠C)÷2 = (180°−40°)÷2 = <b>70°</b>。<br>D 在直線 BC 上，∠BDE + ∠EDF + ∠CDF = 180°(平角)。<br>∠EDF = 180° − 55° − 70° = <b>55°</b>。<br>驗算：55°+55°+70° = 180°，正確。</div>
+        </div>
+      </div>
+  </div>
+  <div class="printpage">
+    <div class="pageribbon">列印第 36 頁 / 共 44 頁　·　3-4 中垂線與角平分線的性質</div>
+    
+    
+      <div class="qcard">
+        <div class="qhead"><span class="tbadge" style="background:#e76f51">計算</span><span class="qid">3-4-9</span><span class="src">📄 改編·苓雅國中</span><span class="pchip">🖨 第 36 頁</span></div>
+        <div class="qbody">坐標平面上有 A(3,8)、B(5,−8) 兩點，直線 L 為 y 軸。今在 y 軸上找一點 P，使 PA+PB 最小。求 P 點坐標，並求此最小值。(需寫出過程)</div>
+        <div class="fig"><svg viewBox="0 0 220 160"><line x1="110" y1="10" x2="110" y2="150" stroke="#1f6f8b" stroke-width="1.5"/><line x1="20" y1="80" x2="200" y2="80" stroke="#1f6f8b" stroke-width="1"/><circle cx="140" cy="35" r="3" fill="#1f6f8b"/><text x="144" y="33" font-size="12">A(3,8)</text><circle cx="160" cy="128" r="3" fill="#1f6f8b"/><text x="150" y="143" font-size="12">B(5,-8)</text><circle cx="80" cy="35" r="3" fill="#e76f51"/><text x="48" y="33" font-size="12" fill="#e76f51">A'(-3,8)</text><circle cx="110" cy="68" r="3" fill="#e76f51"/><text x="113" y="64" font-size="12" fill="#e76f51">P</text><line x1="80" y1="35" x2="160" y2="128" stroke="#e76f51" stroke-width="1.5" stroke-dasharray="4,3"/></svg></div>
+        
+        <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
+        <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
+        <div class="sol">
+          <div class="ans">✅ 答案：P(0, 2)，最小值 8√5</div>
+          <div class="expl"><b>解析：</b>利用「對稱點最短路徑」：A、B 在 y 軸同側(x 座標皆正)，先取 A 對 y 軸的對稱點 A'(−3, 8)。<br>由中垂線(對稱軸)性質，y 軸上任一點 P 皆滿足 PA = PA'，故 PA + PB = PA' + PB。<br>當 P 落在線段 A'B 與 y 軸的交點時，PA' + PB 最小(三點共線，等於 A'B 長)。<br>求直線 A'B 與 y 軸交點：A'(−3,8)、B(5,−8)，斜率 = (−8−8)/(5−(−3)) = −16/8 = −2。<br>直線：y − 8 = −2(x+3)，即 y = −2x + 2。令 x=0，得 y = 2，故 <b>P(0, 2)</b>。<br>最小值 = A'B = √[(5−(−3))² + (−8−8)²] = √(8² + 16²) = √(64+256) = √320 = <b>8√5</b>。<br>驗算：PA=√(3²+6²)=√45=3√5，PB=√(5²+10²)=√125=5√5，和=8√5=√320=8√5，正確。</div>
+        </div>
+      </div>
+  </div>
+  <div class="printpage">
+    <div class="pageribbon">列印第 37 頁 / 共 44 頁　·　3-4 中垂線與角平分線的性質</div>
+    
+    
+      <div class="qcard">
+        <div class="qhead"><span class="tbadge" style="background:#e76f51">計算</span><span class="qid">3-4-10</span><span class="src">📄 改編·獅甲國中</span><span class="pchip">🖨 第 37 頁</span></div>
+        <div class="qbody">如圖，△ABC 中，直線 L 為 AB 的中垂線，交 AB 於 M，交 BC 於 D，連 AD。已知 BC=10、CA=7。求 △ADC 的周長。(需寫出過程)</div>
+        <div class="fig"><svg viewBox="0 0 220 160"><polygon points="30,30 40,140 190,140" fill="#eef6f8" stroke="#1f6f8b" stroke-width="2"/><line x1="18" y1="88" x2="55" y2="70" stroke="#e76f51" stroke-width="2"/><rect x="31" y="79" width="6" height="6" fill="none" stroke="#e76f51"/><circle cx="35" cy="85" r="3" fill="#e76f51"/><line x1="35" y1="85" x2="88" y2="140" stroke="#1f6f8b" stroke-width="1.5"/><line x1="30" y1="30" x2="88" y2="140" stroke="#1f6f8b" stroke-width="1.5"/><text x="20" y="28" font-size="13">A</text><text x="30" y="152" font-size="13">B</text><text x="192" y="150" font-size="13">C</text><text x="84" y="153" font-size="13">D</text><text x="38" y="82" font-size="13">M</text></svg></div>
+        
+        <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
+        <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
+        <div class="sol">
+          <div class="ans">✅ 答案：△ADC 周長 = 17</div>
+          <div class="expl"><b>解析：</b>D 在 AB 的中垂線 L 上，由中垂線性質知 D 到 A、B 兩端點等距，故 <b>DA = DB</b>。<br>△ADC 周長 = AD + DC + CA。<br>把 AD 換成 DB：AD + DC = DB + DC = BC(因 D 在 BC 上，B、D、C 共線)= 10。<br>所以 △ADC 周長 = BC + CA = 10 + 7 = <b>17</b>。<br>驗算：AD+DC=DB+DC=BC=10，再加 CA=7，共 17，正確。</div>
+        </div>
+      </div>
+  </div>
+  <div class="printpage">
+    <div class="pageribbon">列印第 38 頁 / 共 44 頁　·　3-5 三角形的邊角關係</div>
+    <div class="sechd" id="3-5"><h2>3-5　三角形的邊角關係</h2><p>任兩邊和>第三邊 ‧ 任兩邊差<第三邊 ‧ 構成三角形判別 ‧ 第三邊整數範圍 ‧ 大邊對大角 ‧ 大角對大邊 ‧ 畢氏逆定理判銳/直/鈍角</p></div>
+    
+      <div class="qcard">
+        <div class="qhead"><span class="tbadge" style="background:#457b9d">選擇</span><span class="qid">3-5-1</span><span class="src">📄 改編·翠屏國中</span><span class="pchip">🖨 第 38 頁</span></div>
+        <div class="qbody">下列哪一組數<b>不能</b>作為三角形的三邊長？</div>
+        
+        <div class="opts"><div class="opt"><span class="ol">(A)</span> 6、6、6</div><div class="opt"><span class="ol">(B)</span> 2、5、3</div><div class="opt"><span class="ol">(C)</span> 2、5、5</div><div class="opt"><span class="ol">(D)</span> 0.3、0.4、0.5</div></div>
+        <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
+        <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
+        <div class="sol">
+          <div class="ans">✅ 答案：(B) 2、5、3</div>
+          <div class="expl"><b>解析：</b>判別法：最長邊 < 其他兩邊之和 ⟹ 可構成三角形。<br>(A) 最長6，6+6=12>6 → 可。<br>(B) 最長5，2+3=5，<b>不 &gt; 5（剛好相等）</b> → 不可，三點共線。<br>(C) 最長5，2+5=7>5 → 可。<br>(D) 最長0.5，0.3+0.4=0.7>0.5 → 可。<br>驗算：只有 (B) 兩短邊之和恰等於最長邊，作不出三角形。</div>
+        </div>
+      </div>
+      <div class="qcard">
+        <div class="qhead"><span class="tbadge" style="background:#457b9d">選擇</span><span class="qid">3-5-2</span><span class="src">📄 改編·向上國中</span><span class="pchip">🖨 第 38 頁</span></div>
+        <div class="qbody">有兩條線段分別長 6.6 公分與 10.7 公分。下列哪一個長度的線段能與這兩條線段圍成一個三角形？</div>
+        
+        <div class="opts"><div class="opt"><span class="ol">(A)</span> 4.1</div><div class="opt"><span class="ol">(B)</span> 3.9</div><div class="opt"><span class="ol">(C)</span> 17.2</div><div class="opt"><span class="ol">(D)</span> 17.3</div></div>
+        <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
+        <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
+        <div class="sol">
+          <div class="ans">✅ 答案：(C) 17.2</div>
+          <div class="expl"><b>解析：</b>設第三邊為 x，須滿足 兩邊差 &lt; x &lt; 兩邊和。<br>兩邊差 = 10.7 − 6.6 = 4.1；兩邊和 = 10.7 + 6.6 = 17.3。<br>∴ <b>4.1 &lt; x &lt; 17.3</b>。<br>(A) 4.1 → 等於下界，不符（&gt; 才行）。<br>(B) 3.9 &lt; 4.1 → 太小。<br>(C) 17.2 → 4.1 &lt; 17.2 &lt; 17.3 ✔。<br>(D) 17.3 → 等於上界，不符。<br>驗算：僅 17.2 落在開區間內。</div>
+        </div>
+      </div>
+  </div>
+  <div class="printpage">
+    <div class="pageribbon">列印第 39 頁 / 共 44 頁　·　3-5 三角形的邊角關係</div>
+    
+    
+      <div class="qcard">
+        <div class="qhead"><span class="tbadge" style="background:#457b9d">選擇</span><span class="qid">3-5-3</span><span class="src">📄 改編·向上國中</span><span class="pchip">🖨 第 39 頁</span></div>
+        <div class="qbody">若一個<b>銳角三角形</b>三邊長分別為 15、12、x，且 x 為此三角形的<b>最短邊</b>，則 x 的範圍為何？</div>
+        
+        <div class="opts"><div class="opt"><span class="ol">(A)</span> 3 < x < 27</div><div class="opt"><span class="ol">(B)</span> 3 < x < 12</div><div class="opt"><span class="ol">(C)</span> 12 < x < 15</div><div class="opt"><span class="ol">(D)</span> 9 < x < 12</div></div>
+        <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
+        <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
+        <div class="sol">
+          <div class="ans">✅ 答案：(D) 9 < x < 12</div>
+          <div class="expl"><b>解析：</b>① x 為最短邊 ⟹ x &lt; 12，此時最長邊為 15。<br>② 三角形不等式（配合最長邊15）：15 − 12 &lt; x，即 x &gt; 3。<br>③ 銳角三角形 ⟹ 最長邊15 的對角為銳角，需兩短邊平方和 &gt; 最長邊平方：<br>　12² + x² &gt; 15² ⟹ 144 + x² &gt; 225 ⟹ x² &gt; 81 ⟹ x &gt; 9。<br>綜合 ①②③：<b>9 &lt; x &lt; 12</b>。<br>驗算：取 x=10，邊 10,12,15：10²+12²=244 &gt; 225 → 銳角 ✔，且10為最短 ✔。</div>
+        </div>
+      </div>
+  </div>
+  <div class="printpage">
+    <div class="pageribbon">列印第 40 頁 / 共 44 頁　·　3-5 三角形的邊角關係</div>
+    
+    
+      <div class="qcard">
+        <div class="qhead"><span class="tbadge" style="background:#457b9d">選擇</span><span class="qid">3-5-4</span><span class="src">📄 改編·苓雅國中/鼎金國中</span><span class="pchip">🖨 第 40 頁</span></div>
+        <div class="qbody">在 △ABC 中，AB=5、BC=6、CA=7，則 ∠A、∠B、∠C 的大小關係為何？</div>
+        <div class="fig"><svg viewBox="0 0 220 160"><polygon points="30,140 190,130 70,25" fill="#eef6f8" stroke="#1f6f8b" stroke-width="2"/><text x="58" y="20" font-size="13">A</text><text x="14" y="148" font-size="13">B</text><text x="194" y="132" font-size="13">C</text><text x="14" y="92" font-size="12" fill="#e76f51">5</text><text x="108" y="152" font-size="12" fill="#e76f51">6</text><text x="140" y="70" font-size="12" fill="#e76f51">7</text></svg></div>
+        <div class="opts"><div class="opt"><span class="ol">(A)</span> ∠A > ∠B > ∠C</div><div class="opt"><span class="ol">(B)</span> ∠B > ∠A > ∠C</div><div class="opt"><span class="ol">(C)</span> ∠C > ∠B > ∠A</div><div class="opt"><span class="ol">(D)</span> ∠A > ∠C > ∠B</div></div>
+        <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
+        <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
+        <div class="sol">
+          <div class="ans">✅ 答案：(B) ∠B > ∠A > ∠C</div>
+          <div class="expl"><b>解析：</b>利用<b>大邊對大角</b>：每個角的大小由它的<b>對邊</b>決定。<br>∠A 的對邊為 BC=6；∠B 的對邊為 CA=7；∠C 的對邊為 AB=5。<br>對邊由大到小：CA(7) &gt; BC(6) &gt; AB(5)。<br>∴ 所對的角由大到小：<b>∠B &gt; ∠A &gt; ∠C</b>。<br>驗算：最長邊 CA=7 對 ∠B（最大），最短邊 AB=5 對 ∠C（最小），合理。</div>
+        </div>
+      </div>
+  </div>
+  <div class="printpage">
+    <div class="pageribbon">列印第 41 頁 / 共 44 頁　·　3-5 三角形的邊角關係</div>
+    
+    
+      <div class="qcard">
+        <div class="qhead"><span class="tbadge" style="background:#457b9d">選擇</span><span class="qid">3-5-5</span><span class="src">📄 改編·中正國中/四育國中</span><span class="pchip">🖨 第 41 頁</span></div>
+        <div class="qbody">如圖，四邊形 ABCD 中各角度數如圖所標（△ABC 中 ∠ABC=55°、∠BCA=65°；△ACD 中 ∠DCA=55°、∠ADC=65°）。則 AB、BC、CD、DA 四邊中，哪一邊<b>最長</b>？</div>
+        <div class="fig"><svg viewBox="0 0 220 160"><polygon points="25,80 110,20 195,80 110,145" fill="#eef6f8" stroke="#1f6f8b" stroke-width="2"/><line x1="25" y1="80" x2="195" y2="80" stroke="#e76f51" stroke-width="1.5" stroke-dasharray="4 3"/><text x="104" y="16" font-size="13">A</text><text x="6" y="84" font-size="13">B</text><text x="200" y="84" font-size="13">C</text><text x="104" y="158" font-size="13">D</text><text x="96" y="75" font-size="11" fill="#1f6f8b">AC</text></svg></div>
+        <div class="opts"><div class="opt"><span class="ol">(A)</span> AB</div><div class="opt"><span class="ol">(B)</span> BC</div><div class="opt"><span class="ol">(C)</span> CD</div><div class="opt"><span class="ol">(D)</span> DA</div></div>
+        <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
+        <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
+        <div class="sol">
+          <div class="ans">✅ 答案：(A) AB</div>
+          <div class="expl"><b>解析：</b>以對角線 AC 分成兩個三角形，各自用<b>大角對大邊</b>。<br>△ABC 中：∠BAC = 180° − 55° − 65° = 60°。角由大到小 ∠BCA(65°) &gt; ∠BAC(60°) &gt; ∠ABC(55°)，對邊：<b>AB &gt; BC &gt; AC</b>。<br>△ACD 中：∠DAC = 180° − 55° − 65° = 60°。角由大到小 ∠ADC(65°) &gt; ∠DAC(60°) &gt; ∠DCA(55°)，對邊：<b>AC &gt; CD &gt; AD</b>。<br>串起來：AB &gt; BC &gt; AC &gt; CD &gt; AD。<br>∴ <b>AB 最長</b>。驗算：AB 對 65°、AC 對 60°，故 AB &gt; AC，再由第二式 AC 大於 CD、AD，故 AB 為最大。</div>
+        </div>
+      </div>
+  </div>
+  <div class="printpage">
+    <div class="pageribbon">列印第 42 頁 / 共 44 頁　·　3-5 三角形的邊角關係</div>
+    
+    
+      <div class="qcard">
+        <div class="qhead"><span class="tbadge" style="background:#457b9d">選擇</span><span class="qid">3-5-6</span><span class="src">📄 改編·誠正國中/苓雅國中</span><span class="pchip">🖨 第 42 頁</span></div>
+        <div class="qbody">小惠家、飲料店、學校三個地點<b>不在同一直線上</b>。已知小惠家到飲料店 1.2 公里，飲料店到學校 3.4 公里，則小惠家到學校的距離可能是下列何者？</div>
+        
+        <div class="opts"><div class="opt"><span class="ol">(A)</span> 3.5 公里</div><div class="opt"><span class="ol">(B)</span> 2 公里</div><div class="opt"><span class="ol">(C)</span> 2.2 公里</div><div class="opt"><span class="ol">(D)</span> 4.6 公里</div></div>
+        <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
+        <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
+        <div class="sol">
+          <div class="ans">✅ 答案：(A) 3.5 公里</div>
+          <div class="expl"><b>解析：</b>三地不共線 ⟹ 三段可構成三角形，設家到學校為 d。<br>由三角形不等式：兩邊差 &lt; d &lt; 兩邊和。<br>3.4 − 1.2 = 2.2，3.4 + 1.2 = 4.6 ⟹ <b>2.2 &lt; d &lt; 4.6</b>。<br>(A) 3.5 → 2.2 &lt; 3.5 &lt; 4.6 ✔。<br>(B) 2 &lt; 2.2 → 太小。<br>(C) 2.2 → 等於下界，會共線，不符。<br>(D) 4.6 → 等於上界，會共線，不符。<br>驗算：僅 3.5 嚴格落在開區間內。</div>
+        </div>
+      </div>
+      <div class="qcard">
+        <div class="qhead"><span class="tbadge" style="background:#2a9d8f">填充</span><span class="qid">3-5-7</span><span class="src">📄 改編·中港高中國中部/楠梓國中</span><span class="pchip">🖨 第 42 頁</span></div>
+        <div class="qbody">已知三線段長 x−2、x−3、x−4 可以構成一個三角形，求 x 的範圍。</div>
+        
+        
+        <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
+        <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
+        <div class="sol">
+          <div class="ans">✅ 答案：x > 5</div>
+          <div class="expl"><b>解析：</b>三線段由大到小為 x−2 &gt; x−3 &gt; x−4，最長邊為 x−2。<br>① 每段須為正：最短邊 x−4 &gt; 0 ⟹ x &gt; 4。<br>② 構成三角形只需<b>最長邊 &lt; 其他兩邊之和</b>：<br>　x−2 &lt; (x−3) + (x−4) = 2x−7<br>　x−2 &lt; 2x−7 ⟹ 5 &lt; x ⟹ x &gt; 5。<br>綜合 x &gt; 5（已含 x &gt; 4）。<br>驗算：取 x=6，三邊 4、3、2，3+2=5 &gt; 4 ✔；取 x=5 則三邊 3、2、1，1+2=3 恰等於3，不成三角形，故須嚴格 x &gt; 5。</div>
+        </div>
+      </div>
+  </div>
+  <div class="printpage">
+    <div class="pageribbon">列印第 43 頁 / 共 44 頁　·　3-5 三角形的邊角關係</div>
+    
+    
+      <div class="qcard">
+        <div class="qhead"><span class="tbadge" style="background:#457b9d">選擇</span><span class="qid">3-5-8</span><span class="src">📄 改編·四育國中</span><span class="pchip">🖨 第 43 頁</span></div>
+        <div class="qbody">如圖，四邊形 ABCD 中 AB=AD=5，BC=8，CD=3，連對角線 BD。若 BD 為整數，則 BD 的<b>最大值</b>為何？</div>
+        <div class="fig"><svg viewBox="0 0 220 160"><polygon points="60,20 20,90 120,140 190,70" fill="#eef6f8" stroke="#1f6f8b" stroke-width="2"/><line x1="20" y1="90" x2="190" y2="70" stroke="#e76f51" stroke-width="1.5" stroke-dasharray="4 3"/><text x="56" y="16" font-size="13">A</text><text x="4" y="94" font-size="13">B</text><text x="116" y="154" font-size="13">C</text><text x="194" y="70" font-size="13">D</text><text x="32" y="48" font-size="11" fill="#e76f51">5</text><text x="128" y="38" font-size="11" fill="#e76f51">5</text><text x="64" y="128" font-size="11" fill="#e76f51">8</text><text x="162" y="118" font-size="11" fill="#e76f51">3</text></svg></div>
+        <div class="opts"><div class="opt"><span class="ol">(A)</span> 7</div><div class="opt"><span class="ol">(B)</span> 8</div><div class="opt"><span class="ol">(C)</span> 9</div><div class="opt"><span class="ol">(D)</span> 10</div></div>
+        <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
+        <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
+        <div class="sol">
+          <div class="ans">✅ 答案：(C) 9</div>
+          <div class="expl"><b>解析：</b>對角線 BD 同時是 △ABD 與 △BCD 的一邊，需<b>兩邊都滿足三角形不等式</b>。<br>△ABD（AB=AD=5）：|5−5| &lt; BD &lt; 5+5 ⟹ 0 &lt; BD &lt; 10。<br>△BCD（BC=8、CD=3）：|8−3| &lt; BD &lt; 8+3 ⟹ 5 &lt; BD &lt; 11。<br>取交集：<b>5 &lt; BD &lt; 10</b>。<br>BD 為整數 ⟹ BD ∈ {6,7,8,9}，最大值為 <b>9</b>。<br>驗算：BD=9 時，△ABD:9&lt;10 ✔；△BCD:5&lt;9&lt;11 ✔；BD=10 則不 &lt; 10，出局。</div>
+        </div>
+      </div>
+  </div>
+  <div class="printpage">
+    <div class="pageribbon">列印第 44 頁 / 共 44 頁　·　3-5 三角形的邊角關係</div>
+    
+    
+      <div class="qcard">
+        <div class="qhead"><span class="tbadge" style="background:#e76f51">計算</span><span class="qid">3-5-9</span><span class="src">📄 改編·中正國中/五甲國中</span><span class="pchip">🖨 第 44 頁</span></div>
+        <div class="qbody">如圖，四邊形 ABCD 中，AB=24、BC=12、CD=20、AD=14，連對角線 AC。(1) 求 AC 的範圍。(2) 若 AC 為整數，求 AC 的最小值與最大值。</div>
+        <div class="fig"><svg viewBox="0 0 220 160"><polygon points="25,70 100,15 195,60 110,145" fill="#eef6f8" stroke="#1f6f8b" stroke-width="2"/><line x1="25" y1="70" x2="195" y2="60" stroke="#e76f51" stroke-width="1.5" stroke-dasharray="4 3"/><text x="6" y="74" font-size="13">A</text><text x="96" y="12" font-size="13">B</text><text x="199" y="60" font-size="13">C</text><text x="106" y="158" font-size="13">D</text><text x="50" y="36" font-size="11" fill="#e76f51">24</text><text x="150" y="30" font-size="11" fill="#e76f51">12</text><text x="162" y="112" font-size="11" fill="#e76f51">20</text><text x="52" y="120" font-size="11" fill="#e76f51">14</text></svg></div>
+        
+        <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
+        <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
+        <div class="sol">
+          <div class="ans">✅ 答案：(1) 12 < AC < 34　(2) 最小 13、最大 33</div>
+          <div class="expl"><b>解析：</b>AC 是 △ABC 與 △ACD 的公共邊，兩三角形都要滿足三角形不等式。<br><b>△ABC</b>（AB=24、BC=12）：|24−12| &lt; AC &lt; 24+12 ⟹ 12 &lt; AC &lt; 36。<br><b>△ACD</b>（CD=20、AD=14）：|20−14| &lt; AC &lt; 20+14 ⟹ 6 &lt; AC &lt; 34。<br>取交集：<b>12 &lt; AC &lt; 34</b>。<br>(2) 整數 AC ∈ {13,14,…,33}，故最小值 <b>13</b>、最大值 <b>33</b>。<br>驗算：AC=13 時，△ABC:12&lt;13&lt;36 ✔、△ACD:6&lt;13&lt;34 ✔；AC=33 時，△ABC:33&lt;36 ✔、△ACD:33&lt;34 ✔；AC=34 則不 &lt; 34，出局。</div>
+        </div>
+      </div>
+      <div class="qcard">
+        <div class="qhead"><span class="tbadge" style="background:#e76f51">計算</span><span class="qid">3-5-10</span><span class="src">📄 自編</span><span class="pchip">🖨 第 44 頁</span></div>
+        <div class="qbody">利用<b>畢氏定理的逆定理</b>判斷下列各三角形是銳角、直角還是鈍角三角形（比較兩短邊平方和與最長邊平方）：<br>(1) 三邊 7、24、25　(2) 三邊 6、8、11　(3) 三邊 5、12、12</div>
+        
+        
+        <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
+        <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
+        <div class="sol">
+          <div class="ans">✅ 答案：(1) 直角三角形　(2) 鈍角三角形　(3) 銳角三角形</div>
+          <div class="expl"><b>解析：</b>設最長邊為 c、兩短邊為 a、b，比較 a²+b² 與 c²：<br>‧ a²+b² = c² ⟹ 直角三角形（c 的對角為直角）<br>‧ a²+b² &lt; c² ⟹ 鈍角三角形（c 的對角為鈍角）<br>‧ a²+b² &gt; c² ⟹ 銳角三角形<br><br>(1) 7²+24² = 49+576 = 625 = 25² ⟹ 相等 ⟹ <b>直角三角形</b>。<br>(2) 6²+8² = 36+64 = 100，11² = 121；100 &lt; 121 ⟹ <b>鈍角三角形</b>。<br>(3) 5²+12² = 25+144 = 169，最長邊 12²=144；169 &gt; 144 ⟹ <b>銳角三角形</b>。<br>驗算：三題最長邊各為 25、11、12，平方比較無誤。</div>
+        </div>
+      </div>
+  </div>
+</div>
+<a href="#top" class="top">↑</a>
+<script>
+function tog(b){var s=b.nextElementSibling;var on=s.classList.toggle('show');b.classList.toggle('on',on);b.textContent=on?'收合解析 ▲':'顯示解析 ▼';}
+</script></body></html>
