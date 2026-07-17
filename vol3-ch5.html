@@ -1,0 +1,243 @@
+<!DOCTYPE html><html lang="zh-Hant"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>國二上 第5章 統計資料處理 · 會考分節練習 · 分節互動練習</title><style>
+:root{--primary:#1f6f8b;--primary-dark:#155263;--accent:#e76f51;--bg:#f6f4ef;--card:#fff;--ink:#2b2b2b;--line:#e5e1d8}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC","Microsoft JhengHei",sans-serif;line-height:1.8;font-size:16px}
+.wrap{max-width:900px;margin:0 auto;padding:0 18px 70px}
+code{background:#eae6dc;padding:1px 5px;border-radius:4px;font-family:Menlo,Consolas,monospace;font-size:1em}
+.fig{margin:10px 0;text-align:center}
+.fig svg{background:#fff;border:1px solid var(--line);border-radius:8px;width:100%;max-width:300px;height:auto;max-height:5cm}
+.opts{margin:8px 0;display:flex;flex-wrap:wrap;gap:8px 14px}
+.opt{padding:4px 14px;background:#f4f2ec;border-radius:6px;flex:0 0 auto}
+.ol{font-weight:700;color:var(--primary)}
+
+header.hero{background:linear-gradient(135deg,var(--primary),var(--primary-dark));color:#fff;padding:40px 18px 34px;text-align:center;margin-bottom:22px}
+header.hero h1{margin:0 0 8px;font-size:18px}
+header.hero p{margin:3px 0;opacity:.92;font-size:16px}
+.toc{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin:16px 0}
+.toc a{background:#fff;border:1px solid var(--line);border-radius:20px;padding:6px 16px;text-decoration:none;color:var(--primary-dark);font-size:16px;box-shadow:0 1px 4px rgba(0,0,0,.05)}
+.toc a:hover{background:var(--primary);color:#fff}
+.sechd h2{display:inline-block;background:var(--primary);color:#fff;padding:6px 20px;border-radius:26px;margin:0 0 4px;font-size:18px}
+.sechd p{color:#6b7280;font-size:16px;margin:2px 0 10px}
+.qcard{background:var(--card);border-radius:14px;padding:18px 20px;margin:14px 0;box-shadow:0 2px 10px rgba(0,0,0,.06)}
+.qhead{display:flex;align-items:center;gap:8px;margin-bottom:8px;flex-wrap:wrap}
+.tbadge{color:#fff;font-size:16px;font-weight:700;padding:2px 12px;border-radius:12px}
+.qid{font-weight:700;color:var(--primary-dark);font-size:16px}
+.src{margin-left:auto;font-size:16px;color:#fff;background:var(--accent);padding:2px 12px;border-radius:12px;font-weight:700;white-space:nowrap}
+.pchip{font-size:16px;color:#fff;background:var(--primary-dark);padding:2px 12px;border-radius:12px;font-weight:700;white-space:nowrap}
+@media(max-width:640px){.src{margin-left:0}}
+.work{margin-top:12px;border:1.5px dashed #b9c7cd;border-radius:8px;min-height:5cm;width:15cm;max-width:100%;box-sizing:border-box;padding:8px 12px;background:repeating-linear-gradient(180deg,transparent,transparent 27px,#eef1f2 27px,#eef1f2 28px)}
+.wlabel{font-size:16px;color:#8a99a0;font-weight:700}
+.printpage{margin:0 0 8px}
+.pageribbon{display:none;text-align:center;font-size:16px;color:#8a99a0;border-bottom:1px dashed #cbd5da;margin:22px 0 10px;padding-bottom:4px}
+.qbody{font-size:16px}
+.revbtn{margin-top:12px;background:var(--accent);color:#fff;border:none;border-radius:22px;padding:8px 20px;font-size:16px;font-weight:700;cursor:pointer;box-shadow:0 2px 6px rgba(231,111,81,.35);transition:.15s}
+.revbtn:hover{filter:brightness(1.05);transform:translateY(-1px)}
+.revbtn.on{background:var(--primary)}
+.sol{display:none;margin-top:12px;padding:14px 16px;background:#eef6f8;border-left:5px solid var(--primary);border-radius:8px;font-size:16px}
+.sol.show{display:block;animation:fade .25s ease}
+@keyframes fade{from{opacity:0;transform:translateY(-4px)}to{opacity:1}}
+.ans{font-weight:700;color:var(--primary-dark);margin-bottom:8px;font-size:17px}
+.expl{color:#333;font-size:16px}
+.top{position:fixed;right:16px;bottom:16px;background:var(--primary);color:#fff;text-decoration:none;width:44px;height:44px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:18px;box-shadow:0 4px 12px rgba(0,0,0,.25);opacity:.85}
+.tips{background:#fff8ec;border-left:5px solid var(--accent);border-radius:10px;padding:12px 16px;margin:16px 0;font-size:16px;color:#7a5a3a}
+@media print{
+  @page{margin:1.4cm 1.2cm}
+  body{background:#fff;font-size:16px}
+  header.hero,.toc,.tips,.top{display:none!important}
+  .wrap{max-width:none;padding:0}
+  .printpage{page-break-before:always;break-before:page}
+  .printpage:first-of-type{page-break-before:avoid;break-before:avoid}
+  .pageribbon{display:block}
+  .qcard{box-shadow:none;border:1px solid #d7d2c7;page-break-inside:avoid;break-inside:avoid;margin:8px 0;padding:10px 12px}
+  .revbtn,.sol{display:none!important}
+  .work{min-height:5cm}
+}
+
+header.hero{position:relative;overflow:hidden;background:linear-gradient(120deg,#7b2ff7,#f107a3,#ff8a3d,#ffd166);background-size:280% 280%;animation:flow 14s ease infinite;color:#fff;padding:22px 18px 34px;text-align:center;margin-bottom:22px}
+@keyframes flow{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}
+header.hero h1{position:relative;text-shadow:0 3px 14px rgba(0,0,0,.18)}
+header.hero p{position:relative}
+header.hero .heroback{position:relative;display:inline-flex;align-items:center;gap:7px;color:#fff;text-decoration:none;font-weight:700;font-size:14px;background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.5);padding:7px 15px;border-radius:999px;backdrop-filter:blur(3px);transition:.15s}
+header.hero .heroback:hover{background:#fff;color:#155263}
+header.hero .toprow{position:relative;display:flex;justify-content:flex-start;margin-bottom:6px}
+.msym{position:absolute;color:rgba(255,255,255,.22);font-weight:800;pointer-events:none;user-select:none;animation:floaty 7s ease-in-out infinite}
+.msym.s1{font-size:64px;left:4%;top:38%;animation-delay:0s}
+.msym.s2{font-size:44px;left:22%;top:10%;animation-delay:1.2s}
+.msym.s3{font-size:52px;right:8%;top:16%;animation-delay:.6s}
+.msym.s4{font-size:38px;right:24%;bottom:12%;animation-delay:2s}
+.msym.s5{font-size:48px;right:40%;top:52%;animation-delay:1.6s}
+.msym.s6{font-size:40px;left:12%;bottom:14%;animation-delay:.9s}
+@keyframes floaty{0%,100%{transform:translateY(0) rotate(-4deg)}50%{transform:translateY(-12px) rotate(4deg)}}
+@media print{.msym{display:none}header.hero{animation:none;background:#155263}}
+</style></head><body id="top">
+<header class="hero">
+<span class="msym s1">△</span><span class="msym s2">π</span><span class="msym s3">∑</span><span class="msym s4">√</span><span class="msym s5">∠</span><span class="msym s6">%</span>
+<div class="toprow"><a class="heroback" href="vol3.html">← 返回第三冊 Back to Vol.3</a></div>
+<h1>國二上 第5章 統計資料處理 · 會考分節練習 · 分節互動練習</h1>
+<p>依講義觀念分節 ‧ 每題附「計算 / 作答區」可書寫；點「顯示解析」才展開答案詳解</p>
+<p>🖨 每題右上角標示列印頁碼（全卷共 9 頁），螢幕與紙本頁碼一致</p>
+</header>
+<div class="wrap">
+<div class="toc"><a href="#5-1">5-1 相對次數分配表與折線圖</a><a href="#5-2">5-2 累積次數分配表與折線圖</a><a href="#5-3">5-3 累積相對次數分配表與折線圖</a></div>
+<div class="tips">💡 老師可直接用「計算 / 作答區」板書講解，不一定要展開解析。用瀏覽器列印（⌘/Ctrl+P）即為學生練習卷：自動分頁、隱藏答案、保留作答空間。圖形為示意圖，請以題目數據為準。</div>
+
+  <div class="printpage">
+    <div class="pageribbon">列印第 1 頁 / 共 9 頁　·　5-1 相對次數分配表與折線圖</div>
+    <div class="sechd" id="5-1"><h2>5-1　相對次數分配表與折線圖</h2><p>相對次數的意義與計算 ‧ 相對次數折線圖</p></div>
+    
+      <div class="qcard">
+        <div class="qhead"><span class="tbadge" style="background:#2a9d8f">填充</span><span class="qid">5-1-1</span><span class="src">📄 改編·中小學題庫</span><span class="pchip">🖨 第 1 頁</span></div>
+        <div class="qbody">下表為八年一班 40 位學生的數學成績次數分配表：<br>組別(分)　40~50：次數 2<br>50~60：4<br>60~70：8<br>70~80：12<br>80~90：10<br>90~100：4<br>（全班共 40 人）<br>試求「70~80 分」這一組的相對次數（以百分率表示）。</div>
+        
+        
+        <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
+        <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
+        <div class="sol">
+          <div class="ans">✅ 答案：30%</div>
+          <div class="expl"><b>解析：</b>相對次數 = 該組次數 ÷ 全體次數。<br>70~80 分這組次數為 12，全班 40 人：<br>相對次數 = 12/40 = 0.3 = <b>30%</b>。</div>
+        </div>
+      </div>
+  </div>
+  <div class="printpage">
+    <div class="pageribbon">列印第 2 頁 / 共 9 頁　·　5-1 相對次數分配表與折線圖</div>
+    
+    
+      <div class="qcard">
+        <div class="qhead"><span class="tbadge" style="background:#457b9d">選擇</span><span class="qid">5-1-2</span><span class="src">📄 改編·中小學題庫</span><span class="pchip">🖨 第 2 頁</span></div>
+        <div class="qbody">承上表（八年一班 40 人成績次數分配表）。下列敘述何者<b>正確</b>？<br>各組次數為 40~50：2、50~60：4、60~70：8、70~80：12、80~90：10、90~100：4。</div>
+        
+        <div class="opts"><div class="opt"><span class="ol">(A)</span> 相對次數最大的組別是 80~90 分</div><div class="opt"><span class="ol">(B)</span> 60~70 分這組的相對次數是 20%</div><div class="opt"><span class="ol">(C)</span> 各組相對次數的總和小於 1</div><div class="opt"><span class="ol">(D)</span> 90~100 分這組的相對次數是 4%</div></div>
+        <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
+        <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
+        <div class="sol">
+          <div class="ans">✅ 答案：(B) 60~70 分這組的相對次數是 20%</div>
+          <div class="expl"><b>解析：</b>各組相對次數：40~50=2/40=5%、50~60=4/40=10%、60~70=8/40=<b>20%</b>、70~80=12/40=30%、80~90=10/40=25%、90~100=4/40=10%。<br>(A) 相對次數最大是 70~80 分(30%)，錯。<br>(B) 60~70 分為 20%，<b>正確</b>。<br>(C) 各組相對次數總和必為 1(100%)，錯。<br>(D) 90~100 分為 10%，錯。<br>故選【B】。</div>
+        </div>
+      </div>
+  </div>
+  <div class="printpage">
+    <div class="pageribbon">列印第 3 頁 / 共 9 頁　·　5-1 相對次數分配表與折線圖</div>
+    
+    
+      <div class="qcard">
+        <div class="qhead"><span class="tbadge" style="background:#e76f51">計算</span><span class="qid">5-1-3</span><span class="src">📄 改編·中小學題庫</span><span class="pchip">🖨 第 3 頁</span></div>
+        <div class="qbody">某校八年級某班共 50 人參加英語聽力測驗，已知「80~90 分」這一組的相對次數為 24%。試問這一組有多少人？並說明相對次數折線圖的橫軸應標示什麼。</div>
+        
+        
+        <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
+        <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
+        <div class="sol">
+          <div class="ans">✅ 答案：12 人；橫軸標示各組的組中點（成績）</div>
+          <div class="expl"><b>解析：</b>由相對次數 = 該組次數 ÷ 全體次數，得<br>該組次數 = 相對次數 × 全體次數 = 24% × 50 = 0.24 × 50 = <b>12（人）</b>。<br>繪製相對次數折線圖時，橫軸標示各組的<b>組中點</b>（成績，單位：分），縱軸標示相對次數（%），再將 (組中點, 相對次數) 各點依序連線。</div>
+        </div>
+      </div>
+  </div>
+  <div class="printpage">
+    <div class="pageribbon">列印第 4 頁 / 共 9 頁　·　5-2 累積次數分配表與折線圖</div>
+    <div class="sechd" id="5-2"><h2>5-2　累積次數分配表與折線圖</h2><p>累積次數的意義與計算 ‧ 累積次數折線圖</p></div>
+    
+      <div class="qcard">
+        <div class="qhead"><span class="tbadge" style="background:#2a9d8f">填充</span><span class="qid">5-2-1</span><span class="src">📄 改編·中小學題庫</span><span class="pchip">🖨 第 4 頁</span></div>
+        <div class="qbody">下表為八年一班 40 位學生的數學成績次數分配表：<br>組別(分)　40~50：2<br>50~60：4<br>60~70：8<br>70~80：12<br>80~90：10<br>90~100：4<br>試求成績「未達 80 分」（即 80 分以下）的累積次數為多少人？</div>
+        
+        
+        <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
+        <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
+        <div class="sol">
+          <div class="ans">✅ 答案：26 人</div>
+          <div class="expl"><b>解析：</b>累積次數是由最低組起，逐組把次數累加。<br>未達 80 分 = 40~50 到 70~80 各組次數相加：<br>2 + 4 + 8 + 12 = <b>26（人）</b>。</div>
+        </div>
+      </div>
+  </div>
+  <div class="printpage">
+    <div class="pageribbon">列印第 5 頁 / 共 9 頁　·　5-2 累積次數分配表與折線圖</div>
+    
+    
+      <div class="qcard">
+        <div class="qhead"><span class="tbadge" style="background:#457b9d">選擇</span><span class="qid">5-2-2</span><span class="src">📄 改編·中小學題庫</span><span class="pchip">🖨 第 5 頁</span></div>
+        <div class="qbody">承上表（八年一班 40 人）。由累積次數判斷，成績「未達 70 分」的學生共有幾人？</div>
+        
+        <div class="opts"><div class="opt"><span class="ol">(A)</span> 6 人</div><div class="opt"><span class="ol">(B)</span> 14 人</div><div class="opt"><span class="ol">(C)</span> 26 人</div><div class="opt"><span class="ol">(D)</span> 36 人</div></div>
+        <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
+        <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
+        <div class="sol">
+          <div class="ans">✅ 答案：(B) 14 人</div>
+          <div class="expl"><b>解析：</b>未達 70 分 = 40~50、50~60、60~70 三組次數相加：<br>2 + 4 + 8 = <b>14（人）</b>。<br>故選【B】。</div>
+        </div>
+      </div>
+  </div>
+  <div class="printpage">
+    <div class="pageribbon">列印第 6 頁 / 共 9 頁　·　5-2 累積次數分配表與折線圖</div>
+    
+    
+      <div class="qcard">
+        <div class="qhead"><span class="tbadge" style="background:#e76f51">計算</span><span class="qid">5-2-3</span><span class="src">📄 改編·中小學題庫</span><span class="pchip">🖨 第 6 頁</span></div>
+        <div class="qbody">已知某班成績的累積次數分配表中，「未達 80 分」的累積次數為 26 人，「未達 70 分」的累積次數為 14 人。試問「70~80 分」這一組有多少人？並說明如何由累積次數還原各組次數。</div>
+        
+        
+        <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
+        <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
+        <div class="sol">
+          <div class="ans">✅ 答案：12 人</div>
+          <div class="expl"><b>解析：</b>相鄰兩個累積次數相減，即為中間那一組的次數。<br>「70~80 分」這組次數 = （未達 80 分的累積次數）−（未達 70 分的累積次數）<br>= 26 − 14 = <b>12（人）</b>。<br>因此只要把相鄰累積次數相減，就能還原每一組的次數。</div>
+        </div>
+      </div>
+  </div>
+  <div class="printpage">
+    <div class="pageribbon">列印第 7 頁 / 共 9 頁　·　5-3 累積相對次數分配表與折線圖</div>
+    <div class="sechd" id="5-3"><h2>5-3　累積相對次數分配表與折線圖</h2><p>累積相對次數 ‧ 由累積相對次數判讀名次與中位數</p></div>
+    
+      <div class="qcard">
+        <div class="qhead"><span class="tbadge" style="background:#2a9d8f">填充</span><span class="qid">5-3-1</span><span class="src">📄 改編·中小學題庫</span><span class="pchip">🖨 第 7 頁</span></div>
+        <div class="qbody">下表為八年一班 40 位學生的數學成績次數分配表：<br>組別(分)　40~50：2<br>50~60：4<br>60~70：8<br>70~80：12<br>80~90：10<br>90~100：4<br>試求成績「未達 80 分」的累積相對次數（以百分率表示）。</div>
+        
+        
+        <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
+        <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
+        <div class="sol">
+          <div class="ans">✅ 答案：65%</div>
+          <div class="expl"><b>解析：</b>累積相對次數 = 累積次數 ÷ 全體次數。<br>未達 80 分的累積次數 = 2+4+8+12 = 26，全班 40 人：<br>累積相對次數 = 26/40 = 0.65 = <b>65%</b>。</div>
+        </div>
+      </div>
+  </div>
+  <div class="printpage">
+    <div class="pageribbon">列印第 8 頁 / 共 9 頁　·　5-3 累積相對次數分配表與折線圖</div>
+    
+    
+      <div class="qcard">
+        <div class="qhead"><span class="tbadge" style="background:#457b9d">選擇</span><span class="qid">5-3-2</span><span class="src">📄 改編·中小學題庫</span><span class="pchip">🖨 第 8 頁</span></div>
+        <div class="qbody">承上表（八年一班 40 人）。各組累積相對次數依序為：未達 50 分 5%、未達 60 分 15%、未達 70 分 35%、未達 80 分 65%、未達 90 分 90%、未達 100 分 100%。若成績由高到低排名，則全班成績最好的前 10%（即前 4 名）大約落在哪一組？</div>
+        
+        <div class="opts"><div class="opt"><span class="ol">(A)</span> 70~80 分</div><div class="opt"><span class="ol">(B)</span> 80~90 分</div><div class="opt"><span class="ol">(C)</span> 90~100 分</div><div class="opt"><span class="ol">(D)</span> 無法判斷</div></div>
+        <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
+        <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
+        <div class="sol">
+          <div class="ans">✅ 答案：(C) 90~100 分</div>
+          <div class="expl"><b>解析：</b>「未達 90 分」的累積相對次數為 90%，表示成績在 90 分以上的學生佔 100% − 90% = 10%，恰為前 10%（40×10% = 4 人）。<br>因此成績最好的前 10% 落在 <b>90~100 分</b>這組。<br>故選【C】。</div>
+        </div>
+      </div>
+  </div>
+  <div class="printpage">
+    <div class="pageribbon">列印第 9 頁 / 共 9 頁　·　5-3 累積相對次數分配表與折線圖</div>
+    
+    
+      <div class="qcard">
+        <div class="qhead"><span class="tbadge" style="background:#e76f51">計算</span><span class="qid">5-3-3</span><span class="src">📄 改編·中小學題庫</span><span class="pchip">🖨 第 9 頁</span></div>
+        <div class="qbody">承上表，各組累積相對次數依序為：未達 60 分 15%、未達 70 分 35%、未達 80 分 65%、未達 90 分 90%。已知全班 40 人，試判斷這班數學成績的中位數落在哪一組？並說明理由。</div>
+        
+        
+        <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
+        <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
+        <div class="sol">
+          <div class="ans">✅ 答案：落在 70~80 分這組</div>
+          <div class="expl"><b>解析：</b>中位數是第 20、21 名的成績（40 人取中間）。用累積相對次數看 50% 落在哪一組：<br>「未達 70 分」累積相對次數為 35%（不足 50%），「未達 80 分」累積相對次數為 65%（已超過 50%）。<br>所以第 50 百分位（中位數）落在 <b>70~80 分</b>這組。</div>
+        </div>
+      </div>
+  </div>
+</div>
+<a href="#top" class="top">↑</a>
+<script>
+function tog(b){var s=b.nextElementSibling;var on=s.classList.toggle('show');b.classList.toggle('on',on);b.textContent=on?'收合解析 ▲':'顯示解析 ▼';}
+</script></body></html>
