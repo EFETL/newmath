@@ -1,0 +1,1229 @@
+<!DOCTYPE html><html lang="zh-Hant"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>國二上數學 × 會考歷屆試題　分節對應練習 · 分節互動練習</title><style>
+:root{--primary:#1f6f8b;--primary-dark:#155263;--accent:#e76f51;--bg:#f6f4ef;--card:#fff;--ink:#2b2b2b;--line:#e5e1d8}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC","Microsoft JhengHei",sans-serif;line-height:1.8;font-size:16px}
+.wrap{max-width:900px;margin:0 auto;padding:0 18px 70px}
+code{background:#eae6dc;padding:1px 5px;border-radius:4px;font-family:Menlo,Consolas,monospace;font-size:1em}
+.fig{margin:10px 0;text-align:center}
+.fig svg{background:#fff;border:1px solid var(--line);border-radius:8px;width:100%;max-width:300px;height:auto;max-height:5cm}
+.opts{margin:8px 0;display:flex;flex-wrap:wrap;gap:8px 14px}
+.opt{padding:4px 14px;background:#f4f2ec;border-radius:6px;flex:0 0 auto}
+.ol{font-weight:700;color:var(--primary)}
+
+header.hero{background:linear-gradient(135deg,var(--primary),var(--primary-dark));color:#fff;padding:40px 18px 34px;text-align:center;margin-bottom:22px}
+header.hero h1{margin:0 0 8px;font-size:18px}
+header.hero p{margin:3px 0;opacity:.92;font-size:16px}
+.toc{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin:16px 0}
+.toc a{background:#fff;border:1px solid var(--line);border-radius:20px;padding:6px 16px;text-decoration:none;color:var(--primary-dark);font-size:16px;box-shadow:0 1px 4px rgba(0,0,0,.05)}
+.toc a:hover{background:var(--primary);color:#fff}
+.sechd h2{display:inline-block;background:var(--primary);color:#fff;padding:6px 20px;border-radius:26px;margin:0 0 4px;font-size:18px}
+.sechd p{color:#6b7280;font-size:16px;margin:2px 0 10px}
+.qcard{background:var(--card);border-radius:14px;padding:18px 20px;margin:14px 0;box-shadow:0 2px 10px rgba(0,0,0,.06)}
+.qhead{display:flex;align-items:center;gap:8px;margin-bottom:8px;flex-wrap:wrap}
+.tbadge{color:#fff;font-size:16px;font-weight:700;padding:2px 12px;border-radius:12px}
+.qid{font-weight:700;color:var(--primary-dark);font-size:16px}
+.src{margin-left:auto;font-size:16px;color:#fff;background:var(--accent);padding:2px 12px;border-radius:12px;font-weight:700;white-space:nowrap}
+.pchip{font-size:16px;color:#fff;background:var(--primary-dark);padding:2px 12px;border-radius:12px;font-weight:700;white-space:nowrap}
+@media(max-width:640px){.src{margin-left:0}}
+.work{margin-top:12px;border:1.5px dashed #b9c7cd;border-radius:8px;min-height:5cm;width:15cm;max-width:100%;box-sizing:border-box;padding:8px 12px;background:repeating-linear-gradient(180deg,transparent,transparent 27px,#eef1f2 27px,#eef1f2 28px)}
+.wlabel{font-size:16px;color:#8a99a0;font-weight:700}
+.printpage{margin:0 0 8px}
+.pageribbon{display:none;text-align:center;font-size:16px;color:#8a99a0;border-bottom:1px dashed #cbd5da;margin:22px 0 10px;padding-bottom:4px}
+.qbody{font-size:16px}
+.revbtn{margin-top:12px;background:var(--accent);color:#fff;border:none;border-radius:22px;padding:8px 20px;font-size:16px;font-weight:700;cursor:pointer;box-shadow:0 2px 6px rgba(231,111,81,.35);transition:.15s}
+.revbtn:hover{filter:brightness(1.05);transform:translateY(-1px)}
+.revbtn.on{background:var(--primary)}
+.sol{display:none;margin-top:12px;padding:14px 16px;background:#eef6f8;border-left:5px solid var(--primary);border-radius:8px;font-size:16px}
+.sol.show{display:block;animation:fade .25s ease}
+@keyframes fade{from{opacity:0;transform:translateY(-4px)}to{opacity:1}}
+.ans{font-weight:700;color:var(--primary-dark);margin-bottom:8px;font-size:17px}
+.expl{color:#333;font-size:16px}
+.top{position:fixed;right:16px;bottom:16px;background:var(--primary);color:#fff;text-decoration:none;width:44px;height:44px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:18px;box-shadow:0 4px 12px rgba(0,0,0,.25);opacity:.85}
+.tips{background:#fff8ec;border-left:5px solid var(--accent);border-radius:10px;padding:12px 16px;margin:16px 0;font-size:16px;color:#7a5a3a}
+@media print{
+  @page{margin:1.4cm 1.2cm}
+  body{background:#fff;font-size:16px}
+  header.hero,.toc,.tips,.top{display:none!important}
+  .wrap{max-width:none;padding:0}
+  .printpage{page-break-before:always;break-before:page}
+  .printpage:first-of-type{page-break-before:avoid;break-before:avoid}
+  .pageribbon{display:block}
+  .qcard{box-shadow:none;border:1px solid #d7d2c7;page-break-inside:avoid;break-inside:avoid;margin:8px 0;padding:10px 12px}
+  .revbtn,.sol{display:none!important}
+  .work{min-height:5cm}
+}
+
+header.hero{position:relative;overflow:hidden;background:linear-gradient(120deg,#7b2ff7,#f107a3,#ff8a3d,#ffd166);background-size:280% 280%;animation:flow 14s ease infinite;color:#fff;padding:22px 18px 34px;text-align:center;margin-bottom:22px}
+@keyframes flow{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}
+header.hero h1{position:relative;text-shadow:0 3px 14px rgba(0,0,0,.18)}
+header.hero p{position:relative}
+header.hero .heroback{position:relative;display:inline-flex;align-items:center;gap:7px;color:#fff;text-decoration:none;font-weight:700;font-size:14px;background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.5);padding:7px 15px;border-radius:999px;backdrop-filter:blur(3px);transition:.15s}
+header.hero .heroback:hover{background:#fff;color:#155263}
+header.hero .toprow{position:relative;display:flex;justify-content:flex-start;margin-bottom:6px}
+.msym{position:absolute;color:rgba(255,255,255,.22);font-weight:800;pointer-events:none;user-select:none;animation:floaty 7s ease-in-out infinite}
+.msym.s1{font-size:64px;left:4%;top:38%;animation-delay:0s}
+.msym.s2{font-size:44px;left:22%;top:10%;animation-delay:1.2s}
+.msym.s3{font-size:52px;right:8%;top:16%;animation-delay:.6s}
+.msym.s4{font-size:38px;right:24%;bottom:12%;animation-delay:2s}
+.msym.s5{font-size:48px;right:40%;top:52%;animation-delay:1.6s}
+.msym.s6{font-size:40px;left:12%;bottom:14%;animation-delay:.9s}
+@keyframes floaty{0%,100%{transform:translateY(0) rotate(-4deg)}50%{transform:translateY(-12px) rotate(4deg)}}
+@media print{.msym{display:none}header.hero{animation:none;background:#155263}}
+</style></head><body id="top">
+<header class="hero">
+<span class="msym s1">△</span><span class="msym s2">π</span><span class="msym s3">∑</span><span class="msym s4">√</span><span class="msym s5">∠</span><span class="msym s6">%</span>
+<div class="toprow"><a class="heroback" href="vol3.html">← 返回第三冊 Back to Vol.3</a></div>
+<h1>國二上數學 × 會考歷屆試題　分節對應練習 · 分節互動練習</h1>
+<p>依講義觀念分節 ‧ 每題附「計算 / 作答區」可書寫；點「顯示解析」才展開答案詳解</p>
+<p>🖨 每題右上角標示列印頁碼（全卷共 67 頁），螢幕與紙本頁碼一致</p>
+</header>
+<div class="wrap">
+<div class="toc"><a href="#1-1">1-1 乘法公式</a><a href="#1-2">1-2 多項式的加減</a><a href="#1-3">1-3 多項式的乘除</a><a href="#2-1">2-1 平方根的意義</a><a href="#2-2">2-2 根式的運算</a><a href="#2-3">2-3 畢氏定理</a><a href="#3-1">3-1 提公因式與乘法公式作因式分解</a><a href="#3-2">3-2 利用十字交乘法因式分解</a><a href="#4-1">4-1 因式分解法解一元二次方程式</a><a href="#4-2">4-2 配方法與公式解</a><a href="#4-3">4-3 應用問題</a><a href="#5-1">5-1 相對次數分配表與折線圖</a><a href="#5-2">5-2 累積次數分配表與折線圖</a><a href="#5-3">5-3 累積相對次數分配表與折線圖</a></div>
+<div class="tips">💡 老師可直接用「計算 / 作答區」板書講解，不一定要展開解析。用瀏覽器列印（⌘/Ctrl+P）即為學生練習卷：自動分頁、隱藏答案、保留作答空間。圖形為示意圖，請以題目數據為準。</div>
+
+  <div class="printpage">
+    <div class="pageribbon">列印第 1 頁 / 共 67 頁　·　1-1 乘法公式</div>
+    <div class="sechd" id="1-1"><h2>1-1　乘法公式</h2><p>和/差平方公式 ‧ 平方差公式 ‧ 乘法公式做數字巧算</p></div>
+    
+      <div class="qcard">
+        <div class="qhead"><span class="tbadge" style="background:#457b9d">選擇</span><span class="qid">1-1-1</span><span class="src">📄 會考·110年</span><span class="pchip">🖨 第 1 頁</span></div>
+        <div class="qbody">利用乘法公式判斷，下列等式何者成立？</div>
+        
+        <div class="opts"><div class="opt"><span class="ol">(A)</span> 248²+248×52+52²=300²</div><div class="opt"><span class="ol">(B)</span> 248²−248×48−48²=200²</div><div class="opt"><span class="ol">(C)</span> 248²+2×248×52+52²=300²</div><div class="opt"><span class="ol">(D)</span> 248²−2×248×48−48²=200²</div></div>
+        <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
+        <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
+        <div class="sol">
+          <div class="ans">✅ 答案：(C) 248²+2×248×52+52²=300²</div>
+          <div class="expl"><b>解析：</b>由 (a+b)²=a²+2ab+b²、(a−b)²=a²−2ab+b² 可知，<br>300²=(248+52)²=248²+2×248×52+52²<br>200²=(248−48)²=248²−2×248×48+48²<br>∴(C)成立。<br>故選 <b>(C)</b>。</div>
+        </div>
+      </div>
+  </div>
+  <div class="printpage">
+    <div class="pageribbon">列印第 2 頁 / 共 67 頁　·　1-1 乘法公式</div>
+    
+    
+      <div class="qcard">
+        <div class="qhead"><span class="tbadge" style="background:#457b9d">選擇</span><span class="qid">1-1-2</span><span class="src">📄 會考·114年</span><span class="pchip">🖨 第 2 頁</span></div>
+        <div class="qbody">利用乘法公式判斷，下列算式之值，何者與其他<b>不相同</b>？</div>
+        
+        <div class="opts"><div class="opt"><span class="ol">(A)</span> (106²-4²)×(108²-2²)</div><div class="opt"><span class="ol">(B)</span> (107²-3²)×(107²-1²)</div><div class="opt"><span class="ol">(C)</span> (108²-2²)×(106²-2²)</div><div class="opt"><span class="ol">(D)</span> (109²-1²)×(105²-1²)</div></div>
+        <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
+        <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
+        <div class="sol">
+          <div class="ans">✅ 答案：(A) (106²-4²)×(108²-2²)</div>
+          <div class="expl"><b>解析：</b>(A) (106²-4²)×(108²-2²)=(106+4)×(106-4)×(108+2)×(108-2)=110×102×110×106<br>(B) (107²-3²)×(107²-1²)=(107+3)×(107-3)×(107+1)×(107-1)=110×104×108×106<br>(C) (108²-2²)×(106²-2²)=(108+2)×(108-2)×(106+2)×(106-2)=110×106×108×104<br>(D) (109²-1²)×(105²-1²)=(109+1)×(109-1)×(105+1)×(105-1)=110×108×106×104<br>只有 (A) 和其他選項不同<br>故選【A】。</div>
+        </div>
+      </div>
+  </div>
+  <div class="printpage">
+    <div class="pageribbon">列印第 3 頁 / 共 67 頁　·　1-1 乘法公式</div>
+    
+    
+      <div class="qcard">
+        <div class="qhead"><span class="tbadge" style="background:#457b9d">選擇</span><span class="qid">1-1-3</span><span class="src">📄 改編·中小學題庫</span><span class="pchip">🖨 第 3 頁</span></div>
+        <div class="qbody">下列哪一個是 (2x-3)² 的正確展開結果？</div>
+        
+        <div class="opts"><div class="opt"><span class="ol">(A)</span> 4x²-9</div><div class="opt"><span class="ol">(B)</span> 4x²-12x+9</div><div class="opt"><span class="ol">(C)</span> 4x²-6x+9</div><div class="opt"><span class="ol">(D)</span> 4x²+12x+9</div></div>
+        <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
+        <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
+        <div class="sol">
+          <div class="ans">✅ 答案：(B) 4x²-12x+9</div>
+          <div class="expl"><b>解析：</b>利用完全平方公式 (a-b)² = a²-2ab+b²。<br>令 a=2x、b=3：<br>a² = (2x)² = 4x²<br>2ab = 2·(2x)·3 = 12x<br>b² = 3² = 9<br>故 (2x-3)² = <b>4x²-12x+9</b>。<br>常見誘答 4x²-9 是誤把它當成平方差；4x²-6x+9 則是中間項少乘一個 2。</div>
+        </div>
+      </div>
+  </div>
+  <div class="printpage">
+    <div class="pageribbon">列印第 4 頁 / 共 67 頁　·　1-1 乘法公式</div>
+    
+    
+      <div class="qcard">
+        <div class="qhead"><span class="tbadge" style="background:#e76f51">計算</span><span class="qid">1-1-4</span><span class="src">📄 改編·中小學題庫</span><span class="pchip">🖨 第 4 頁</span></div>
+        <div class="qbody">利用乘法公式（不用直式）計算下列兩式的值：(1) 103²　(2) 49×51</div>
+        
+        
+        <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
+        <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
+        <div class="sol">
+          <div class="ans">✅ 答案：(1) 10609　(2) 2499</div>
+          <div class="expl"><b>解析：</b>(1) 把 103 拆成 100+3，用完全平方公式：<br>103² = (100+3)² = 100² + 2·100·3 + 3²<br>= 10000 + 600 + 9 = <b>10609</b>。<br>(2) 49 與 51 對稱於 50，用平方差公式 (a-b)(a+b)=a²-b²：<br>49×51 = (50-1)(50+1) = 50² - 1²<br>= 2500 - 1 = <b>2499</b>。</div>
+        </div>
+      </div>
+  </div>
+  <div class="printpage">
+    <div class="pageribbon">列印第 5 頁 / 共 67 頁　·　1-1 乘法公式</div>
+    
+    
+      <div class="qcard">
+        <div class="qhead"><span class="tbadge" style="background:#2a9d8f">填充</span><span class="qid">1-1-5</span><span class="src">📄 改編·中小學題庫</span><span class="pchip">🖨 第 5 頁</span></div>
+        <div class="qbody">已知 a+b = 7、ab = 10，利用配方（乘法公式）求 a²+b² 的值。</div>
+        
+        
+        <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
+        <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
+        <div class="sol">
+          <div class="ans">✅ 答案：29</div>
+          <div class="expl"><b>解析：</b>由完全平方公式 (a+b)² = a²+2ab+b²，移項可得：<br>a²+b² = (a+b)² - 2ab。<br>代入 a+b=7、ab=10：<br>a²+b² = 7² - 2·10 = 49 - 20 = <b>29</b>。<br>驗算：若取 a=2、b=5，則 a+b=7、ab=10，a²+b²=4+25=29，吻合。</div>
+        </div>
+      </div>
+  </div>
+  <div class="printpage">
+    <div class="pageribbon">列印第 6 頁 / 共 67 頁　·　1-2 多項式的加減</div>
+    <div class="sechd" id="1-2"><h2>1-2　多項式的加減</h2><p>多項式的次數與係數 ‧ 同類項合併 ‧ 多項式加減</p></div>
+    
+      <div class="qcard">
+        <div class="qhead"><span class="tbadge" style="background:#457b9d">選擇</span><span class="qid">1-2-1</span><span class="src">📄 會考·114年</span><span class="pchip">🖨 第 6 頁</span></div>
+        <div class="qbody">計算 (5x²-2x)-(4-3x) 的結果，與下列何者相同？</div>
+        
+        <div class="opts"><div class="opt"><span class="ol">(A)</span> 5x²-3x</div><div class="opt"><span class="ol">(B)</span> 5x²+x-4</div><div class="opt"><span class="ol">(C)</span> 5x²-5x+4</div><div class="opt"><span class="ol">(D)</span> 5x²-5x-4</div></div>
+        <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
+        <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
+        <div class="sol">
+          <div class="ans">✅ 答案：(B) 5x²+x-4</div>
+          <div class="expl"><b>解析：</b>5x²-2x-(4-3x)<br>=5x²-2x-4+3x<br>=<b>5x²+x-4</b><br>故選【B】。</div>
+        </div>
+      </div>
+  </div>
+  <div class="printpage">
+    <div class="pageribbon">列印第 7 頁 / 共 67 頁　·　1-2 多項式的加減</div>
+    
+    
+      <div class="qcard">
+        <div class="qhead"><span class="tbadge" style="background:#457b9d">選擇</span><span class="qid">1-2-2</span><span class="src">📄 改編·中小學題庫</span><span class="pchip">🖨 第 7 頁</span></div>
+        <div class="qbody">多項式 -4x⁴+2x²-x+6，它的次數與「x 的一次項係數」分別為何？</div>
+        
+        <div class="opts"><div class="opt"><span class="ol">(A)</span> 次數 4，x 的係數 -1</div><div class="opt"><span class="ol">(B)</span> 次數 4，x 的係數 1</div><div class="opt"><span class="ol">(C)</span> 次數 2，x 的係數 -1</div><div class="opt"><span class="ol">(D)</span> 次數 6，x 的係數 -1</div></div>
+        <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
+        <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
+        <div class="sol">
+          <div class="ans">✅ 答案：(A) 次數 4，x 的係數 -1</div>
+          <div class="expl"><b>解析：</b>多項式的「次數」是最高次項的次數，最高次項為 -4x⁴，故<b>次數為 4</b>。<br>「x 的係數」指一次項 -x 的係數，-x = (-1)x，故<b>係數為 -1</b>。<br>常見誤答：把常數項 6 或把 x² 的係數 2 當成答案，或把係數看成 +1（漏掉負號）。</div>
+        </div>
+      </div>
+  </div>
+  <div class="printpage">
+    <div class="pageribbon">列印第 8 頁 / 共 67 頁　·　1-2 多項式的加減</div>
+    
+    
+      <div class="qcard">
+        <div class="qhead"><span class="tbadge" style="background:#e76f51">計算</span><span class="qid">1-2-3</span><span class="src">📄 改編·中小學題庫</span><span class="pchip">🖨 第 8 頁</span></div>
+        <div class="qbody">計算並化簡：(3x²-5x+2) - (x²-3x-4)。</div>
+        
+        
+        <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
+        <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
+        <div class="sol">
+          <div class="ans">✅ 答案：2x²-2x+6</div>
+          <div class="expl"><b>解析：</b>先去括號，注意第二個括號前是減號，裡面每一項都要變號：<br>= 3x²-5x+2 - x²+3x+4<br>再合併同類項：<br>x² 項：3x²-x² = 2x²<br>x 項：-5x+3x = -2x<br>常數項：2+4 = 6<br>故結果為 <b>2x²-2x+6</b>。</div>
+        </div>
+      </div>
+  </div>
+  <div class="printpage">
+    <div class="pageribbon">列印第 9 頁 / 共 67 頁　·　1-2 多項式的加減</div>
+    
+    
+      <div class="qcard">
+        <div class="qhead"><span class="tbadge" style="background:#2a9d8f">填充</span><span class="qid">1-2-4</span><span class="src">📄 改編·中小學題庫</span><span class="pchip">🖨 第 9 頁</span></div>
+        <div class="qbody">化簡 2(x²-3x) - 3(2x²-x+1) 後，x²（二次項）的係數是多少？</div>
+        
+        
+        <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
+        <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
+        <div class="sol">
+          <div class="ans">✅ 答案：-4</div>
+          <div class="expl"><b>解析：</b>先展開：<br>2(x²-3x) = 2x²-6x<br>-3(2x²-x+1) = -6x²+3x-3<br>合併：(2x²-6x) + (-6x²+3x-3)<br>x² 項：2x²-6x² = -4x²<br>x 項：-6x+3x = -3x<br>常數：-3<br>化簡結果為 -4x²-3x-3，故 x² 的係數為 <b>-4</b>。</div>
+        </div>
+      </div>
+  </div>
+  <div class="printpage">
+    <div class="pageribbon">列印第 10 頁 / 共 67 頁　·　1-3 多項式的乘除</div>
+    <div class="sechd" id="1-3"><h2>1-3　多項式的乘除</h2><p>多項式乘法展開 ‧ 多項式長除法 ‧ 除法原理</p></div>
+    
+      <div class="qcard">
+        <div class="qhead"><span class="tbadge" style="background:#457b9d">選擇</span><span class="qid">1-3-1</span><span class="src">📄 會考·108年</span><span class="pchip">🖨 第 10 頁</span></div>
+        <div class="qbody">計算 (2x−3)(3x+4) 的結果，與下列哪一個式子相同？</div>
+        
+        <div class="opts"><div class="opt"><span class="ol">(A)</span> −7x+4</div><div class="opt"><span class="ol">(B)</span> −7x−12</div><div class="opt"><span class="ol">(C)</span> 6x²−12</div><div class="opt"><span class="ol">(D)</span> 6x²−x−12</div></div>
+        <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
+        <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
+        <div class="sol">
+          <div class="ans">✅ 答案：(D) 6x²−x−12</div>
+          <div class="expl"><b>解析：</b>(2x−3)(3x+4)=6x²+8x−9x−12=6x²−x−12<br>故選 (D)。</div>
+        </div>
+      </div>
+  </div>
+  <div class="printpage">
+    <div class="pageribbon">列印第 11 頁 / 共 67 頁　·　1-3 多項式的乘除</div>
+    
+    
+      <div class="qcard">
+        <div class="qhead"><span class="tbadge" style="background:#457b9d">選擇</span><span class="qid">1-3-2</span><span class="src">📄 會考·109年</span><span class="pchip">🖨 第 11 頁</span></div>
+        <div class="qbody">計算 2x²−3 除以 x+1 後，得商式和餘式分別為何？</div>
+        
+        <div class="opts"><div class="opt"><span class="ol">(A)</span> 商式為 2，餘式為 −5</div><div class="opt"><span class="ol">(B)</span> 商式為 2x−5，餘式為 5</div><div class="opt"><span class="ol">(C)</span> 商式為 2x+2，餘式為 −1</div><div class="opt"><span class="ol">(D)</span> 商式為 2x−2，餘式為 −1</div></div>
+        <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
+        <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
+        <div class="sol">
+          <div class="ans">✅ 答案：(D) 商式為 2x−2，餘式為 −1</div>
+          <div class="expl"><b>解析：</b>以長除法計算 2x²+0x−3 除以 x+1：<br>2x²+0x−3=(x+1)(2x−2)−1<br>商式為 2x−2，餘式為 −1<br>故選 (D)。</div>
+        </div>
+      </div>
+  </div>
+  <div class="printpage">
+    <div class="pageribbon">列印第 12 頁 / 共 67 頁　·　1-3 多項式的乘除</div>
+    
+    
+      <div class="qcard">
+        <div class="qhead"><span class="tbadge" style="background:#457b9d">選擇</span><span class="qid">1-3-3</span><span class="src">📄 會考·111年</span><span class="pchip">🖨 第 12 頁</span></div>
+        <div class="qbody">計算多項式 6x²+4x 除以 2x² 後，得到的餘式為何？</div>
+        
+        <div class="opts"><div class="opt"><span class="ol">(A)</span> 2</div><div class="opt"><span class="ol">(B)</span> 4</div><div class="opt"><span class="ol">(C)</span> 2x</div><div class="opt"><span class="ol">(D)</span> 4x</div></div>
+        <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
+        <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
+        <div class="sol">
+          <div class="ans">✅ 答案：(D) 4x</div>
+          <div class="expl"><b>解析：</b>以 2x² 去除 6x²+4x，商為 3，6x² 減去後餘 4x。<br>∴ 餘式為 4x，<br>故選 <b>(D)</b>。</div>
+        </div>
+      </div>
+  </div>
+  <div class="printpage">
+    <div class="pageribbon">列印第 13 頁 / 共 67 頁　·　1-3 多項式的乘除</div>
+    
+    
+      <div class="qcard">
+        <div class="qhead"><span class="tbadge" style="background:#457b9d">選擇</span><span class="qid">1-3-4</span><span class="src">📄 會考·115年</span><span class="pchip">🖨 第 13 頁</span></div>
+        <div class="qbody">計算多項式 4x²-3x-5 除以 x+2 後，所得商式與餘式兩者之和為何？</div>
+        
+        <div class="opts"><div class="opt"><span class="ol">(A)</span> 4x+6</div><div class="opt"><span class="ol">(B)</span> 4x+10</div><div class="opt"><span class="ol">(C)</span> -7x-5</div><div class="opt"><span class="ol">(D)</span> -11x-1</div></div>
+        <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
+        <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
+        <div class="sol">
+          <div class="ans">✅ 答案：(A) 4x+6</div>
+          <div class="expl"><b>解析：</b>利用長除法，得商式：4x-11，餘式：17<br>所求=(4x-11)+17=<b>4x+6</b><br>故選【A】。</div>
+        </div>
+      </div>
+  </div>
+  <div class="printpage">
+    <div class="pageribbon">列印第 14 頁 / 共 67 頁　·　1-3 多項式的乘除</div>
+    
+    
+      <div class="qcard">
+        <div class="qhead"><span class="tbadge" style="background:#e76f51">計算</span><span class="qid">1-3-5</span><span class="src">📄 改編·中小學題庫</span><span class="pchip">🖨 第 14 頁</span></div>
+        <div class="qbody">展開並化簡：(2x-3)(x²+2x-1)。</div>
+        
+        
+        <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
+        <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
+        <div class="sol">
+          <div class="ans">✅ 答案：2x³+x²-8x+3</div>
+          <div class="expl"><b>解析：</b>用分配律，把 2x 與 -3 分別乘進括號：<br>2x·(x²+2x-1) = 2x³+4x²-2x<br>-3·(x²+2x-1) = -3x²-6x+3<br>相加合併同類項：<br>x³ 項：2x³<br>x² 項：4x²-3x² = x²<br>x 項：-2x-6x = -8x<br>常數項：3<br>故結果為 <b>2x³+x²-8x+3</b>。</div>
+        </div>
+      </div>
+  </div>
+  <div class="printpage">
+    <div class="pageribbon">列印第 15 頁 / 共 67 頁　·　1-3 多項式的乘除</div>
+    
+    
+      <div class="qcard">
+        <div class="qhead"><span class="tbadge" style="background:#e76f51">計算</span><span class="qid">1-3-6</span><span class="src">📄 改編·中小學題庫</span><span class="pchip">🖨 第 15 頁</span></div>
+        <div class="qbody">將 2x³-3x²+x-5 除以 (x-2)，求「商式」與「餘式」，並用除法原理驗證。</div>
+        
+        
+        <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
+        <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
+        <div class="sol">
+          <div class="ans">✅ 答案：商式 2x²+x+3，餘式 1</div>
+          <div class="expl"><b>解析：</b>用長除法：<br>2x³ ÷ x = 2x²，2x²(x-2)=2x³-4x²，相減得 x²+x-5。<br>x² ÷ x = x，x(x-2)=x²-2x，相減得 3x-5。<br>3x ÷ x = 3，3(x-2)=3x-6，相減得 1（次數低於除式，停止）。<br>故<b>商式 = 2x²+x+3，餘式 = 1</b>。<br>除法原理驗證：被除式 = 除式×商式 + 餘式<br>(x-2)(2x²+x+3)+1<br>= 2x³+x²+3x-4x²-2x-6+1<br>= 2x³-3x²+x-5，與原式相同，驗證正確。</div>
+        </div>
+      </div>
+  </div>
+  <div class="printpage">
+    <div class="pageribbon">列印第 16 頁 / 共 67 頁　·　2-1 平方根的意義</div>
+    <div class="sechd" id="2-1"><h2>2-1　平方根的意義</h2><p>正負平方根 ‧ 根號的估算與比大小 ‧ √(a²)=|a|</p></div>
+    
+      <div class="qcard">
+        <div class="qhead"><span class="tbadge" style="background:#457b9d">選擇</span><span class="qid">2-1-1</span><span class="src">📄 會考·111年</span><span class="pchip">🖨 第 16 頁</span></div>
+        <div class="qbody">√2022 的值介於下列哪兩個數之間？</div>
+        
+        <div class="opts"><div class="opt"><span class="ol">(A)</span> 25，30</div><div class="opt"><span class="ol">(B)</span> 30，35</div><div class="opt"><span class="ol">(C)</span> 35，40</div><div class="opt"><span class="ol">(D)</span> 40，45</div></div>
+        <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
+        <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
+        <div class="sol">
+          <div class="ans">✅ 答案：(D) 40，45</div>
+          <div class="expl"><b>解析：</b>∵ (√2022)²=2022<br>40²=1600，45²=2025<br>∴ 40&lt;√2022&lt;45，<br>故選 <b>(D)</b>。</div>
+        </div>
+      </div>
+  </div>
+  <div class="printpage">
+    <div class="pageribbon">列印第 17 頁 / 共 67 頁　·　2-1 平方根的意義</div>
+    
+    
+      <div class="qcard">
+        <div class="qhead"><span class="tbadge" style="background:#457b9d">選擇</span><span class="qid">2-1-2</span><span class="src">📄 改編·中小學題庫</span><span class="pchip">🖨 第 17 頁</span></div>
+        <div class="qbody">下列有關平方根的敘述，何者<b>正確</b>？</div>
+        
+        <div class="opts"><div class="opt"><span class="ol">(A)</span> √16 = ±4</div><div class="opt"><span class="ol">(B)</span> -5 的平方根是 -5</div><div class="opt"><span class="ol">(C)</span> √((-7)²) = 7</div><div class="opt"><span class="ol">(D)</span> 9 的平方根是 3</div></div>
+        <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
+        <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
+        <div class="sol">
+          <div class="ans">✅ 答案：√((-7)²) = 7</div>
+          <div class="expl"><b>解析：</b>逐一檢驗四個選項。<br>√16 表示 16 的<b>正</b>平方根，√16 = 4，並非 ±4。<br>-5 為負數，<b>負數沒有實數平方根</b>。<br>√((-7)²) = √49 = <b>7</b>（即 |-7| = 7），正確。<br>9 的平方根有兩個，為 <b>±3</b>，不能只寫 3。<br>故正確選項為 √((-7)²) = 7。</div>
+        </div>
+      </div>
+  </div>
+  <div class="printpage">
+    <div class="pageribbon">列印第 18 頁 / 共 67 頁　·　2-1 平方根的意義</div>
+    
+    
+      <div class="qcard">
+        <div class="qhead"><span class="tbadge" style="background:#457b9d">選擇</span><span class="qid">2-1-3</span><span class="src">📄 改編·中小學題庫</span><span class="pchip">🖨 第 18 頁</span></div>
+        <div class="qbody">設 √73 的整數部分為 a，小數部分為 b，則 2a + b 之值為何？</div>
+        
+        <div class="opts"><div class="opt"><span class="ol">(A)</span> √73</div><div class="opt"><span class="ol">(B)</span> 8 + √73</div><div class="opt"><span class="ol">(C)</span> 16 + √73</div><div class="opt"><span class="ol">(D)</span> 24 - √73</div></div>
+        <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
+        <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
+        <div class="sol">
+          <div class="ans">✅ 答案：8 + √73</div>
+          <div class="expl"><b>解析：</b>先估算 √73 落在哪兩個連續整數之間。<br>因為 8² = 64、9² = 81，且 64 &lt; 73 &lt; 81，<br>所以 <b>8 &lt; √73 &lt; 9</b>，整數部分 a = 8。<br>小數部分 b = √73 - 8。<br>2a + b = 2×8 + (√73 - 8) = 16 + √73 - 8 = <b>8 + √73</b>。</div>
+        </div>
+      </div>
+  </div>
+  <div class="printpage">
+    <div class="pageribbon">列印第 19 頁 / 共 67 頁　·　2-1 平方根的意義</div>
+    
+    
+      <div class="qcard">
+        <div class="qhead"><span class="tbadge" style="background:#457b9d">選擇</span><span class="qid">2-1-4</span><span class="src">📄 改編·中小學題庫</span><span class="pchip">🖨 第 19 頁</span></div>
+        <div class="qbody">將 3√2、2√5、√17、4 四數由小到大排列，正確的是？</div>
+        
+        <div class="opts"><div class="opt"><span class="ol">(A)</span> 4 &lt; √17 &lt; 3√2 &lt; 2√5</div><div class="opt"><span class="ol">(B)</span> 4 &lt; 3√2 &lt; √17 &lt; 2√5</div><div class="opt"><span class="ol">(C)</span> √17 &lt; 4 &lt; 3√2 &lt; 2√5</div><div class="opt"><span class="ol">(D)</span> 4 &lt; √17 &lt; 2√5 &lt; 3√2</div></div>
+        <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
+        <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
+        <div class="sol">
+          <div class="ans">✅ 答案：4 &lt; √17 &lt; 3√2 &lt; 2√5</div>
+          <div class="expl"><b>解析：</b>四數皆為正數，可將各數化為根號形式，再比較被開方數。<br>3√2 = √(9×2) = √18；2√5 = √(4×5) = √20；<br>√17 = √17；4 = √16。<br>比較被開方數：<b>16 &lt; 17 &lt; 18 &lt; 20</b>，<br>故 <b>4 &lt; √17 &lt; 3√2 &lt; 2√5</b>。</div>
+        </div>
+      </div>
+  </div>
+  <div class="printpage">
+    <div class="pageribbon">列印第 20 頁 / 共 67 頁　·　2-2 根式的運算</div>
+    <div class="sechd" id="2-2"><h2>2-2　根式的運算</h2><p>根式化簡 ‧ 根式的四則運算 ‧ 分母有理化</p></div>
+    
+      <div class="qcard">
+        <div class="qhead"><span class="tbadge" style="background:#457b9d">選擇</span><span class="qid">2-2-1</span><span class="src">📄 會考·107年</span><span class="pchip">🖨 第 20 頁</span></div>
+        <div class="qbody">算式 √6×(1/√3 − 1) 之值為何？</div>
+        
+        <div class="opts"><div class="opt"><span class="ol">(A)</span> √2 − √6</div><div class="opt"><span class="ol">(B)</span> √2 − 1</div><div class="opt"><span class="ol">(C)</span> 2 − √6</div><div class="opt"><span class="ol">(D)</span> 1</div></div>
+        <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
+        <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
+        <div class="sol">
+          <div class="ans">✅ 答案：(A) √2 − √6</div>
+          <div class="expl"><b>解析：</b>√6×(1/√3 − 1) = √6/√3 − √6 = √2 − √6<br>故選 (A)。</div>
+        </div>
+      </div>
+  </div>
+  <div class="printpage">
+    <div class="pageribbon">列印第 21 頁 / 共 67 頁　·　2-2 根式的運算</div>
+    
+    
+      <div class="qcard">
+        <div class="qhead"><span class="tbadge" style="background:#457b9d">選擇</span><span class="qid">2-2-2</span><span class="src">📄 會考·108年</span><span class="pchip">🖨 第 21 頁</span></div>
+        <div class="qbody">若 √44=2√a，√54=3√b，則 a+b 之值為何？</div>
+        
+        <div class="opts"><div class="opt"><span class="ol">(A)</span> 13</div><div class="opt"><span class="ol">(B)</span> 17</div><div class="opt"><span class="ol">(C)</span> 24</div><div class="opt"><span class="ol">(D)</span> 40</div></div>
+        <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
+        <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
+        <div class="sol">
+          <div class="ans">✅ 答案：(B) 17</div>
+          <div class="expl"><b>解析：</b>√44=√(2²×11)=2√11　∴ a=11<br>√54=√(2×3³)=3√6　∴ b=6<br>故 a+b=11+6=17<br>故選 (B)。</div>
+        </div>
+      </div>
+  </div>
+  <div class="printpage">
+    <div class="pageribbon">列印第 22 頁 / 共 67 頁　·　2-2 根式的運算</div>
+    
+    
+      <div class="qcard">
+        <div class="qhead"><span class="tbadge" style="background:#457b9d">選擇</span><span class="qid">2-2-3</span><span class="src">📄 會考·109年</span><span class="pchip">🖨 第 22 頁</span></div>
+        <div class="qbody">算式 √2×(√48−√12) 之值為何？</div>
+        
+        <div class="opts"><div class="opt"><span class="ol">(A)</span> 6√2</div><div class="opt"><span class="ol">(B)</span> 2√6</div><div class="opt"><span class="ol">(C)</span> 2√21</div><div class="opt"><span class="ol">(D)</span> 4√6−2√3</div></div>
+        <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
+        <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
+        <div class="sol">
+          <div class="ans">✅ 答案：(B) 2√6</div>
+          <div class="expl"><b>解析：</b>√2×(√48−√12)=√2×√48 − √2×√12=√96−√24=4√6−2√6=2√6<br>【另解】√2×(√48−√12)=√2×(4√3−2√3)=√2×2√3=2√6<br>故選 (B)。</div>
+        </div>
+      </div>
+  </div>
+  <div class="printpage">
+    <div class="pageribbon">列印第 23 頁 / 共 67 頁　·　2-2 根式的運算</div>
+    
+    
+      <div class="qcard">
+        <div class="qhead"><span class="tbadge" style="background:#457b9d">選擇</span><span class="qid">2-2-4</span><span class="src">📄 會考·110年</span><span class="pchip">🖨 第 23 頁</span></div>
+        <div class="qbody">下列等式何者<b>不成立</b>？</div>
+        
+        <div class="opts"><div class="opt"><span class="ol">(A)</span> 4√3+2√3=6√3</div><div class="opt"><span class="ol">(B)</span> 4√3−2√3=2√3</div><div class="opt"><span class="ol">(C)</span> 4√3×2√3=8√3</div><div class="opt"><span class="ol">(D)</span> 4√3÷2√3=2</div></div>
+        <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
+        <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
+        <div class="sol">
+          <div class="ans">✅ 答案：(C) 4√3×2√3=8√3</div>
+          <div class="expl"><b>解析：</b>(A) 4√3+2√3=(4+2)×√3=6√3<br>(B) 4√3−2√3=(4−2)×√3=2√3<br>(C) 4√3×2√3=4×2×√3×√3=8×3=24≠8√3<br>(D) 4√3÷2√3=4√3/2√3=2<br>故選 <b>(C)</b>。</div>
+        </div>
+      </div>
+  </div>
+  <div class="printpage">
+    <div class="pageribbon">列印第 24 頁 / 共 67 頁　·　2-2 根式的運算</div>
+    
+    
+      <div class="qcard">
+        <div class="qhead"><span class="tbadge" style="background:#457b9d">選擇</span><span class="qid">2-2-5</span><span class="src">📄 會考·112年</span><span class="pchip">🖨 第 24 頁</span></div>
+        <div class="qbody">化簡 √135 的結果為下列何者？</div>
+        
+        <div class="opts"><div class="opt"><span class="ol">(A)</span> 3√5</div><div class="opt"><span class="ol">(B)</span> 27√5</div><div class="opt"><span class="ol">(C)</span> 3√15</div><div class="opt"><span class="ol">(D)</span> 9√15</div></div>
+        <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
+        <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
+        <div class="sol">
+          <div class="ans">✅ 答案：(C) 3√15</div>
+          <div class="expl"><b>解析：</b>√135=√(3³×5)=√(3²×3×5)=3√15<br>故選 <b>(C)</b>。</div>
+        </div>
+      </div>
+  </div>
+  <div class="printpage">
+    <div class="pageribbon">列印第 25 頁 / 共 67 頁　·　2-2 根式的運算</div>
+    
+    
+      <div class="qcard">
+        <div class="qhead"><span class="tbadge" style="background:#457b9d">選擇</span><span class="qid">2-2-6</span><span class="src">📄 會考·113年</span><span class="pchip">🖨 第 25 頁</span></div>
+        <div class="qbody">將 9/(4-√7) 化簡為 a+b√7，其中 a、b 為整數，求 a+b 之值為何？</div>
+        
+        <div class="opts"><div class="opt"><span class="ol">(A)</span> 5</div><div class="opt"><span class="ol">(B)</span> 3</div><div class="opt"><span class="ol">(C)</span> -9</div><div class="opt"><span class="ol">(D)</span> -15</div></div>
+        <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
+        <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
+        <div class="sol">
+          <div class="ans">✅ 答案：(A) 5</div>
+          <div class="expl"><b>解析：</b>9/(4-√7)=9/(4-√7)×(4+√7)/(4+√7)=9(4+√7)/(4²-(√7)²)=9(4+√7)/(16-7)=4+√7<br>∴ a=4，b=1 ⇒ <b>a+b=5</b><br>故選【A】。</div>
+        </div>
+      </div>
+  </div>
+  <div class="printpage">
+    <div class="pageribbon">列印第 26 頁 / 共 67 頁　·　2-2 根式的運算</div>
+    
+    
+      <div class="qcard">
+        <div class="qhead"><span class="tbadge" style="background:#457b9d">選擇</span><span class="qid">2-2-7</span><span class="src">📄 會考·114年</span><span class="pchip">🖨 第 26 頁</span></div>
+        <div class="qbody">計算 (2√3+√6)×√2 的結果，與下列何者相同？</div>
+        
+        <div class="opts"><div class="opt"><span class="ol">(A)</span> 4√3</div><div class="opt"><span class="ol">(B)</span> 6√3</div><div class="opt"><span class="ol">(C)</span> 2√3+2√6</div><div class="opt"><span class="ol">(D)</span> 4√3+2√6</div></div>
+        <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
+        <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
+        <div class="sol">
+          <div class="ans">✅ 答案：(C) 2√3+2√6</div>
+          <div class="expl"><b>解析：</b>由分配律得：<br>(2√3+√6)×√2=2√6+√12=<b>2√6+2√3</b><br>故選【C】。</div>
+        </div>
+      </div>
+  </div>
+  <div class="printpage">
+    <div class="pageribbon">列印第 27 頁 / 共 67 頁　·　2-2 根式的運算</div>
+    
+    
+      <div class="qcard">
+        <div class="qhead"><span class="tbadge" style="background:#457b9d">選擇</span><span class="qid">2-2-8</span><span class="src">📄 會考·115年</span><span class="pchip">🖨 第 27 頁</span></div>
+        <div class="qbody">若 √504 的最簡根式為 a√b，則 a+b 之值為何？</div>
+        
+        <div class="opts"><div class="opt"><span class="ol">(A)</span> 13</div><div class="opt"><span class="ol">(B)</span> 19</div><div class="opt"><span class="ol">(C)</span> 20</div><div class="opt"><span class="ol">(D)</span> 50</div></div>
+        <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
+        <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
+        <div class="sol">
+          <div class="ans">✅ 答案：(C) 20</div>
+          <div class="expl"><b>解析：</b>√504=√(2³×3²×7)=6√14<br>得 a=6，b=14<br><b>a+b=20</b><br>故選【C】。</div>
+        </div>
+      </div>
+  </div>
+  <div class="printpage">
+    <div class="pageribbon">列印第 28 頁 / 共 67 頁　·　2-2 根式的運算</div>
+    
+    
+      <div class="qcard">
+        <div class="qhead"><span class="tbadge" style="background:#457b9d">選擇</span><span class="qid">2-2-9</span><span class="src">📄 改編·中小學題庫</span><span class="pchip">🖨 第 28 頁</span></div>
+        <div class="qbody">化簡 (√6)/(√2) + √27 - √12 之值為何？</div>
+        
+        <div class="opts"><div class="opt"><span class="ol">(A)</span> √3</div><div class="opt"><span class="ol">(B)</span> 2√3</div><div class="opt"><span class="ol">(C)</span> 4√3</div><div class="opt"><span class="ol">(D)</span> 2√6</div></div>
+        <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
+        <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
+        <div class="sol">
+          <div class="ans">✅ 答案：2√3</div>
+          <div class="expl"><b>解析：</b>逐項化簡再合併同類的根式。<br>(√6)/(√2) = √(6÷2) = √3。<br>√27 = √(9×3) = 3√3；√12 = √(4×3) = 2√3。<br>原式 = √3 + 3√3 - 2√3 = <b>(1 + 3 - 2)√3 = 2√3</b>。</div>
+        </div>
+      </div>
+  </div>
+  <div class="printpage">
+    <div class="pageribbon">列印第 29 頁 / 共 67 頁　·　2-3 畢氏定理</div>
+    <div class="sechd" id="2-3"><h2>2-3　畢氏定理</h2><p>直角三角形三邊關係 ‧ 平面兩點距離 ‧ 畢氏定理的應用</p></div>
+    
+      <div class="qcard">
+        <div class="qhead"><span class="tbadge" style="background:#457b9d">選擇</span><span class="qid">2-3-1</span><span class="src">📄 改編·中小學題庫</span><span class="pchip">🖨 第 29 頁</span></div>
+        <div class="qbody">如圖，直角三角形的兩股長分別為 9 與 12，則斜邊長為何？</div>
+        <div class="fig"><svg viewBox="0 0 220 160" xmlns="http://www.w3.org/2000/svg"><polygon points="35,130 185,130 35,25" fill="#eef6f8" stroke="#1f6f8b" stroke-width="2"/><rect x="35" y="115" width="15" height="15" fill="none" stroke="#e76f51" stroke-width="1.5"/><text x="16" y="82" font-size="13">9</text><text x="103" y="147" font-size="13">12</text><text x="120" y="72" font-size="13">c</text></svg></div>
+        <div class="opts"><div class="opt"><span class="ol">(A)</span> 13</div><div class="opt"><span class="ol">(B)</span> 15</div><div class="opt"><span class="ol">(C)</span> 18</div><div class="opt"><span class="ol">(D)</span> 21</div></div>
+        <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
+        <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
+        <div class="sol">
+          <div class="ans">✅ 答案：15</div>
+          <div class="expl"><b>解析：</b>設斜邊長為 c，由畢氏定理：兩股平方和等於斜邊平方。<br>9² + 12² = c²，<br>81 + 144 = 225 = c²，<br>c = √225 = <b>15</b>。<br><b>驗算</b>：9² + 12² = 81 + 144 = 225 = 15²，成立。</div>
+        </div>
+      </div>
+  </div>
+  <div class="printpage">
+    <div class="pageribbon">列印第 30 頁 / 共 67 頁　·　2-3 畢氏定理</div>
+    
+    
+      <div class="qcard">
+        <div class="qhead"><span class="tbadge" style="background:#457b9d">選擇</span><span class="qid">2-3-2</span><span class="src">📄 改編·中小學題庫</span><span class="pchip">🖨 第 30 頁</span></div>
+        <div class="qbody">下列各組長度（單位相同）中，哪一組可以構成<b>直角三角形</b>？</div>
+        <div class="fig"><svg viewBox="0 0 220 160" xmlns="http://www.w3.org/2000/svg"><polygon points="30,120 200,120 30,55" fill="#eef6f8" stroke="#1f6f8b" stroke-width="2"/><rect x="30" y="105" width="15" height="15" fill="none" stroke="#e76f51" stroke-width="1.5"/><text x="14" y="95" font-size="13">8</text><text x="106" y="137" font-size="13">15</text><text x="120" y="82" font-size="13">17</text></svg></div>
+        <div class="opts"><div class="opt"><span class="ol">(A)</span> 5、6、7</div><div class="opt"><span class="ol">(B)</span> 4、5、6</div><div class="opt"><span class="ol">(C)</span> 8、15、17</div><div class="opt"><span class="ol">(D)</span> 6、7、9</div></div>
+        <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
+        <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
+        <div class="sol">
+          <div class="ans">✅ 答案：8、15、17</div>
+          <div class="expl"><b>解析：</b>三邊能構成直角三角形的條件：<b>兩短邊平方和 = 最長邊平方</b>。<br>檢驗 8、15、17：8² + 15² = 64 + 225 = 289，而 17² = 289，兩者相等，<b>成立</b>。<br>其餘各組：5² + 6² = 61 ≠ 49；4² + 5² = 41 ≠ 36；6² + 7² = 85 ≠ 81，皆不成立。<br>故選 8、15、17。</div>
+        </div>
+      </div>
+  </div>
+  <div class="printpage">
+    <div class="pageribbon">列印第 31 頁 / 共 67 頁　·　2-3 畢氏定理</div>
+    
+    
+      <div class="qcard">
+        <div class="qhead"><span class="tbadge" style="background:#457b9d">選擇</span><span class="qid">2-3-3</span><span class="src">📄 改編·中小學題庫</span><span class="pchip">🖨 第 31 頁</span></div>
+        <div class="qbody">在座標平面上，A(-2, 1) 與 B(3, 13) 兩點間的距離為何？</div>
+        <div class="fig"><svg viewBox="0 0 220 160" xmlns="http://www.w3.org/2000/svg"><polygon points="40,140 40,30 100,140" fill="#eef6f8" stroke="#1f6f8b" stroke-width="2"/><rect x="40" y="125" width="15" height="15" fill="none" stroke="#e76f51" stroke-width="1.5"/><circle cx="40" cy="30" r="3.5" fill="#1f6f8b"/><circle cx="100" cy="140" r="3.5" fill="#1f6f8b"/><text x="20" y="26" font-size="12">B(3,13)</text><text x="105" y="145" font-size="12">A(-2,1)</text><text x="22" y="90" font-size="13">12</text><text x="62" y="155" font-size="13">5</text><text x="78" y="82" font-size="13">?</text></svg></div>
+        <div class="opts"><div class="opt"><span class="ol">(A)</span> 11</div><div class="opt"><span class="ol">(B)</span> 12</div><div class="opt"><span class="ol">(C)</span> 13</div><div class="opt"><span class="ol">(D)</span> 17</div></div>
+        <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
+        <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
+        <div class="sol">
+          <div class="ans">✅ 答案：13</div>
+          <div class="expl"><b>解析：</b>利用兩點距離公式（即畢氏定理）。<br>水平差 = 3 - (-2) = 5，鉛直差 = 13 - 1 = 12。<br>距離 = √(5² + 12²) = √(25 + 144) = √169 = <b>13</b>。<br><b>驗算</b>：5² + 12² = 25 + 144 = 169 = 13²，成立。</div>
+        </div>
+      </div>
+  </div>
+  <div class="printpage">
+    <div class="pageribbon">列印第 32 頁 / 共 67 頁　·　2-3 畢氏定理</div>
+    
+    
+      <div class="qcard">
+        <div class="qhead"><span class="tbadge" style="background:#457b9d">選擇</span><span class="qid">2-3-4</span><span class="src">📄 改編·中小學題庫</span><span class="pchip">🖨 第 32 頁</span></div>
+        <div class="qbody">一支垂直於地面的旗桿高 8 公尺，桿頂拉一條繩子固定在地面上，固定點離桿底 6 公尺。若繩子拉直，則繩長為多少公尺？</div>
+        <div class="fig"><svg viewBox="0 0 220 160" xmlns="http://www.w3.org/2000/svg"><line x1="40" y1="135" x2="205" y2="135" stroke="#8a6d3b" stroke-width="2"/><polygon points="40,135 40,35 130,135" fill="#eef6f8" stroke="#1f6f8b" stroke-width="2"/><rect x="40" y="120" width="15" height="15" fill="none" stroke="#e76f51" stroke-width="1.5"/><text x="20" y="90" font-size="13">8</text><text x="78" y="150" font-size="13">6</text><text x="92" y="80" font-size="13">繩</text></svg></div>
+        <div class="opts"><div class="opt"><span class="ol">(A)</span> 9</div><div class="opt"><span class="ol">(B)</span> 10</div><div class="opt"><span class="ol">(C)</span> 12</div><div class="opt"><span class="ol">(D)</span> 14</div></div>
+        <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
+        <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
+        <div class="sol">
+          <div class="ans">✅ 答案：10</div>
+          <div class="expl"><b>解析：</b>旗桿（8 公尺）與地面（6 公尺）互相垂直，繩子為斜邊。<br>繩長² = 8² + 6² = 64 + 36 = 100，<br>繩長 = √100 = <b>10（公尺）</b>。<br><b>驗算</b>：6² + 8² = 36 + 64 = 100 = 10²，即為 6-8-10 直角三角形，成立。</div>
+        </div>
+      </div>
+  </div>
+  <div class="printpage">
+    <div class="pageribbon">列印第 33 頁 / 共 67 頁　·　2-3 畢氏定理</div>
+    
+    
+      <div class="qcard">
+        <div class="qhead"><span class="tbadge" style="background:#457b9d">選擇</span><span class="qid">2-3-5</span><span class="src">📄 改編·中小學題庫</span><span class="pchip">🖨 第 33 頁</span></div>
+        <div class="qbody">如圖，一個正方形的對角線長為 8，則此正方形的面積為多少？</div>
+        <div class="fig"><svg viewBox="0 0 220 160" xmlns="http://www.w3.org/2000/svg"><rect x="55" y="30" width="100" height="100" fill="#eef6f8" stroke="#1f6f8b" stroke-width="2"/><line x1="55" y1="130" x2="155" y2="30" stroke="#e76f51" stroke-width="2"/><rect x="55" y="115" width="15" height="15" fill="none" stroke="#e76f51" stroke-width="1.5"/><text x="100" y="147" font-size="13">a</text><text x="40" y="85" font-size="13">a</text><text x="112" y="78" font-size="13">8</text></svg></div>
+        <div class="opts"><div class="opt"><span class="ol">(A)</span> 16</div><div class="opt"><span class="ol">(B)</span> 32</div><div class="opt"><span class="ol">(C)</span> 32√2</div><div class="opt"><span class="ol">(D)</span> 64</div></div>
+        <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
+        <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
+        <div class="sol">
+          <div class="ans">✅ 答案：32</div>
+          <div class="expl"><b>解析：</b>設正方形邊長為 a。對角線將正方形分成兩個等腰直角三角形。<br>由畢氏定理：對角線² = a² + a² = 2a²。<br>即 8² = 2a²，64 = 2a²，a² = 32。<br>面積 = a² = <b>32</b>。<br>（也可用：面積 = 對角線² ÷ 2 = 64 ÷ 2 = 32。）<br>此即邊長為對角線的 1/√2 倍、對角線為邊長的 √2 倍之關係。</div>
+        </div>
+      </div>
+  </div>
+  <div class="printpage">
+    <div class="pageribbon">列印第 34 頁 / 共 67 頁　·　3-1 提公因式與乘法公式作因式分解</div>
+    <div class="sechd" id="3-1"><h2>3-1　提公因式與乘法公式作因式分解</h2><p>提公因式 ‧ 平方差與完全平方公式 ‧ 分組分解</p></div>
+    
+      <div class="qcard">
+        <div class="qhead"><span class="tbadge" style="background:#457b9d">選擇</span><span class="qid">3-1-1</span><span class="src">📄 會考·112年</span><span class="pchip">🖨 第 34 頁</span></div>
+        <div class="qbody">下列何者為多項式 x²−36 的因式？</div>
+        
+        <div class="opts"><div class="opt"><span class="ol">(A)</span> x−3</div><div class="opt"><span class="ol">(B)</span> x−4</div><div class="opt"><span class="ol">(C)</span> x−6</div><div class="opt"><span class="ol">(D)</span> x−9</div></div>
+        <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
+        <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
+        <div class="sol">
+          <div class="ans">✅ 答案：(C) x−6</div>
+          <div class="expl"><b>解析：</b>x²−36=(x+6)(x−6)，故選 <b>(C)</b>。</div>
+        </div>
+      </div>
+  </div>
+  <div class="printpage">
+    <div class="pageribbon">列印第 35 頁 / 共 67 頁　·　3-1 提公因式與乘法公式作因式分解</div>
+    
+    
+      <div class="qcard">
+        <div class="qhead"><span class="tbadge" style="background:#457b9d">選擇</span><span class="qid">3-1-2</span><span class="src">📄 會考·113年</span><span class="pchip">🖨 第 35 頁</span></div>
+        <div class="qbody">下列何者為多項式 5x(5x-2)-4(5x-2)² 的因式分解？</div>
+        
+        <div class="opts"><div class="opt"><span class="ol">(A)</span> (5x-2)(25x-8)</div><div class="opt"><span class="ol">(B)</span> (5x-2)(5x-4)</div><div class="opt"><span class="ol">(C)</span> (5x-2)(-15x+8)</div><div class="opt"><span class="ol">(D)</span> (5x-2)(-20x+4)</div></div>
+        <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
+        <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
+        <div class="sol">
+          <div class="ans">✅ 答案：(C) (5x-2)(-15x+8)</div>
+          <div class="expl"><b>解析：</b>5x(5x-2)-4(5x-2)²<br>=(5x-2)[5x-4(5x-2)]<br>=(5x-2)(5x-20x+8)<br>=<b>(5x-2)(-15x+8)</b><br>故選【C】。</div>
+        </div>
+      </div>
+  </div>
+  <div class="printpage">
+    <div class="pageribbon">列印第 36 頁 / 共 67 頁　·　3-1 提公因式與乘法公式作因式分解</div>
+    
+    
+      <div class="qcard">
+        <div class="qhead"><span class="tbadge" style="background:#457b9d">選擇</span><span class="qid">3-1-3</span><span class="src">📄 改編·中小學題庫</span><span class="pchip">🖨 第 36 頁</span></div>
+        <div class="qbody">將多項式 3x²y − 6xy² + 9xy 因式分解，結果為下列何者？</div>
+        
+        <div class="opts"><div class="opt"><span class="ol">(A)</span> 3xy(x − 2y + 3)</div><div class="opt"><span class="ol">(B)</span> 3xy(x − 2y + 9)</div><div class="opt"><span class="ol">(C)</span> 3x(x − 2y + 3)</div><div class="opt"><span class="ol">(D)</span> 3xy(x − 2y − 3)</div></div>
+        <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
+        <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
+        <div class="sol">
+          <div class="ans">✅ 答案：3xy(x − 2y + 3)</div>
+          <div class="expl"><b>解析：</b><b>步驟一：找最大公因式</b><br>三項 3x²y、−6xy²、9xy 的係數 3、6、9 最大公因數為 3；文字部分共同含有 x 與 y，故公因式為 3xy。<br><b>步驟二：逐項相除</b><br>3x²y ÷ 3xy = x<br>−6xy² ÷ 3xy = −2y<br>9xy ÷ 3xy = 3<br>所以 3x²y − 6xy² + 9xy = 3xy(x − 2y + 3)。<br><b>驗算（乘回去）：</b>3xy × x = 3x²y，3xy × (−2y) = −6xy²，3xy × 3 = 9xy，相加正好還原，答案正確。<br>誘答分析：選「+9」是最後一項忘了除以 3xy；選「3x(…)」是漏抽公因式 y；選「−3」是末項符號抄錯。</div>
+        </div>
+      </div>
+  </div>
+  <div class="printpage">
+    <div class="pageribbon">列印第 37 頁 / 共 67 頁　·　3-1 提公因式與乘法公式作因式分解</div>
+    
+    
+      <div class="qcard">
+        <div class="qhead"><span class="tbadge" style="background:#2a9d8f">填充</span><span class="qid">3-1-4</span><span class="src">📄 改編·中小學題庫</span><span class="pchip">🖨 第 37 頁</span></div>
+        <div class="qbody">將 2x³ − 8x 徹底因式分解（分解到不能再分為止）。</div>
+        
+        
+        <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
+        <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
+        <div class="sol">
+          <div class="ans">✅ 答案：2x(x + 2)(x − 2)</div>
+          <div class="expl"><b>解析：</b><b>步驟一：先提公因式</b><br>2x³ 與 8x 的公因式為 2x，故 2x³ − 8x = 2x(x² − 4)。<br><b>步驟二：括號內用平方差公式</b><br>x² − 4 = x² − 2² = (x + 2)(x − 2)。<br>因此 2x³ − 8x = 2x(x + 2)(x − 2)。<br><b>驗算（乘回去）：</b>(x + 2)(x − 2) = x² − 4；再乘 2x 得 2x³ − 8x，與原式相同，答案正確。<br><b>重點</b>：<b>先提公因式、再看能否套平方差</b>，是「徹底分解」的關鍵，不可只寫成 2x(x² − 4)。</div>
+        </div>
+      </div>
+  </div>
+  <div class="printpage">
+    <div class="pageribbon">列印第 38 頁 / 共 67 頁　·　3-1 提公因式與乘法公式作因式分解</div>
+    
+    
+      <div class="qcard">
+        <div class="qhead"><span class="tbadge" style="background:#e76f51">計算</span><span class="qid">3-1-5</span><span class="src">📄 改編·中小學題庫</span><span class="pchip">🖨 第 38 頁</span></div>
+        <div class="qbody">利用分組並配合公式，將 x² + 6x + 9 − y² 因式分解，並寫出過程。</div>
+        
+        
+        <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
+        <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
+        <div class="sol">
+          <div class="ans">✅ 答案：(x + 3 + y)(x + 3 − y)</div>
+          <div class="expl"><b>解析：</b><b>步驟一：分組</b><br>前三項 x² + 6x + 9 可湊成完全平方，先分成 (x² + 6x + 9) − y²。<br><b>步驟二：完全平方公式</b><br>x² + 6x + 9 = x² + 2·x·3 + 3² = (x + 3)²。<br>原式變成 (x + 3)² − y²。<br><b>步驟三：平方差公式</b><br>令 A = x + 3，則 A² − y² = (A + y)(A − y) = (x + 3 + y)(x + 3 − y)。<br><b>驗算（乘回去）：</b>(x + 3 + y)(x + 3 − y) = (x + 3)² − y² = x² + 6x + 9 − y²，與原式相同，答案正確。<br><b>重點</b>：看到「三項能湊完全平方，再減一個平方」時，<b>先湊完全平方、再用平方差</b>。</div>
+        </div>
+      </div>
+  </div>
+  <div class="printpage">
+    <div class="pageribbon">列印第 39 頁 / 共 67 頁　·　3-2 利用十字交乘法因式分解</div>
+    <div class="sechd" id="3-2"><h2>3-2　利用十字交乘法因式分解</h2><p>x²+bx+c 型 ‧ ax²+bx+c 型十字交乘</p></div>
+    
+      <div class="qcard">
+        <div class="qhead"><span class="tbadge" style="background:#457b9d">選擇</span><span class="qid">3-2-1</span><span class="src">📄 會考·108年</span><span class="pchip">🖨 第 39 頁</span></div>
+        <div class="qbody">若多項式 5x²+17x−12 可因式分解成 (x+a)(bx+c)，其中 a、b、c 均為整數，則 a+c 之值為何？</div>
+        
+        <div class="opts"><div class="opt"><span class="ol">(A)</span> 1</div><div class="opt"><span class="ol">(B)</span> 7</div><div class="opt"><span class="ol">(C)</span> 11</div><div class="opt"><span class="ol">(D)</span> 13</div></div>
+        <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
+        <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
+        <div class="sol">
+          <div class="ans">✅ 答案：(A) 1</div>
+          <div class="expl"><b>解析：</b>5x²+17x−12=(x+4)(5x−3)<br>（十字交乘：x 與 +4、5x 與 −3，交叉相乘得 20x 與 3x，相加 =17x）<br>和 (x+a)(bx+c) 比較後得 a=4，b=5，c=−3，<br>故 a+c=4+(−3)=1。<br>故選 (A)。</div>
+        </div>
+      </div>
+  </div>
+  <div class="printpage">
+    <div class="pageribbon">列印第 40 頁 / 共 67 頁　·　3-2 利用十字交乘法因式分解</div>
+    
+    
+      <div class="qcard">
+        <div class="qhead"><span class="tbadge" style="background:#457b9d">選擇</span><span class="qid">3-2-2</span><span class="src">📄 會考·111年</span><span class="pchip">🖨 第 40 頁</span></div>
+        <div class="qbody">多項式 39x²+5x−14 可因式分解成 (3x+a)(bx+c)，其中 a、b、c 均為整數，求 a+2c 之值為何？</div>
+        
+        <div class="opts"><div class="opt"><span class="ol">(A)</span> −12</div><div class="opt"><span class="ol">(B)</span> −3</div><div class="opt"><span class="ol">(C)</span> 3</div><div class="opt"><span class="ol">(D)</span> 12</div></div>
+        <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
+        <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
+        <div class="sol">
+          <div class="ans">✅ 答案：(A) −12</div>
+          <div class="expl"><b>解析：</b>利用十字交乘法因式分解<br>39x²+5x−14=(3x+2)(13x−7)<br>∴ a=2，b=13，c=−7<br>a+2c=2+(−14)=−12<br>故選 <b>(A)</b>。</div>
+        </div>
+      </div>
+  </div>
+  <div class="printpage">
+    <div class="pageribbon">列印第 41 頁 / 共 67 頁　·　3-2 利用十字交乘法因式分解</div>
+    
+    
+      <div class="qcard">
+        <div class="qhead"><span class="tbadge" style="background:#457b9d">選擇</span><span class="qid">3-2-3</span><span class="src">📄 改編·中小學題庫</span><span class="pchip">🖨 第 41 頁</span></div>
+        <div class="qbody">利用十字交乘法將 x² − 2x − 15 因式分解，結果為下列何者？</div>
+        
+        <div class="opts"><div class="opt"><span class="ol">(A)</span> (x − 5)(x + 3)</div><div class="opt"><span class="ol">(B)</span> (x + 5)(x − 3)</div><div class="opt"><span class="ol">(C)</span> (x − 5)(x − 3)</div><div class="opt"><span class="ol">(D)</span> (x − 15)(x + 1)</div></div>
+        <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
+        <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
+        <div class="sol">
+          <div class="ans">✅ 答案：(x − 5)(x + 3)</div>
+          <div class="expl"><b>解析：</b><b>十字交乘思路</b>：找兩數相乘等於常數 −15、相加等於一次項係數 −2。<br>試 −5 與 +3：(−5) × 3 = −15（符合），(−5) + 3 = −2（符合）。<br>故 x² − 2x − 15 = (x − 5)(x + 3)。<br><b>驗算（乘回去）：</b>(x − 5)(x + 3) = x² + 3x − 5x − 15 = x² − 2x − 15，與原式相同，答案正確。<br>誘答分析：(x + 5)(x − 3) 展開為 x² + 2x − 15（中間項符號相反）；(x − 5)(x − 3) 展開為 x² − 8x + 15（常數符號錯）；(x − 15)(x + 1) 展開為 x² − 14x − 15（相加不等於 −2）。</div>
+        </div>
+      </div>
+  </div>
+  <div class="printpage">
+    <div class="pageribbon">列印第 42 頁 / 共 67 頁　·　3-2 利用十字交乘法因式分解</div>
+    
+    
+      <div class="qcard">
+        <div class="qhead"><span class="tbadge" style="background:#e76f51">計算</span><span class="qid">3-2-4</span><span class="src">📄 改編·中小學題庫</span><span class="pchip">🖨 第 42 頁</span></div>
+        <div class="qbody">利用十字交乘法將 6x² + x − 12 因式分解，並寫出你的十字交乘配對。</div>
+        
+        
+        <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
+        <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
+        <div class="sol">
+          <div class="ans">✅ 答案：(2x + 3)(3x − 4)</div>
+          <div class="expl"><b>解析：</b><b>十字交乘設定</b>：二次項 6x² 拆成 2x 與 3x；常數 −12 拆成 +3 與 −4。<br>交叉相乘再相加，檢查是否等於一次項 +x：<br>2x × (−4) = −8x，3x × (+3) = +9x，兩者相加 −8x + 9x = +x（符合）。<br>故 6x² + x − 12 = (2x + 3)(3x − 4)。<br><b>驗算（乘回去）：</b>(2x + 3)(3x − 4) = 6x² − 8x + 9x − 12 = 6x² + x − 12，與原式相同，答案正確。<br><b>重點</b>：ax² 型十字交乘要同時試「係數拆法」與「常數拆法」，並用<b>交叉相乘和 = 一次項</b>來檢驗。</div>
+        </div>
+      </div>
+  </div>
+  <div class="printpage">
+    <div class="pageribbon">列印第 43 頁 / 共 67 頁　·　3-2 利用十字交乘法因式分解</div>
+    
+    
+      <div class="qcard">
+        <div class="qhead"><span class="tbadge" style="background:#2a9d8f">填充</span><span class="qid">3-2-5</span><span class="src">📄 改編·中小學題庫</span><span class="pchip">🖨 第 43 頁</span></div>
+        <div class="qbody">一個長方形的面積為 (2x² + 7x + 3) 平方公分，且各邊長皆可用 x 的一次式表示。請問這個長方形的兩邊長分別是多少？（x 為正整數）</div>
+        
+        
+        <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
+        <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
+        <div class="sol">
+          <div class="ans">✅ 答案：(2x + 1) 公分與 (x + 3) 公分</div>
+          <div class="expl"><b>解析：</b><b>觀念</b>：長方形面積 = 長 × 寬，故把面積式因式分解，兩個因式就是兩邊長。<br><b>十字交乘</b>：2x² 拆成 2x 與 x；常數 3 拆成 +1 與 +3。<br>交叉相乘和：2x × 3 = 6x，x × 1 = x，相加 6x + x = 7x（等於一次項，符合）。<br>故 2x² + 7x + 3 = (2x + 1)(x + 3)。<br><b>驗算（乘回去）：</b>(2x + 1)(x + 3) = 2x² + 6x + x + 3 = 2x² + 7x + 3，與面積式相同，答案正確。<br>所以兩邊長為 <b>(2x + 1) 公分與 (x + 3) 公分</b>。</div>
+        </div>
+      </div>
+  </div>
+  <div class="printpage">
+    <div class="pageribbon">列印第 44 頁 / 共 67 頁　·　4-1 因式分解法解一元二次方程式</div>
+    <div class="sechd" id="4-1"><h2>4-1　因式分解法解一元二次方程式</h2><p>AB=0 性質 ‧ 十字交乘解方程式 ‧ 由根求係數</p></div>
+    
+      <div class="qcard">
+        <div class="qhead"><span class="tbadge" style="background:#457b9d">選擇</span><span class="qid">4-1-1</span><span class="src">📄 會考·107年</span><span class="pchip">🖨 第 44 頁</span></div>
+        <div class="qbody">若一元二次方程式 x²−8x−3×11=0 的兩根為 a、b，且 a&gt;b，則 a−2b 之值為何？</div>
+        
+        <div class="opts"><div class="opt"><span class="ol">(A)</span> −25</div><div class="opt"><span class="ol">(B)</span> −19</div><div class="opt"><span class="ol">(C)</span> 5</div><div class="opt"><span class="ol">(D)</span> 17</div></div>
+        <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
+        <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
+        <div class="sol">
+          <div class="ans">✅ 答案：(D) 17</div>
+          <div class="expl"><b>解析：</b>x²−8x−3×11=0<br>(x−11)(x+3)=0<br>x−11=0 或 x+3=0<br>x=11 或 x=−3<br>又 a&gt;b<br>∴ a=11，b=−3<br>a−2b=11−2×(−3)=11−(−6)=17<br>故選 (D)。</div>
+        </div>
+      </div>
+  </div>
+  <div class="printpage">
+    <div class="pageribbon">列印第 45 頁 / 共 67 頁　·　4-1 因式分解法解一元二次方程式</div>
+    
+    
+      <div class="qcard">
+        <div class="qhead"><span class="tbadge" style="background:#457b9d">選擇</span><span class="qid">4-1-2</span><span class="src">📄 會考·115年</span><span class="pchip">🖨 第 45 頁</span></div>
+        <div class="qbody">已知一元二次方程式 2x(x+7)-10(x+7)=0 的兩根為 a、b，且 a&gt;b，求 a+2b 之值為何？</div>
+        
+        <div class="opts"><div class="opt"><span class="ol">(A)</span> -13</div><div class="opt"><span class="ol">(B)</span> -9</div><div class="opt"><span class="ol">(C)</span> -4</div><div class="opt"><span class="ol">(D)</span> -3</div></div>
+        <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
+        <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
+        <div class="sol">
+          <div class="ans">✅ 答案：(B) -9</div>
+          <div class="expl"><b>解析：</b>提出公因式 (x+7) 得：(x+7)(2x-10)=0<br>x=-7 或 5<br>又兩根為 a、b 且 a&gt;b，取 a=5，b=-7<br>a+2b=5+2×(-7)=<b>-9</b><br>故選【B】。</div>
+        </div>
+      </div>
+  </div>
+  <div class="printpage">
+    <div class="pageribbon">列印第 46 頁 / 共 67 頁　·　4-1 因式分解法解一元二次方程式</div>
+    
+    
+      <div class="qcard">
+        <div class="qhead"><span class="tbadge" style="background:#e76f51">計算</span><span class="qid">4-1-3</span><span class="src">📄 改編·中小學題庫</span><span class="pchip">🖨 第 46 頁</span></div>
+        <div class="qbody">利用十字交乘法解一元二次方程式 2x²+5x−3=0。</div>
+        
+        
+        <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
+        <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
+        <div class="sol">
+          <div class="ans">✅ 答案：x=1/2 或 x=−3</div>
+          <div class="expl"><b>解析：</b>十字交乘：2x² 拆成 2x 與 x，常數 −3 拆成 −1 與 3。<br>(2x−1)(x+3)=0<br><b>展開驗算：2x²+6x−x−3=2x²+5x−3 ✓，與原式相同。</b><br>由 AB=0 性質：<br>2x−1=0 → x=1/2<br>x+3=0 → x=−3<br><b>代回驗算：</b><br>x=1/2：2×(1/4)+5×(1/2)−3=1/2+5/2−3=0 ✓<br>x=−3：2×9+5×(−3)−3=18−15−3=0 ✓<br>故 <b>x=1/2 或 x=−3</b>。</div>
+        </div>
+      </div>
+  </div>
+  <div class="printpage">
+    <div class="pageribbon">列印第 47 頁 / 共 67 頁　·　4-1 因式分解法解一元二次方程式</div>
+    
+    
+      <div class="qcard">
+        <div class="qhead"><span class="tbadge" style="background:#457b9d">選擇</span><span class="qid">4-1-4</span><span class="src">📄 改編·中小學題庫</span><span class="pchip">🖨 第 47 頁</span></div>
+        <div class="qbody">若 (2x−3)(x+4)=0，則 x 的值為下列何者？</div>
+        
+        <div class="opts"><div class="opt"><span class="ol">(A)</span> x=3/2 或 x=−4</div><div class="opt"><span class="ol">(B)</span> x=−3/2 或 x=4</div><div class="opt"><span class="ol">(C)</span> x=2/3 或 x=−4</div><div class="opt"><span class="ol">(D)</span> x=3/2 或 x=4</div></div>
+        <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
+        <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
+        <div class="sol">
+          <div class="ans">✅ 答案：x=3/2 或 x=−4</div>
+          <div class="expl"><b>解析：</b>由 AB=0 性質：兩因式相乘為 0，則至少有一個因式為 0。<br>2x−3=0 → 2x=3 → x=3/2<br>x+4=0 → x=−4<br><b>代回驗算：</b><br>x=3/2：(2×3/2−3)(3/2+4)=(3−3)(11/2)=0×(11/2)=0 ✓<br>x=−4：(2×(−4)−3)((−4)+4)=(−11)(0)=0 ✓<br>故答案為 <b>x=3/2 或 x=−4</b>。</div>
+        </div>
+      </div>
+  </div>
+  <div class="printpage">
+    <div class="pageribbon">列印第 48 頁 / 共 67 頁　·　4-1 因式分解法解一元二次方程式</div>
+    
+    
+      <div class="qcard">
+        <div class="qhead"><span class="tbadge" style="background:#2a9d8f">填充</span><span class="qid">4-1-5</span><span class="src">📄 改編·中小學題庫</span><span class="pchip">🖨 第 48 頁</span></div>
+        <div class="qbody">已知一元二次方程式 x²+kx−15=0 有一根為 3，求 k 的值與另一根。</div>
+        
+        
+        <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
+        <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
+        <div class="sol">
+          <div class="ans">✅ 答案：k=2，另一根為 x=−5</div>
+          <div class="expl"><b>解析：</b>設未知數：k 為待求係數。<br>將 x=3 代入方程式：<br>3²+k×3−15=0<br>9+3k−15=0 → 3k−6=0 → <b>k=2</b>。<br>方程式為 x²+2x−15=0。<br>因式分解：(x+5)(x−3)=0<br><b>展開驗算：x²−3x+5x−15=x²+2x−15 ✓。</b><br>解得 x=−5 或 x=3，故另一根為 <b>x=−5</b>。<br><b>代回驗算：</b>(−5)²+2×(−5)−15=25−10−15=0 ✓。</div>
+        </div>
+      </div>
+  </div>
+  <div class="printpage">
+    <div class="pageribbon">列印第 49 頁 / 共 67 頁　·　4-2 配方法與公式解</div>
+    <div class="sechd" id="4-2"><h2>4-2　配方法與公式解</h2><p>配方法 ‧ 公式解 ‧ 判別式與根的個數</p></div>
+    
+      <div class="qcard">
+        <div class="qhead"><span class="tbadge" style="background:#457b9d">選擇</span><span class="qid">4-2-1</span><span class="src">📄 會考·109年</span><span class="pchip">🖨 第 49 頁</span></div>
+        <div class="qbody">若一元二次方程式 5(x−4)²=125 的解為 a、b，且 a&gt;b，則 2a+b 之值為何？</div>
+        
+        <div class="opts"><div class="opt"><span class="ol">(A)</span> −7</div><div class="opt"><span class="ol">(B)</span> −1</div><div class="opt"><span class="ol">(C)</span> 11</div><div class="opt"><span class="ol">(D)</span> 17</div></div>
+        <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
+        <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
+        <div class="sol">
+          <div class="ans">✅ 答案：(D) 17</div>
+          <div class="expl"><b>解析：</b>5(x−4)²=125<br>(x−4)²=25<br>x−4=±5<br>x=9 或 x=−1<br>∵ a&gt;b，∴ a=9，b=−1<br>2a+b=2×9+(−1)=18+(−1)=17<br>故選 (D)。</div>
+        </div>
+      </div>
+  </div>
+  <div class="printpage">
+    <div class="pageribbon">列印第 50 頁 / 共 67 頁　·　4-2 配方法與公式解</div>
+    
+    
+      <div class="qcard">
+        <div class="qhead"><span class="tbadge" style="background:#457b9d">選擇</span><span class="qid">4-2-2</span><span class="src">📄 會考·111年</span><span class="pchip">🖨 第 50 頁</span></div>
+        <div class="qbody">已知一元二次方程式 (x−2)²=3 的兩根為 a、b，且 a&gt;b，求 2a+b 之值為何？</div>
+        
+        <div class="opts"><div class="opt"><span class="ol">(A)</span> 9</div><div class="opt"><span class="ol">(B)</span> −3</div><div class="opt"><span class="ol">(C)</span> 6+√3</div><div class="opt"><span class="ol">(D)</span> −6+√3</div></div>
+        <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
+        <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
+        <div class="sol">
+          <div class="ans">✅ 答案：(C) 6+√3</div>
+          <div class="expl"><b>解析：</b>(x−2)²=3<br>x−2=±√3<br>x=2±√3<br>由 a&gt;b 可知，a=2+√3，b=2−√3<br>∴ 2a+b=2(2+√3)+(2−√3)=4+2√3+2−√3=6+√3<br>故選 <b>(C)</b>。</div>
+        </div>
+      </div>
+  </div>
+  <div class="printpage">
+    <div class="pageribbon">列印第 51 頁 / 共 67 頁　·　4-2 配方法與公式解</div>
+    
+    
+      <div class="qcard">
+        <div class="qhead"><span class="tbadge" style="background:#457b9d">選擇</span><span class="qid">4-2-3</span><span class="src">📄 會考·112年</span><span class="pchip">🖨 第 51 頁</span></div>
+        <div class="qbody">利用公式解可得一元二次方程式 3x²−11x−1=0 的兩解為 a、b，且 a&gt;b，求 a 值為何？</div>
+        
+        <div class="opts"><div class="opt"><span class="ol">(A)</span> (−11+√109)/6</div><div class="opt"><span class="ol">(B)</span> (−11+√133)/6</div><div class="opt"><span class="ol">(C)</span> (11+√109)/6</div><div class="opt"><span class="ol">(D)</span> (11+√133)/6</div></div>
+        <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
+        <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
+        <div class="sol">
+          <div class="ans">✅ 答案：(D) (11+√133)/6</div>
+          <div class="expl"><b>解析：</b>判別式 =(−11)²−4×3×(−1)=133<br>∴ 3x²−11x−1=0 的公式解為 x=(11±√133)/(2×3)=(11±√133)/6<br>∴ a=(11+√133)/6<br>故選 <b>(D)</b>。</div>
+        </div>
+      </div>
+  </div>
+  <div class="printpage">
+    <div class="pageribbon">列印第 52 頁 / 共 67 頁　·　4-2 配方法與公式解</div>
+    
+    
+      <div class="qcard">
+        <div class="qhead"><span class="tbadge" style="background:#457b9d">選擇</span><span class="qid">4-2-4</span><span class="src">📄 會考·114年</span><span class="pchip">🖨 第 52 頁</span></div>
+        <div class="qbody">已知甲方程式為 (x-4)²=9，乙方程式為 (x+9)²=-4。關於甲、乙兩方程式的解的情形，下列敘述何者正確？</div>
+        
+        <div class="opts"><div class="opt"><span class="ol">(A)</span> 甲有兩個相異的解，乙無解</div><div class="opt"><span class="ol">(B)</span> 甲有兩個相異的解，乙有兩個相異的解</div><div class="opt"><span class="ol">(C)</span> 甲有兩個相同的解，乙無解</div><div class="opt"><span class="ol">(D)</span> 甲有兩個相同的解，乙有兩個相異的解</div></div>
+        <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
+        <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
+        <div class="sol">
+          <div class="ans">✅ 答案：(A) 甲有兩個相異的解，乙無解</div>
+          <div class="expl"><b>解析：</b>甲方程式：(x-4)²=9<br>x-4=±3<br>x=4±3<br>x=7 或 1，甲有兩個相異的解<br>乙方程式：(x+9)²=-4<br>由於任何數的平方皆大於或等於 0，故乙無解。<br>故選【A】。</div>
+        </div>
+      </div>
+  </div>
+  <div class="printpage">
+    <div class="pageribbon">列印第 53 頁 / 共 67 頁　·　4-2 配方法與公式解</div>
+    
+    
+      <div class="qcard">
+        <div class="qhead"><span class="tbadge" style="background:#e76f51">計算</span><span class="qid">4-2-5</span><span class="src">📄 改編·中小學題庫</span><span class="pchip">🖨 第 53 頁</span></div>
+        <div class="qbody">利用配方法解一元二次方程式 x²−6x+4=0。</div>
+        
+        
+        <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
+        <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
+        <div class="sol">
+          <div class="ans">✅ 答案：x=3+√5 或 x=3−√5</div>
+          <div class="expl"><b>解析：</b>設法將左式配成完全平方。<br>x²−6x+4=0<br>移項：x²−6x=−4<br>兩邊加上一次項係數一半的平方，即 (6/2)²=9：<br>x²−6x+9=−4+9<br>(x−3)²=5<br>開根號：x−3=±√5<br>x=3±√5<br><b>驗算（用公式解判別式）：b²−4ac=(−6)²−4×1×4=36−16=20，√20=2√5，x=(6±2√5)/2=3±√5 ✓，與配方法結果一致。</b><br>故 <b>x=3+√5 或 x=3−√5</b>。</div>
+        </div>
+      </div>
+  </div>
+  <div class="printpage">
+    <div class="pageribbon">列印第 54 頁 / 共 67 頁　·　4-2 配方法與公式解</div>
+    
+    
+      <div class="qcard">
+        <div class="qhead"><span class="tbadge" style="background:#457b9d">選擇</span><span class="qid">4-2-6</span><span class="src">📄 改編·中小學題庫</span><span class="pchip">🖨 第 54 頁</span></div>
+        <div class="qbody">下列哪一個一元二次方程式有兩個相異實根？（提示：判別式 b²−4ac＞0）</div>
+        
+        <div class="opts"><div class="opt"><span class="ol">(A)</span> 2x²−3x−1=0</div><div class="opt"><span class="ol">(B)</span> x²−4x+4=0</div><div class="opt"><span class="ol">(C)</span> x²+x+1=0</div><div class="opt"><span class="ol">(D)</span> x²−2x+5=0</div></div>
+        <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
+        <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
+        <div class="sol">
+          <div class="ans">✅ 答案：2x²−3x−1=0</div>
+          <div class="expl"><b>解析：</b>判別式 D=b²−4ac，D＞0 有兩相異實根、D=0 有兩相等實根、D＜0 無實根。<br>逐一計算：<br>2x²−3x−1=0：D=(−3)²−4×2×(−1)=9+8=17＞0 → 兩相異實根 ✓<br>x²−4x+4=0：D=(−4)²−4×1×4=16−16=0 → 兩相等實根<br>x²+x+1=0：D=1²−4×1×1=1−4=−3＜0 → 無實根<br>x²−2x+5=0：D=(−2)²−4×1×5=4−20=−16＜0 → 無實根<br>故僅 <b>2x²−3x−1=0</b> 有兩個相異實根。</div>
+        </div>
+      </div>
+  </div>
+  <div class="printpage">
+    <div class="pageribbon">列印第 55 頁 / 共 67 頁　·　4-3 應用問題</div>
+    <div class="sechd" id="4-3"><h2>4-3　應用問題</h2><p>設未知數列一元二次方程式 ‧ 幾何與數量應用 ‧ 檢驗解的合理性</p></div>
+    
+      <div class="qcard">
+        <div class="qhead"><span class="tbadge" style="background:#e76f51">計算</span><span class="qid">4-3-1</span><span class="src">📄 改編·中小學題庫</span><span class="pchip">🖨 第 55 頁</span></div>
+        <div class="qbody">兩個連續正整數的乘積為 156，求這兩個正整數。</div>
+        
+        
+        <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
+        <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
+        <div class="sol">
+          <div class="ans">✅ 答案：12 與 13</div>
+          <div class="expl"><b>解析：</b>設未知數：設較小的正整數為 n，則較大的為 n+1。<br>列式：n(n+1)=156<br>n²+n−156=0<br>因式分解：(n−12)(n+13)=0<br><b>展開驗算：n²+13n−12n−156=n²+n−156 ✓。</b><br>解得 n=12 或 n=−13。<br><b>檢驗合理性：n 為正整數，故 n=−13 不合，取 n=12。</b><br>兩數為 12 與 13。<br><b>代回驗算：12×13=156 ✓。</b></div>
+        </div>
+      </div>
+  </div>
+  <div class="printpage">
+    <div class="pageribbon">列印第 56 頁 / 共 67 頁　·　4-3 應用問題</div>
+    
+    
+      <div class="qcard">
+        <div class="qhead"><span class="tbadge" style="background:#e76f51">計算</span><span class="qid">4-3-2</span><span class="src">📄 改編·中小學題庫</span><span class="pchip">🖨 第 56 頁</span></div>
+        <div class="qbody">一塊長方形花圃，長比寬多 4 公尺，面積為 45 平方公尺，求花圃的長與寬各為多少公尺？</div>
+        <div class="fig"><svg viewBox="0 0 220 140" xmlns="http://www.w3.org/2000/svg"><rect x="30" y="35" width="150" height="70" fill="none" stroke="currentColor" stroke-width="2"/><text x="105" y="28" font-size="13" text-anchor="middle" fill="currentColor">長 (x+4)</text><text x="12" y="75" font-size="13" text-anchor="middle" fill="currentColor">寬 x</text></svg></div>
+        
+        <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
+        <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
+        <div class="sol">
+          <div class="ans">✅ 答案：寬 5 公尺，長 9 公尺</div>
+          <div class="expl"><b>解析：</b>設未知數：設寬為 x 公尺，則長為 (x+4) 公尺。<br>列式（面積＝長×寬）：x(x+4)=45<br>x²+4x−45=0<br>因式分解：(x−5)(x+9)=0<br><b>展開驗算：x²+9x−5x−45=x²+4x−45 ✓。</b><br>解得 x=5 或 x=−9。<br><b>檢驗合理性：寬為長度不可為負，故 x=−9 不合，取 x=5。</b><br>寬 5 公尺，長 5+4=9 公尺。<br><b>代回驗算：5×9=45 平方公尺 ✓。</b></div>
+        </div>
+      </div>
+  </div>
+  <div class="printpage">
+    <div class="pageribbon">列印第 57 頁 / 共 67 頁　·　4-3 應用問題</div>
+    
+    
+      <div class="qcard">
+        <div class="qhead"><span class="tbadge" style="background:#e76f51">計算</span><span class="qid">4-3-3</span><span class="src">📄 改編·中小學題庫</span><span class="pchip">🖨 第 57 頁</span></div>
+        <div class="qbody">一個直角三角形的斜邊長 13 公分，兩股長相差 7 公分，求兩股長各為多少公分？</div>
+        <div class="fig"><svg viewBox="0 0 200 150" xmlns="http://www.w3.org/2000/svg"><polygon points="40,120 40,30 160,120" fill="none" stroke="currentColor" stroke-width="2"/><rect x="40" y="108" width="12" height="12" fill="none" stroke="currentColor" stroke-width="1.5"/><text x="22" y="78" font-size="12" text-anchor="middle" fill="currentColor">x</text><text x="100" y="135" font-size="12" text-anchor="middle" fill="currentColor">x+7</text><text x="108" y="68" font-size="12" text-anchor="middle" fill="currentColor">13</text></svg></div>
+        
+        <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
+        <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
+        <div class="sol">
+          <div class="ans">✅ 答案：5 公分與 12 公分</div>
+          <div class="expl"><b>解析：</b>設未知數：設較短股為 x 公分，則較長股為 (x+7) 公分。<br>列式（畢氏定理：兩股平方和＝斜邊平方）：<br>x²+(x+7)²=13²<br>x²+x²+14x+49=169<br>2x²+14x−120=0<br>兩邊同除以 2：x²+7x−60=0<br>因式分解：(x−5)(x+12)=0<br><b>展開驗算：x²+12x−5x−60=x²+7x−60 ✓。</b><br>解得 x=5 或 x=−12。<br><b>檢驗合理性：邊長不可為負，故 x=−12 不合，取 x=5。</b><br>兩股為 5 公分與 5+7=12 公分。<br><b>代回驗算：5²+12²=25+144=169=13² ✓。</b></div>
+        </div>
+      </div>
+  </div>
+  <div class="printpage">
+    <div class="pageribbon">列印第 58 頁 / 共 67 頁　·　4-3 應用問題</div>
+    
+    
+      <div class="qcard">
+        <div class="qhead"><span class="tbadge" style="background:#e76f51">計算</span><span class="qid">4-3-4</span><span class="src">📄 改編·中小學題庫</span><span class="pchip">🖨 第 58 頁</span></div>
+        <div class="qbody">將一顆球從地面以初速向上拋出，經過 t 秒後球的高度為 h=30t−5t²（公尺）。請問球在何時的高度為 40 公尺？</div>
+        
+        
+        <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
+        <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
+        <div class="sol">
+          <div class="ans">✅ 答案：第 2 秒（上升時）與第 4 秒（下降時）</div>
+          <div class="expl"><b>解析：</b>設未知數：t 為拋出後經過的秒數。<br>列式：令 h=40，<br>30t−5t²=40<br>整理：5t²−30t+40=0<br>兩邊同除以 5：t²−6t+8=0<br>因式分解：(t−2)(t−4)=0<br><b>展開驗算：t²−4t−2t+8=t²−6t+8 ✓。</b><br>解得 t=2 或 t=4。<br><b>檢驗合理性：t 為時間須為正，兩者皆為正且合理——球先上升，在 t=2 秒到達 40 公尺；繼續上升至最高點後下降，在 t=4 秒再次通過 40 公尺。</b><br><b>代回驗算：</b><br>t=2：30×2−5×4=60−20=40 ✓<br>t=4：30×4−5×16=120−80=40 ✓<br>故球在 <b>第 2 秒（上升）與第 4 秒（下降）</b> 高度為 40 公尺。</div>
+        </div>
+      </div>
+  </div>
+  <div class="printpage">
+    <div class="pageribbon">列印第 59 頁 / 共 67 頁　·　5-1 相對次數分配表與折線圖</div>
+    <div class="sechd" id="5-1"><h2>5-1　相對次數分配表與折線圖</h2><p>相對次數的意義與計算 ‧ 相對次數折線圖</p></div>
+    
+      <div class="qcard">
+        <div class="qhead"><span class="tbadge" style="background:#2a9d8f">填充</span><span class="qid">5-1-1</span><span class="src">📄 改編·中小學題庫</span><span class="pchip">🖨 第 59 頁</span></div>
+        <div class="qbody">下表為八年一班 40 位學生的數學成績次數分配表：<br>組別(分)　40~50：次數 2<br>50~60：4<br>60~70：8<br>70~80：12<br>80~90：10<br>90~100：4<br>（全班共 40 人）<br>試求「70~80 分」這一組的相對次數（以百分率表示）。</div>
+        
+        
+        <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
+        <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
+        <div class="sol">
+          <div class="ans">✅ 答案：30%</div>
+          <div class="expl"><b>解析：</b>相對次數 = 該組次數 ÷ 全體次數。<br>70~80 分這組次數為 12，全班 40 人：<br>相對次數 = 12/40 = 0.3 = <b>30%</b>。</div>
+        </div>
+      </div>
+  </div>
+  <div class="printpage">
+    <div class="pageribbon">列印第 60 頁 / 共 67 頁　·　5-1 相對次數分配表與折線圖</div>
+    
+    
+      <div class="qcard">
+        <div class="qhead"><span class="tbadge" style="background:#457b9d">選擇</span><span class="qid">5-1-2</span><span class="src">📄 改編·中小學題庫</span><span class="pchip">🖨 第 60 頁</span></div>
+        <div class="qbody">承上表（八年一班 40 人成績次數分配表）。下列敘述何者<b>正確</b>？<br>各組次數為 40~50：2、50~60：4、60~70：8、70~80：12、80~90：10、90~100：4。</div>
+        
+        <div class="opts"><div class="opt"><span class="ol">(A)</span> 相對次數最大的組別是 80~90 分</div><div class="opt"><span class="ol">(B)</span> 60~70 分這組的相對次數是 20%</div><div class="opt"><span class="ol">(C)</span> 各組相對次數的總和小於 1</div><div class="opt"><span class="ol">(D)</span> 90~100 分這組的相對次數是 4%</div></div>
+        <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
+        <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
+        <div class="sol">
+          <div class="ans">✅ 答案：(B) 60~70 分這組的相對次數是 20%</div>
+          <div class="expl"><b>解析：</b>各組相對次數：40~50=2/40=5%、50~60=4/40=10%、60~70=8/40=<b>20%</b>、70~80=12/40=30%、80~90=10/40=25%、90~100=4/40=10%。<br>(A) 相對次數最大是 70~80 分(30%)，錯。<br>(B) 60~70 分為 20%，<b>正確</b>。<br>(C) 各組相對次數總和必為 1(100%)，錯。<br>(D) 90~100 分為 10%，錯。<br>故選【B】。</div>
+        </div>
+      </div>
+  </div>
+  <div class="printpage">
+    <div class="pageribbon">列印第 61 頁 / 共 67 頁　·　5-1 相對次數分配表與折線圖</div>
+    
+    
+      <div class="qcard">
+        <div class="qhead"><span class="tbadge" style="background:#e76f51">計算</span><span class="qid">5-1-3</span><span class="src">📄 改編·中小學題庫</span><span class="pchip">🖨 第 61 頁</span></div>
+        <div class="qbody">某校八年級某班共 50 人參加英語聽力測驗，已知「80~90 分」這一組的相對次數為 24%。試問這一組有多少人？並說明相對次數折線圖的橫軸應標示什麼。</div>
+        
+        
+        <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
+        <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
+        <div class="sol">
+          <div class="ans">✅ 答案：12 人；橫軸標示各組的組中點（成績）</div>
+          <div class="expl"><b>解析：</b>由相對次數 = 該組次數 ÷ 全體次數，得<br>該組次數 = 相對次數 × 全體次數 = 24% × 50 = 0.24 × 50 = <b>12（人）</b>。<br>繪製相對次數折線圖時，橫軸標示各組的<b>組中點</b>（成績，單位：分），縱軸標示相對次數（%），再將 (組中點, 相對次數) 各點依序連線。</div>
+        </div>
+      </div>
+  </div>
+  <div class="printpage">
+    <div class="pageribbon">列印第 62 頁 / 共 67 頁　·　5-2 累積次數分配表與折線圖</div>
+    <div class="sechd" id="5-2"><h2>5-2　累積次數分配表與折線圖</h2><p>累積次數的意義與計算 ‧ 累積次數折線圖</p></div>
+    
+      <div class="qcard">
+        <div class="qhead"><span class="tbadge" style="background:#2a9d8f">填充</span><span class="qid">5-2-1</span><span class="src">📄 改編·中小學題庫</span><span class="pchip">🖨 第 62 頁</span></div>
+        <div class="qbody">下表為八年一班 40 位學生的數學成績次數分配表：<br>組別(分)　40~50：2<br>50~60：4<br>60~70：8<br>70~80：12<br>80~90：10<br>90~100：4<br>試求成績「未達 80 分」（即 80 分以下）的累積次數為多少人？</div>
+        
+        
+        <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
+        <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
+        <div class="sol">
+          <div class="ans">✅ 答案：26 人</div>
+          <div class="expl"><b>解析：</b>累積次數是由最低組起，逐組把次數累加。<br>未達 80 分 = 40~50 到 70~80 各組次數相加：<br>2 + 4 + 8 + 12 = <b>26（人）</b>。</div>
+        </div>
+      </div>
+  </div>
+  <div class="printpage">
+    <div class="pageribbon">列印第 63 頁 / 共 67 頁　·　5-2 累積次數分配表與折線圖</div>
+    
+    
+      <div class="qcard">
+        <div class="qhead"><span class="tbadge" style="background:#457b9d">選擇</span><span class="qid">5-2-2</span><span class="src">📄 改編·中小學題庫</span><span class="pchip">🖨 第 63 頁</span></div>
+        <div class="qbody">承上表（八年一班 40 人）。由累積次數判斷，成績「未達 70 分」的學生共有幾人？</div>
+        
+        <div class="opts"><div class="opt"><span class="ol">(A)</span> 6 人</div><div class="opt"><span class="ol">(B)</span> 14 人</div><div class="opt"><span class="ol">(C)</span> 26 人</div><div class="opt"><span class="ol">(D)</span> 36 人</div></div>
+        <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
+        <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
+        <div class="sol">
+          <div class="ans">✅ 答案：(B) 14 人</div>
+          <div class="expl"><b>解析：</b>未達 70 分 = 40~50、50~60、60~70 三組次數相加：<br>2 + 4 + 8 = <b>14（人）</b>。<br>故選【B】。</div>
+        </div>
+      </div>
+  </div>
+  <div class="printpage">
+    <div class="pageribbon">列印第 64 頁 / 共 67 頁　·　5-2 累積次數分配表與折線圖</div>
+    
+    
+      <div class="qcard">
+        <div class="qhead"><span class="tbadge" style="background:#e76f51">計算</span><span class="qid">5-2-3</span><span class="src">📄 改編·中小學題庫</span><span class="pchip">🖨 第 64 頁</span></div>
+        <div class="qbody">已知某班成績的累積次數分配表中，「未達 80 分」的累積次數為 26 人，「未達 70 分」的累積次數為 14 人。試問「70~80 分」這一組有多少人？並說明如何由累積次數還原各組次數。</div>
+        
+        
+        <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
+        <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
+        <div class="sol">
+          <div class="ans">✅ 答案：12 人</div>
+          <div class="expl"><b>解析：</b>相鄰兩個累積次數相減，即為中間那一組的次數。<br>「70~80 分」這組次數 = （未達 80 分的累積次數）−（未達 70 分的累積次數）<br>= 26 − 14 = <b>12（人）</b>。<br>因此只要把相鄰累積次數相減，就能還原每一組的次數。</div>
+        </div>
+      </div>
+  </div>
+  <div class="printpage">
+    <div class="pageribbon">列印第 65 頁 / 共 67 頁　·　5-3 累積相對次數分配表與折線圖</div>
+    <div class="sechd" id="5-3"><h2>5-3　累積相對次數分配表與折線圖</h2><p>累積相對次數 ‧ 由累積相對次數判讀名次與中位數</p></div>
+    
+      <div class="qcard">
+        <div class="qhead"><span class="tbadge" style="background:#2a9d8f">填充</span><span class="qid">5-3-1</span><span class="src">📄 改編·中小學題庫</span><span class="pchip">🖨 第 65 頁</span></div>
+        <div class="qbody">下表為八年一班 40 位學生的數學成績次數分配表：<br>組別(分)　40~50：2<br>50~60：4<br>60~70：8<br>70~80：12<br>80~90：10<br>90~100：4<br>試求成績「未達 80 分」的累積相對次數（以百分率表示）。</div>
+        
+        
+        <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
+        <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
+        <div class="sol">
+          <div class="ans">✅ 答案：65%</div>
+          <div class="expl"><b>解析：</b>累積相對次數 = 累積次數 ÷ 全體次數。<br>未達 80 分的累積次數 = 2+4+8+12 = 26，全班 40 人：<br>累積相對次數 = 26/40 = 0.65 = <b>65%</b>。</div>
+        </div>
+      </div>
+  </div>
+  <div class="printpage">
+    <div class="pageribbon">列印第 66 頁 / 共 67 頁　·　5-3 累積相對次數分配表與折線圖</div>
+    
+    
+      <div class="qcard">
+        <div class="qhead"><span class="tbadge" style="background:#457b9d">選擇</span><span class="qid">5-3-2</span><span class="src">📄 改編·中小學題庫</span><span class="pchip">🖨 第 66 頁</span></div>
+        <div class="qbody">承上表（八年一班 40 人）。各組累積相對次數依序為：未達 50 分 5%、未達 60 分 15%、未達 70 分 35%、未達 80 分 65%、未達 90 分 90%、未達 100 分 100%。若成績由高到低排名，則全班成績最好的前 10%（即前 4 名）大約落在哪一組？</div>
+        
+        <div class="opts"><div class="opt"><span class="ol">(A)</span> 70~80 分</div><div class="opt"><span class="ol">(B)</span> 80~90 分</div><div class="opt"><span class="ol">(C)</span> 90~100 分</div><div class="opt"><span class="ol">(D)</span> 無法判斷</div></div>
+        <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
+        <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
+        <div class="sol">
+          <div class="ans">✅ 答案：(C) 90~100 分</div>
+          <div class="expl"><b>解析：</b>「未達 90 分」的累積相對次數為 90%，表示成績在 90 分以上的學生佔 100% − 90% = 10%，恰為前 10%（40×10% = 4 人）。<br>因此成績最好的前 10% 落在 <b>90~100 分</b>這組。<br>故選【C】。</div>
+        </div>
+      </div>
+  </div>
+  <div class="printpage">
+    <div class="pageribbon">列印第 67 頁 / 共 67 頁　·　5-3 累積相對次數分配表與折線圖</div>
+    
+    
+      <div class="qcard">
+        <div class="qhead"><span class="tbadge" style="background:#e76f51">計算</span><span class="qid">5-3-3</span><span class="src">📄 改編·中小學題庫</span><span class="pchip">🖨 第 67 頁</span></div>
+        <div class="qbody">承上表，各組累積相對次數依序為：未達 60 分 15%、未達 70 分 35%、未達 80 分 65%、未達 90 分 90%。已知全班 40 人，試判斷這班數學成績的中位數落在哪一組？並說明理由。</div>
+        
+        
+        <div class="work"><span class="wlabel">✎ 計算 / 作答區</span></div>
+        <button class="revbtn" onclick="tog(this)">顯示解析 ▼</button>
+        <div class="sol">
+          <div class="ans">✅ 答案：落在 70~80 分這組</div>
+          <div class="expl"><b>解析：</b>中位數是第 20、21 名的成績（40 人取中間）。用累積相對次數看 50% 落在哪一組：<br>「未達 70 分」累積相對次數為 35%（不足 50%），「未達 80 分」累積相對次數為 65%（已超過 50%）。<br>所以第 50 百分位（中位數）落在 <b>70~80 分</b>這組。</div>
+        </div>
+      </div>
+  </div>
+</div>
+<a href="#top" class="top">↑</a>
+<script>
+function tog(b){var s=b.nextElementSibling;var on=s.classList.toggle('show');b.classList.toggle('on',on);b.textContent=on?'收合解析 ▲':'顯示解析 ▼';}
+</script></body></html>

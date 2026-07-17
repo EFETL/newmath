@@ -4,6 +4,24 @@
   "tagline": "國中數學 · 線上互動講義與分節練習",
   "volumes": [
     {
+      "id": "vol3",
+      "title": "第三冊",
+      "title_en": "VOLUME 3",
+      "meta": "國二上 · Grade 8 (1st term)",
+      "emoji": "📐",
+      "kicker": "VOLUME 3 · GRADE 8",
+      "subtitle": "乘法公式與多項式　·　平方根與畢氏定理　·　因式分解　·　一元二次方程式　·　統計　·　會考分節練習",
+      "chapters": [
+        {
+          "file": "vol3-huikao.html",
+          "title": "會考分節對應練習（第1～5章）",
+          "title_en": "EXAM BY SECTION",
+          "meta": "107–115 會考原題 × 課本分節 · 附中小學題庫改編平行題 · 共 67 題",
+          "emoji": "📝"
+        }
+      ]
+    },
+    {
       "id": "vol4",
       "title": "第四冊",
       "title_en": "VOLUME 4",
