@@ -13,6 +13,13 @@
       "subtitle": "乘法公式與多項式　·　平方根與畢氏定理　·　因式分解　·　一元二次方程式　·　統計　·　會考分節練習",
       "chapters": [
         {
+          "file": "vol3-map.html",
+          "title": "各校段考真題　章節對照地圖",
+          "title_en": "EXAM MAP",
+          "meta": "113 第一次段考 13 校 · 逐題觀念分類與命題熱度 · 備課地圖",
+          "emoji": "🗺️"
+        },
+        {
           "file": "vol3-ch1.html",
           "title": "第一章　乘法公式與多項式",
           "title_en": "CHAPTER 1",
