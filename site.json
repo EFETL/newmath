@@ -13,24 +13,17 @@
       "subtitle": "乘法公式與多項式　·　平方根與畢氏定理　·　因式分解　·　一元二次方程式　·　統計　·　會考分節練習",
       "chapters": [
         {
-          "file": "vol3-map.html",
-          "title": "各校段考真題　章節對照地圖",
-          "title_en": "EXAM MAP",
-          "meta": "113 第一次段考 13 校 · 逐題觀念分類與命題熱度 · 備課地圖",
-          "emoji": "🗺️"
-        },
-        {
           "file": "vol3-ch1.html",
           "title": "第一章　乘法公式與多項式",
           "title_en": "CHAPTER 1",
-          "meta": "Polynomials · 乘法公式/多項式加減乘除 · 分節練習（15 題）",
+          "meta": "Polynomials · 乘法公式/多項式加減乘除 · 段考題型分節練習（30 題）",
           "emoji": "✖️"
         },
         {
           "file": "vol3-ch2.html",
           "title": "第二章　平方根與畢氏定理",
           "title_en": "CHAPTER 2",
-          "meta": "Roots & Pythagoras · 平方根/根式運算/畢氏定理 · 分節練習（18 題）",
+          "meta": "Roots & Pythagoras · 平方根/根式運算/畢氏定理 · 段考題型分節練習（25 題）",
           "emoji": "📐"
         },
         {
