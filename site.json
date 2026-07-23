@@ -13,35 +13,35 @@
       "subtitle": "乘法公式與多項式　·　平方根與畢氏定理　·　因式分解　·　一元二次方程式　·　統計　·　會考分節練習",
       "chapters": [
         {
-          "file": "vol3-ch1.html",
+          "file": "vol3-polynomials.html",
           "title": "第一章　乘法公式與多項式",
           "title_en": "CHAPTER 1",
           "meta": "Polynomials · 乘法公式/多項式加減乘除 · 段考題型分節練習（30 題）",
           "emoji": "✖️"
         },
         {
-          "file": "vol3-ch2.html",
+          "file": "vol3-roots-pythagoras.html",
           "title": "第二章　平方根與畢氏定理",
           "title_en": "CHAPTER 2",
           "meta": "Roots & Pythagoras · 平方根/根式運算/畢氏定理 · 段考題型分節練習（34 題）",
           "emoji": "📐"
         },
         {
-          "file": "vol3-ch3.html",
+          "file": "vol3-factorization.html",
           "title": "第三章　因式分解",
           "title_en": "CHAPTER 3",
           "meta": "Factorization · 提公因式/乘法公式/十字交乘 · 段考題型分節練習（20 題）",
           "emoji": "🧩"
         },
         {
-          "file": "vol3-ch4.html",
+          "file": "vol3-quadratic-equations.html",
           "title": "第四章　一元二次方程式",
           "title_en": "CHAPTER 4",
           "meta": "Quadratic Equations · 因式分解法/配方法公式解/應用 · 段考題型分節練習（30 題）",
           "emoji": "🟰"
         },
         {
-          "file": "vol3-ch5.html",
+          "file": "vol3-statistics.html",
           "title": "第五章　統計資料處理",
           "title_en": "CHAPTER 5",
           "meta": "Statistics · 相對次數/累積次數/累積相對次數 · 段考題型分節練習（19 題）",
