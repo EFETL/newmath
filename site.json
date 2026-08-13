@@ -4,6 +4,73 @@
   "tagline": "國中數學 · 線上互動講義與分節練習",
   "volumes": [
     {
+      "id": "vol1",
+      "title": "第一冊",
+      "title_en": "VOLUME 1",
+      "meta": "國一上 · Grade 7 (1st term)",
+      "emoji": "🔢",
+      "kicker": "VOLUME 1 · GRADE 7",
+      "subtitle": "第二章 分數的運算　·　因數與倍數／最大公因數與最小公倍數／分數的加減／分數的乘除與四則運算　·　A～F 六卷平行考卷",
+      "chapters": [
+        {
+          "file": "vol1-2-1.html",
+          "title": "2-1　因數與倍數",
+          "title_en": "SECTION 2-1",
+          "meta": "Factors & Multiples · A～F 六卷平行考卷 · 每卷 填充10＋計算10（共20題）",
+          "emoji": "🔢"
+        },
+        {
+          "file": "vol1-2-2.html",
+          "title": "2-2　最大公因數與最小公倍數",
+          "title_en": "SECTION 2-2",
+          "meta": "GCD & LCM · A～F 六卷平行考卷 · 每卷 填充10＋計算10（共20題）",
+          "emoji": "🧮"
+        },
+        {
+          "file": "vol1-2-3.html",
+          "title": "2-3　分數的加減",
+          "title_en": "SECTION 2-3",
+          "meta": "Fraction Addition & Subtraction · A～F 六卷平行考卷 · 每卷 填充10＋計算10（共20題）",
+          "emoji": "➕"
+        },
+        {
+          "file": "vol1-2-4.html",
+          "title": "2-4　分數的乘除與四則運算",
+          "title_en": "SECTION 2-4",
+          "meta": "Fraction Multiplication & Division · A～F 六卷平行考卷 · 每卷 填充10＋計算10（共20題）",
+          "emoji": "✖️"
+        },
+        {
+          "file": "vol1-2-1-key.html",
+          "title": "2-1　因數與倍數　教師解答版",
+          "title_en": "SECTION 2-1 · ANSWER KEY",
+          "meta": "Factors & Multiples · 六卷全部題目＋答案＋逐步解析（教師用）",
+          "emoji": "🔑"
+        },
+        {
+          "file": "vol1-2-2-key.html",
+          "title": "2-2　最大公因數與最小公倍數　教師解答版",
+          "title_en": "SECTION 2-2 · ANSWER KEY",
+          "meta": "GCD & LCM · 六卷全部題目＋答案＋逐步解析（教師用）",
+          "emoji": "🔑"
+        },
+        {
+          "file": "vol1-2-3-key.html",
+          "title": "2-3　分數的加減　教師解答版",
+          "title_en": "SECTION 2-3 · ANSWER KEY",
+          "meta": "Fraction Addition & Subtraction · 六卷全部題目＋答案＋逐步解析（教師用）",
+          "emoji": "🔑"
+        },
+        {
+          "file": "vol1-2-4-key.html",
+          "title": "2-4　分數的乘除與四則運算　教師解答版",
+          "title_en": "SECTION 2-4 · ANSWER KEY",
+          "meta": "Fraction Multiplication & Division · 六卷全部題目＋答案＋逐步解析（教師用）",
+          "emoji": "🔑"
+        }
+      ]
+    },
+    {
       "id": "vol3",
       "title": "第三冊",
       "title_en": "VOLUME 3",
